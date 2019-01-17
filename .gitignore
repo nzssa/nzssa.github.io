@@ -61,3 +61,5 @@ typings/
 public
 yarn-error.log
 .tern-port
+
+.idea/workspace.xml
