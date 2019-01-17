@@ -8,11 +8,15 @@ const headroom = css`
     z-index: 2000;
     top: 0;
   }
+  .headroom-wrapper img {
+    margin-bottom: 0;
+  }
   .headroom {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
+    height: 60px;
     padding: 1rem 1.5rem;
     svg {
       height: 2.5rem;
