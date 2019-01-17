@@ -51,8 +51,10 @@
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
     "typeface-candal": "0.0.54",
+    "typeface-chivo": "0.0.54",
     "typeface-open-sans": "0.0.54",
-    "typography": "^0.16.17"
+    "typography": "^0.16.18",
+    "typography-theme-st-annes": "^0.16.18"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
