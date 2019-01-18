@@ -1,8 +1,8 @@
 # New Zealand Students' Space Association
 Website built with Gatsby and Justin Formentin's <a href="https://github.com/justinformentin/gatsby-v2-tutorial-starter">starter</a>.
-<br>
-<br>
-<br>
+
+## dev notes / to-dos
+- need to create new component for home page header (which is different from blog post headers)
 
 ## Starter Features
 
