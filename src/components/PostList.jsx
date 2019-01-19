@@ -92,7 +92,7 @@ const Image = styled.div`
 `;
 
 const Info = styled.div`
-  color: ${props => props.theme.colors.white.light};
+  color: ${props => props.theme.colors.white.base};
   margin: 0 1rem 1.25rem 1.25rem;
   position: absolute;
   bottom: 0;
