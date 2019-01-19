@@ -25,10 +25,11 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <img src={backpackGirl} styles={"background-color: #ffffff"} alt={"backpackGirl"} height={"650px"} width={"670px"} align="left"></img>
+      <img src={backpackGirl} styles={"background-color: #ffffff"} alt={"backpackGirl"} height={"650px"} width={"670px"}
+           align="left" vspace="1"></img>
       <Helmet title={"Home Page"} />
       <HomeHeader title="New Zealand Students' Space Association">
-        (mission statement)
+        Be bold. Have fun. Build a better world.
       </HomeHeader>
       <PostWrapper>
         {edges.map(({ node }) => (

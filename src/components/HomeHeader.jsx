@@ -42,7 +42,7 @@ const HomeHeader = ({ children, title, date, cover }) => (
   <Wrapper>
     <Img fluid={cover || {} || [] || ''} />
     <Text>
-      <h1 css={{fontSize: '60px'}}>{title}</h1>
+      <h1 css={{fontSize: '70px', fontWeight: 'bold'}}>{title}</h1>
       <h3>{date}</h3>
 
       {children && <Subtitle>{children}</Subtitle>}
