@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8979ccb9-69af-4fe4-8af2-587aee63ffc4" name="Default" comment="" />
+    <list default="true" id="8979ccb9-69af-4fe4-8af2-587aee63ffc4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/static/logo/bannerOG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/logo/faviconOG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/logo/header-logoOG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/logo/logoOG.png" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,8 +33,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="37">
               <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+=======
+            <state relative-caret-position="337">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+>>>>>>> logoUpdate
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -72,8 +82,16 @@
       </file>
     </leaf>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
     <option name="x" value="24" />
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="67" />
+>>>>>>> logoUpdate
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="699" />
@@ -99,13 +117,22 @@
             <path>
               <item name="nzssa-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="nzssa-site" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="src" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+>>>>>>> logoUpdate
             </path>
             <path>
               <item name="nzssa-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="nzssa-site" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="logo" type="462c0819:PsiDirectoryNode" />
+>>>>>>> logoUpdate
             </path>
           </expand>
           <select />
@@ -121,6 +148,7 @@
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
   </component>
   <component name="RunDashboard">
@@ -146,11 +174,16 @@
       <option name="presentableId" value="Default" />
       <updated>1547715787753</updated>
       <workItem from="1547715789248" duration="604000" />
+      <workItem from="1547717202929" duration="2402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="1147000" />
+=======
+    <option name="totallyTimeSpent" value="3006000" />
+>>>>>>> logoUpdate
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="23" width="1280" height="699" extended-state="0" />
@@ -170,7 +203,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+=======
+      <window_info anchor="bottom" id="Version Control" order="10" />
+>>>>>>> logoUpdate
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -180,9 +217,14 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+=======
+    <entry file="file://$PROJECT_DIR$/src/pages/about.jsx">
+>>>>>>> logoUpdate
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="120">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -228,8 +270,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="37">
           <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+=======
+        <state relative-caret-position="337">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+>>>>>>> logoUpdate
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
