@@ -18,9 +18,9 @@ const Wrapper = styled.header`
 
 const Text = styled.div`
   color: ${props => props.theme.colors.black.base};
-  z-index: 100;
-  position: realtive;
-  top: 40%;
+  z-index: 1;
+  position: relative;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -36,15 +36,18 @@ const Text = styled.div`
 const Subtitle = styled.p`
   max-width: 650px;
   color: ${props => props.theme.colors.black.base};
+  z-index: 2;
 `;
+
+
 
 const HomeHeader = ({ children, title, date, cover }) => (
   <Wrapper>
-      <Img fluid={cover || {} || [] || ''}/>
+      <Img css={{zIndex: '-1'}} fluid={cover || {} || [] || ''}/>
       <Text>
-        <h1 css={{fontSize: '70px', fontWeight: 'bold',
-          styles={"background-image: ../../static/stars.svg"}}}>{title}</h1>
-        <h3>{date}</h3>
+        <h1 css={{fontSize: '70px', fontWeight: 'bold', zIndex: '2'}}>{title}</h1>
+
+          <h3>{date}</h3>
 
         {children && <Subtitle css={{fontSize: '30px', fontWeight: 'light'}}>{children}</Subtitle>}
       </Text>

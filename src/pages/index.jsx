@@ -22,14 +22,25 @@ const PostWrapper = styled.div`
   }
 `;
 
+
+const Image = styled.img`
+  position: absolute;
+  left: 500px;
+  top: -140px;
+  z-index: 3;
+  background-repeat: repeat-x;
+  background-image: url("../../static/stars.svg");
+  
+`
+
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <img src={stars} styles={"background-color: #ffffff"} alt={"stars"} height={"400px"} width={"400px"}
-         align="center" vspace="0"></img>
+      <Image src={stars} styles={"background-color: #ffffff"} alt={"stars"} height={"400px"} width={"400px"}
+           vspace="0"  ></Image>
       <img src={backpackGirl} styles={"background-color: #ffffff"} alt={"backpackGirl"} height={"650px"} width={"670px"}
-           align="left" vspace="1"></img>
+           align="left"></img>
       <Helmet title={"Home Page"} />
       <HomeHeader title="New Zealand Students' Space Association">
         <p>Be bold.<br />Have fun.<br />Build a better world.</p>
