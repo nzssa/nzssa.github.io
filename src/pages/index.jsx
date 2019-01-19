@@ -6,6 +6,7 @@ import styled from 'react-emotion';
 import { HomeHeader, Header, PostList } from 'components';
 import { Layout } from 'layouts';
 import backpackGirl from '../../static/backpackGirl.svg'
+import stars from '../../static/stars.svg'
 
 const PostWrapper = styled.div`
   display: flex;
@@ -21,14 +22,28 @@ const PostWrapper = styled.div`
   }
 `;
 
+
+const Image = styled.img`
+  position: absolute;
+  left: 500px;
+  top: -140px;
+  z-index: 3;
+  background-repeat: repeat-x;
+  background-image: url("../../static/stars.svg");
+  
+`
+
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <img src={backpackGirl} styles={"background-color: #ffffff"} alt={"backpackGirl"} height={"650px"} width={"670px"} align="left"></img>
+      <Image src={stars} styles={"background-color: #ffffff"} alt={"stars"} height={"400px"} width={"400px"}
+           vspace="0"  ></Image>
+      <img src={backpackGirl} styles={"background-color: #ffffff"} alt={"backpackGirl"} height={"650px"} width={"670px"}
+           align="left"></img>
       <Helmet title={"Home Page"} />
       <HomeHeader title="New Zealand Students' Space Association">
-        (mission statement)
+        <p>Be bold.<br />Have fun.<br />Build a better world.</p>
       </HomeHeader>
       <PostWrapper>
         {edges.map(({ node }) => (
