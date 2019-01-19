@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
-  background: ${props => props.theme.gradient.rightToLeft};
+  background: ${props => props.theme.colors.white.base};
   height: fill-available;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     height: 300px;
@@ -17,15 +17,15 @@ const Wrapper = styled.header`
 `;
 
 const Text = styled.div`
-  color: ${props => props.theme.colors.white.base};
+  color: ${props => props.theme.colors.black.base};
   z-index: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   width: 100%;
   max-width: ${props => props.theme.layout.base};
   padding: 0 2rem;
@@ -35,14 +35,14 @@ const Text = styled.div`
 
 const Subtitle = styled.p`
   max-width: 650px;
-  color: ${props => props.theme.colors.white.light};
+  color: ${props => props.theme.colors.black.base};
 `;
 
 const HomeHeader = ({ children, title, date, cover }) => (
   <Wrapper>
     <Img fluid={cover || {} || [] || ''} />
     <Text>
-      <h1>{title}</h1>
+      <h1 css={{fontSize: '60px'}}>{title}</h1>
       <h3>{date}</h3>
 
       {children && <Subtitle>{children}</Subtitle>}
