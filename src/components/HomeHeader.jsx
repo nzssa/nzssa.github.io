@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
-  background: ${props => props.theme.gradient.rightToLeft};
+  background: ${props => props.theme.colors.white.base};
   height: fill-available;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     height: 300px;
@@ -17,7 +17,7 @@ const Wrapper = styled.header`
 `;
 
 const Text = styled.div`
-  color: ${props => props.theme.colors.white.base};
+  color: ${props => props.theme.colors.black.base};
   z-index: 0;
   position: absolute;
   top: 50%;
