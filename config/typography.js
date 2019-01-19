@@ -5,7 +5,7 @@ const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.45,
   headerFontFamily: [
-    'Candal',
+    'Chivo',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
