@@ -34,12 +34,17 @@
         <entry file="file://$PROJECT_DIR$/src/components/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="37">
               <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
 =======
             <state relative-caret-position="337">
               <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
 >>>>>>> logoUpdate
+=======
+            <state relative-caret-position="337">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+>>>>>>> bdfafb21e0a68978877b5fbf8199a7534e79168e
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -118,14 +123,19 @@
               <item name="nzssa-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="nzssa-site" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <item name="src" type="462c0819:PsiDirectoryNode" />
 =======
               <item name="static" type="462c0819:PsiDirectoryNode" />
 >>>>>>> logoUpdate
+=======
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+>>>>>>> bdfafb21e0a68978877b5fbf8199a7534e79168e
             </path>
             <path>
               <item name="nzssa-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="nzssa-site" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
 <<<<<<< HEAD
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
@@ -133,6 +143,10 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="logo" type="462c0819:PsiDirectoryNode" />
 >>>>>>> logoUpdate
+=======
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="logo" type="462c0819:PsiDirectoryNode" />
+>>>>>>> bdfafb21e0a68978877b5fbf8199a7534e79168e
             </path>
           </expand>
           <select />
@@ -180,10 +194,14 @@
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="1147000" />
 =======
     <option name="totallyTimeSpent" value="3006000" />
 >>>>>>> logoUpdate
+=======
+    <option name="totallyTimeSpent" value="3006000" />
+>>>>>>> bdfafb21e0a68978877b5fbf8199a7534e79168e
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="23" width="1280" height="699" extended-state="0" />
@@ -231,7 +249,11 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/templates/tag.jsx">
+=======
+    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+>>>>>>> bdfafb21e0a68978877b5fbf8199a7534e79168e
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -240,7 +262,11 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/index.jsx">
+=======
+    <entry file="file://$PROJECT_DIR$/src/templates/tag.jsx">
+>>>>>>> bdfafb21e0a68978877b5fbf8199a7534e79168e
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -259,11 +285,15 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/index.jsx">
+>>>>>>> bdfafb21e0a68978877b5fbf8199a7534e79168e
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -271,12 +301,17 @@
     <entry file="file://$PROJECT_DIR$/src/components/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="37">
           <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
 =======
         <state relative-caret-position="337">
           <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
 >>>>>>> logoUpdate
+=======
+        <state relative-caret-position="337">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+>>>>>>> bdfafb21e0a68978877b5fbf8199a7534e79168e
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
