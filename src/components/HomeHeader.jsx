@@ -45,7 +45,7 @@ const HomeHeader = ({ children, title, date, cover }) => (
       <h1 css={{fontSize: '70px', fontWeight: 'bold'}}>{title}</h1>
       <h3>{date}</h3>
 
-      {children && <Subtitle>{children}</Subtitle>}
+      {children && <Subtitle css={{fontSize: '30px', fontWeight: 'light'}}>{children}</Subtitle>}
     </Text>
   </Wrapper>
 );
