@@ -2,7 +2,15 @@
 Website built with Gatsby and Justin Formentin's <a href="https://github.com/justinformentin/gatsby-v2-tutorial-starter">starter</a>.
 
 ## dev notes / to-dos
-- need to create new component for home page header (which is different from blog post headers)
+:white_check_mark: create new component for home page header (which is different from blog post headers)
+
+:white_large_square: develop brand identity
+
+:white_large_square: incorporate brand into site design
+
+:white_large_square: add copy
+
+:white_large_square: add form submission to Contact Us
 
 ## Starter Features
 
