@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import styled from 'react-emotion';
 import { HomeHeader, Header, PostList } from 'components';
 import { Layout } from 'layouts';
-import rocket from '../../static/rocket.svg'
+import backpackGirl from '../../static/backpackGirl.svg'
 
 const PostWrapper = styled.div`
   display: flex;
@@ -25,9 +25,14 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
+      <img src={backpackGirl} styles={"background-color: #ffffff"} alt={"backpackGirl"} height={"650px"} width={"670px"} align="left"></img>
       <Helmet title={"Home Page"} />
+<<<<<<< HEAD
+      <Header title="New Zealand Students' Space Association">
+=======
       <HomeHeader title="New Zealand Students' Space Association">
         <img src={rocket} styles={"background-color: #FFFFFF"} alt={"Rocket"} height={"200px"} width={"200px"}></img>
+>>>>>>> 39d4844f203224f588eec6eeedcd69adb721ac7e
         (mission statement)
       </HomeHeader>
       <PostWrapper>
