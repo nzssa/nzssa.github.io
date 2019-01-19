@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from 'react-emotion';
-import { Header, PostList } from 'components';
+import { HomeHeader, Header, PostList } from 'components';
 import { Layout } from 'layouts';
 import rocket from '../../static/rocket.svg'
 
@@ -26,10 +26,10 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={"Home Page"} />
-      <Header title="New Zealand Students' Space Association">
+      <HomeHeader title="New Zealand Students' Space Association">
         <img src={rocket} styles={"background-color: #FFFFFF"} alt={"Rocket"} height={"200px"} width={"200px"}></img>
         (mission statement)
-      </Header>
+      </HomeHeader>
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList

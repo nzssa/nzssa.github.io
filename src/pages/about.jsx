@@ -7,7 +7,6 @@ import { Layout, Container } from 'layouts';
 
 const Text = styled.div`
     margin: 2rem 10rem;
-  }
 `;
 
 const About = center => (

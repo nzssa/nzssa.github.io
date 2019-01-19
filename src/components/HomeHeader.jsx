@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
   background: ${props => props.theme.gradient.rightToLeft};
-  height: 300px;
+  height: fill-available;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
-    height: 200px;
+    height: 300px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 150px;
+    height: 275px;
   }
   position: relative;
   overflow: hidden;
@@ -38,7 +38,7 @@ const Subtitle = styled.p`
   color: ${props => props.theme.colors.white.light};
 `;
 
-const Header = ({ children, title, date, cover }) => (
+const HomeHeader = ({ children, title, date, cover }) => (
   <Wrapper>
     <Img fluid={cover || {} || [] || ''} />
     <Text>
@@ -50,9 +50,9 @@ const Header = ({ children, title, date, cover }) => (
   </Wrapper>
 );
 
-export default Header;
+export default HomeHeader;
 
-Header.propTypes = {
+HomeHeader.propTypes = {
   children: PropTypes.oneOfType([PropTypes.node, PropTypes.bool]),
   cover: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   date: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
@@ -63,7 +63,7 @@ Header.propTypes = {
   ]),
 };
 
-Header.defaultProps = {
+HomeHeader.defaultProps = {
   children: false,
   cover: false,
   date: false,
