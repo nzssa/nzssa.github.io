@@ -5,30 +5,59 @@ import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 
+
+
 const Text = styled.div`
     margin: 2rem 10rem;
 `;
+
 
 const Contact = center => (
   <Layout>
     <Helmet title={'Contact Page'} />
     <Header title="Contact us">Gatsby Tutorial Starter</Header>
-    <Container center={center}>
-      <Text>
-        <h3>
-          If you would like to build this site completely from scratch, you go
-          can go read the guide{' '}
-          <a href="https://justinformentin.com/gatsby-v2-guide">here.</a>
-        </h3>
-        <br />
-        <h3>
-          Or you can watch the video{' '}
-          <a href="https://youtube.com/#">on Youtube.</a>
-        </h3>
-      </Text>
-    </Container>
+    <NameForm css={{border: '2px solid blue', height: '75%', fitContent: '40%', display: 'inline-block', width: '50px'}}></NameForm>
   </Layout>
 );
+
+class NameForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form export ={this.handleSubmit}>
+        <label>
+          Name:
+          <input css={{border: '2px solid blue'}} type="text" value={this.state.name} onChange={this.handleChange} />
+        </label><br />
+        <label>
+          Email:
+          <input type="text" value={this.state.email} onChange={this.handleChange} />
+        </label><br />
+        <label>
+          Message:
+          <textarea css={{height: '200px', width: '400px'}} value={this.state.message} onChange={this.handleChange} />
+        </label><br />
+        <input type="submit" value="Submit"/>
+      </form>
+    );
+  }
+}
 
 export default Contact;
 
