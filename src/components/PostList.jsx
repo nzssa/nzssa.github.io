@@ -5,7 +5,9 @@ import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import theme from '../../config/theme';
 
+
 const Wrapper = styled.article`
+  display: inline-block;
   margin-bottom: 2rem;
   position: relative;
   z-index: 100;

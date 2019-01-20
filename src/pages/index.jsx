@@ -9,10 +9,11 @@ import backpackGirl from '../../static/backpackGirl.svg'
 import stars from '../../static/stars.svg'
 
 const PostWrapper = styled.div`
+  top: 600px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  place-content: space-between space-evenly; 
   margin: 4rem 4rem 1rem 4rem;
   @media (max-width: 1000px) {
     margin: 4rem 2rem 1rem 2rem;
@@ -39,11 +40,11 @@ const Index = ({ data }) => {
     <Layout>
       <Image src={stars} styles={"background-color: #ffffff"} alt={"stars"} height={"400px"} width={"400px"}
            vspace="0"  ></Image>
-      <img src={backpackGirl} styles={"background-color: #ffffff"} alt={"backpackGirl"} height={"650px"} width={"670px"}
+      <img src={backpackGirl} styles={"background-color: #ffffff"} alt={"backpackGirl"} height={"600px"}
            align="left"></img>
       <Helmet title={"Home Page"} />
       <HomeHeader title="New Zealand Students' Space Association">
-        <p>Be bold.<br />Have fun.<br />Build a better world.</p>
+        <p>Be bold. Have fun. Build a better world.</p>
       </HomeHeader>
       <PostWrapper>
         {edges.map(({ node }) => (

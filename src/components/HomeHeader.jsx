@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
   background: ${props => props.theme.colors.white.base};
-  height: fill-available;
+  height: 600px;
+  top: 60px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     height: 300px;
   }
@@ -28,7 +29,7 @@ const Text = styled.div`
   text-align: left;
   width: 100%;
   max-width: ${props => props.theme.layout.base};
-  padding: 0 2rem;
+  padding: 0 3rem 0 0;
   margin-bottom: 3rem;
   align-items: center;
 `;
@@ -45,7 +46,7 @@ const HomeHeader = ({ children, title, date, cover }) => (
   <Wrapper>
       <Img css={{zIndex: '-1'}} fluid={cover || {} || [] || ''}/>
       <Text>
-        <h1 css={{fontSize: '70px', fontWeight: 'bold', zIndex: '2'}}>{title}</h1>
+        <h1 css={{fontSize: '70px', fontWeight: 'bold', zIndex: '2', textAlign: 'right'}}>{title}</h1>
 
           <h3>{date}</h3>
 
