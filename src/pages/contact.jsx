@@ -9,24 +9,18 @@ const Text = styled.div`
     margin: 2rem 10rem;
 `;
 
+
 const Contact = center => (
   <Layout>
     <Helmet title={'Contact Page'} />
     <Header title="Contact us">Gatsby Tutorial Starter</Header>
-    <Container center={center}>
-      <Text>
-        <h3>
-          If you would like to build this site completely from scratch, you go
-          can go read the guide{' '}
-          <a href="https://justinformentin.com/gatsby-v2-guide">here.</a>
-        </h3>
-        <br />
-        <h3>
-          Or you can watch the video{' '}
-          <a href="https://youtube.com/#">on Youtube.</a>
-        </h3>
-      </Text>
-    </Container>
+    <form>
+      <label>
+        Name:
+        <input type="text" name="name" />
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
   </Layout>
 );
 
