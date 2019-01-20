@@ -9,20 +9,52 @@ const Text = styled.div`
     margin: 2rem 10rem;
 `;
 
-
 const Contact = center => (
   <Layout>
     <Helmet title={'Contact Page'} />
     <Header title="Contact us">Gatsby Tutorial Starter</Header>
-    <form>
-      <label>
-        Name:
-        <input type="text" name="name" />
-      </label>
-      <input type="submit" value="Submit" />
-    </form>
+    <NameForm></NameForm>
   </Layout>
 );
+
+class NameForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input type="text" value={this.state.name} onChange={this.handleChange} />
+        </label><br />
+        <label>
+          Email:
+          <input type="text" value={this.state.email} onChange={this.handleChange} />
+        </label><br />
+        <label>
+          Message:
+          <textarea css={{height: '200px'}} value={this.state.message} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
 
 export default Contact;
 
