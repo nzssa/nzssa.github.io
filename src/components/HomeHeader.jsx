@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
   background: ${props => props.theme.colors.white.base};
-  height: fill-available;
+  height: 600px;
+  top: 60px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     height: 300px;
   }
