@@ -5,15 +5,18 @@ import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 
+
+
 const Text = styled.div`
     margin: 2rem 10rem;
 `;
+
 
 const Contact = center => (
   <Layout>
     <Helmet title={'Contact Page'} />
     <Header title="Contact us">Gatsby Tutorial Starter</Header>
-    <NameForm></NameForm>
+    <NameForm css={{border: '2px solid blue', height: '75%', fitContent: '40%', display: 'inline-block', width: '50px'}}></NameForm>
   </Layout>
 );
 
@@ -37,10 +40,10 @@ class NameForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form export ={this.handleSubmit}>
         <label>
           Name:
-          <input type="text" value={this.state.name} onChange={this.handleChange} />
+          <input css={{border: '2px solid blue'}} type="text" value={this.state.name} onChange={this.handleChange} />
         </label><br />
         <label>
           Email:
@@ -48,9 +51,9 @@ class NameForm extends React.Component {
         </label><br />
         <label>
           Message:
-          <textarea css={{height: '200px'}} value={this.state.message} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
+          <textarea css={{height: '200px', width: '400px'}} value={this.state.message} onChange={this.handleChange} />
+        </label><br />
+        <input type="submit" value="Submit"/>
       </form>
     );
   }
