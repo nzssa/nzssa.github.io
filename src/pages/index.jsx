@@ -43,7 +43,7 @@ const Index = ({ data }) => {
            align="left"></img>
       <Helmet title={"Home Page"} />
       <HomeHeader title="New Zealand Students' Space Association">
-        <p>Be bold.<br />Have fun.<br />Build a better world.</p>
+        <p>Be bold. Have fun. Build a better world.</p>
       </HomeHeader>
       <PostWrapper>
         {edges.map(({ node }) => (
