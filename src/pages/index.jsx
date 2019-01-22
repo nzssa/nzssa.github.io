@@ -44,7 +44,7 @@ const Index = ({ data }) => {
            align="left"></img>
       <Helmet title={"Home Page"} />
       <HomeHeader title="New Zealand Students' Space Association">
-        <p>Be bold. Have fun. Build a better world.</p>
+        Be bold. Have fun. Build a better world.
       </HomeHeader>
       <PostWrapper>
         {edges.map(({ node }) => (

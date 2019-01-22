@@ -34,6 +34,7 @@ const NavBar = () => (
     </StyledLink>
     <Nav>
       <Link to="/about">About</Link>
+      <Link to="/events">Events</Link>
       <Link to="/blog">Blog</Link>
       <Link to="/team">Team</Link>
       <Link to="/contact">Contact</Link>
