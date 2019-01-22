@@ -3,6 +3,8 @@ import theme from '../../config/theme';
 
 const headroom = css`
   .headroom-wrapper {
+    background-color: ${theme.colors.white.base};
+    box-shadow: ${theme.shadow.navbar};
     position: fixed;
     width: 100%;
     z-index: 2000;
@@ -35,14 +37,14 @@ const headroom = css`
   }
   .headroom--unpinned {
     position: fixed;
-    transform: translateY(-100%);
+    // transform: translateY(-100%);
     transition: ${theme.transitions.headroom.transition};
   }
   .headroom--pinned {
     position: fixed;
     transform: translateY(0);
     transition: ${theme.transitions.headroom.transition};
-    background-color: ${theme.colors.white.light};
+    background-color: ${theme.colors.white.base};
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
     nav {
       a {

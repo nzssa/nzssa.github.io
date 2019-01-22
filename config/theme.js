@@ -28,6 +28,7 @@ const shadow = {
   image: '0 15px 25px rgba(0, 0, 0, 0.1)',
   suggestion: '0 -5px 30px rgba(0,0,0,0.2)',
   footer: '0 -3px 26px rgba(0,0,0,0.5)',
+  navbar: '0 2px 2px rgba(0, 0, 0, 0.1)',
   feature: {
     big: {
       default: '0 40px 40px rgba(0, 0, 0, 0.2)',
