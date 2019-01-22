@@ -4,7 +4,9 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 ## dev notes / to-dos
 :white_check_mark: create new component for home page header (which is different from blog post headers)
 
-:white_large_square: reformat home page blog icons to use CSS Grid 
+:white_check_mark: <strike>reformat home page blog icons to use CSS Grid</strike> make blog post icons sit nicely
+
+:white_large_square: ensure everything is r e s p o n s i v e
 
 :white_large_square: develop brand identity
 
