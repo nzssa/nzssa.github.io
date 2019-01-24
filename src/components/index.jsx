@@ -4,5 +4,6 @@ import Header from './Header';
 import PostList from './PostList';
 import SEO from './SEO';
 import TagsBlock from './TagsBlock';
+import EventList from './EventList'
 
-export { BlogList, HomeHeader, Header, PostList, SEO, TagsBlock };
+export { BlogList, EventList, HomeHeader, Header, PostList, SEO, TagsBlock };
