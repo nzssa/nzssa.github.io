@@ -6,6 +6,10 @@ import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import theme from '../../config/theme';
 import { graphql } from 'gatsby';
+import MissionControlList from '../components/MissionControlList';
+import LaunchTeamList from '../components/LaunchTeamList';
+import ChristchurchList from '../components/ChristchurchList';
+import WellingtonList from '../components/WellingtonList';
 
 const Text = styled.div`
     margin: 2rem 10rem;
@@ -38,36 +42,52 @@ const Card = styled.div`
   box-shadow: ${theme.shadow.navbar};
 `
 
-const Team = center => (
-  <Layout>
-    <Helmet title={'Team Page'} />
-    <Header title="Our Team">Gatsby Tutorial Starter</Header>
-    {/*<Container center={center}>*/}
+const Team = ({ data }) => {
+  const { edges } = data.allMarkdownRemark;
+  return (
+    <Layout>
+      <Helmet title={'Team Page'}/>
+      <Header title="Our Team">Gatsby Tutorial Starter</Header>
+      {edges.map(({ node }) => (
+        <MissionControlList key={node.id}/>
+      ))}
+      {edges.map(({ node }) => (
+        <LaunchTeamList key={node.id}/>
+      ))}
+      {edges.map(({ node }) => (
+        <ChristchurchList key={node.id}/>
+      ))}
+      {edges.map(({ node }) => (
+        <WellingtonList key={node.id}/>
+      ))}
+
+      {/*<Container center={center}>*/}
       {/*<Text>*/}
-        {/*<h3>*/}
-          {/*If you would like to build this site completely from scratch, you go*/}
-          {/*can go read the guide{' '}*/}
-          {/*<a href="https://justinformentin.com/gatsby-v2-guide">here.</a>*/}
-        {/*</h3>*/}
-        {/*<br />*/}
-        {/*<h3>*/}
-          {/*Or you can watch the video{' '}*/}
-          {/*<a href="https://youtube.com/#">on Youtube.</a>*/}
-        {/*</h3>*/}
+      {/*<h3>*/}
+      {/*If you would like to build this site completely from scratch, you go*/}
+      {/*can go read the guide{' '}*/}
+      {/*<a href="https://justinformentin.com/gatsby-v2-guide">here.</a>*/}
+      {/*</h3>*/}
+      {/*<br />*/}
+      {/*<h3>*/}
+      {/*Or you can watch the video{' '}*/}
+      {/*<a href="https://youtube.com/#">on Youtube.</a>*/}
+      {/*</h3>*/}
       {/*</Text>*/}
-    {/*</Container>*/}
-    <GridWrapper>
-      <Card>
-        
-      </Card>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-    </GridWrapper>
-  </Layout>
-);
+      {/*</Container>*/}
+      <GridWrapper>
+        <Card>
+
+        </Card>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+      </GridWrapper>
+    </Layout>
+  );
+};
 
 export default Team;
 
