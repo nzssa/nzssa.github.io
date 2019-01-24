@@ -9,12 +9,19 @@ import { graphql } from 'gatsby';
 const Text = styled.div`
   margin: 2rem 10rem;
 `;
+
+const HeaderTitle = styled.h1`
+  margin: 0;
+`
+
 const Events = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
       <Helmet title={'Events Page'} />
       <Header title="Events Page">Gatsby Tutorial Starter</Header>
+      <Container>
+      <HeaderTitle>Upcoming</HeaderTitle>
       {edges.map(({ node }) => (
         <SingleEvent
           key={node.id}
@@ -23,6 +30,7 @@ const Events = ({ data }) => {
           excerpt={node.excerpt}
         />
       ))}
+      </Container>
     </Layout>
   );
 };
