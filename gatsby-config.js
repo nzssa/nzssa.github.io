@@ -21,6 +21,13 @@ module.exports = {
         path: `${__dirname}/content/events`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'members',
+        path: `${__dirname}/content/members`,
+      },
+    },
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',

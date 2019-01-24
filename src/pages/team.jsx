@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import theme from '../../config/theme';
+import { graphql } from 'gatsby';
 
 const Text = styled.div`
     margin: 2rem 10rem;
@@ -73,3 +74,17 @@ export default Team;
 Container.propTypes = {
   center: PropTypes.object,
 };
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(
+      filter: {fileAbsolutePath: { regex: "/(/content/members)/.*\\.md$/" }}
+    ) {
+      edges {
+        node {
+          id
+        }
+      }
+    }
+  }
+`;

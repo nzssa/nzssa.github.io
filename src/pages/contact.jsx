@@ -4,9 +4,6 @@ import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
-import { withFormik } from 'formik';
-import Yup from 'yup';
-
 
 const Text = styled.div`
     margin: 2rem 10rem;
