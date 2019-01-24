@@ -3,7 +3,7 @@ path: "/post-four"
 cover: "../2019-01-24/blocks.jpg"
 slug: "post-four"
 date: "2019-01-24"
-title: "Post Number Four"
+title: "Event 3"
 tags: ['gatsby', 'other']
 published: false
 ---

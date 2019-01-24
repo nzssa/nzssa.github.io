@@ -3,7 +3,7 @@ path: "/post-five"
 cover: "../2019-01-23/speed.jpg"
 slug: "post-five"
 date: "2019-01-23"
-title: "Post Number Five"
+title: "Event 2"
 tags: ['tutorial', 'javascript', 'frontend']
 published: true
 ---

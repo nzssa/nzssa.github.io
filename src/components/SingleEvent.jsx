@@ -6,13 +6,21 @@ import { Container } from 'layouts';
 const Wrapper = styled.article`
   margin: 0 3rem;
 `;
+const Title = styled.h1`
+  margin: 0;
+`;
+const Excerpt = styled.p`
+margin: 0;
+`
 
-const EventList = ({ id }) => (
+
+const SingleEvent = ({ key, title, date, excerpt }) => (
   <Container>
     <Wrapper>
-      <p>Id is: {id}</p>
+      <Title>{title}</Title>
+      <Excerpt>{excerpt}</Excerpt>
     </Wrapper>
   </Container>
 );
 
-export default EventList;
+export default SingleEvent;

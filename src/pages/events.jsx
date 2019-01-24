@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
-import { Header, EventList } from 'components';
+import { Header, SingleEvent } from 'components';
 import { Layout, Container } from 'layouts';
 import { graphql } from 'gatsby';
 
@@ -33,13 +33,18 @@ const Text = styled.div`
 //   );
 // };
 const Events = ({ data }) => {
-  const { edges } = data.allFile;
+  const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
       <Helmet title={'Events Page'} />
       <Header title="Events Page">Gatsby Tutorial Starter</Header>
       {edges.map(({ node }) => (
-        <EventList key={node.id} />
+        <SingleEvent
+          key={node.id}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          excerpt={node.excerpt}
+        />
       ))}
     </Layout>
   );
@@ -74,15 +79,20 @@ Container.propTypes = {
 
 export const query = graphql`
   query {
-    allFile(
-      filter: {
-        sourceInstanceName: { eq: "events" }
-        internal: { mediaType: { eq: "text/markdown" } }
-      }
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/(/content/events)/.*\\.md$/" } }
     ) {
       edges {
         node {
-          id
+        excerpt(pruneLength: 200)
+          frontmatter {
+            title
+            path
+            slug
+            date
+            published
+            _PARENT
+          }
         }
       }
     }
