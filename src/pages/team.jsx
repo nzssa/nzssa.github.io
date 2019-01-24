@@ -49,16 +49,29 @@ const Team = ({ data }) => {
       <Helmet title={'Team Page'}/>
       <Header title="Our Team">Gatsby Tutorial Starter</Header>
       {edges.map(({ node }) => (
-        <MissionControlList key={node.id}/>
+        <MissionControlList
+          key={node.id}
+          title={node.frontmatter.title}
+          cover={node.frontmatter.cover.childImageSharp.fluid}
+        />
       ))}
       {edges.map(({ node }) => (
-        <LaunchTeamList key={node.id}/>
+        <LaunchTeamList
+          key={node.id}
+          cover={node.frontmatter.cover.childImageSharp.fluid}
+        />
       ))}
       {edges.map(({ node }) => (
-        <ChristchurchList key={node.id}/>
+        <ChristchurchList
+          key={node.id}
+          cover={node.frontmatter.cover.childImageSharp.fluid}
+        />
       ))}
       {edges.map(({ node }) => (
-        <WellingtonList key={node.id}/>
+        <WellingtonList
+          key={node.id}
+          cover={node.frontmatter.cover.childImageSharp.fluid}
+        />
       ))}
 
       {/*<Container center={center}>*/}
@@ -103,6 +116,20 @@ export const query = graphql`
       edges {
         node {
           id
+          frontmatter {
+            title
+            cover {
+              childImageSharp {
+                fluid(
+                  maxWidth: 1000
+                  quality: 90
+                  traceSVG: { color: "#2B2B2F" }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+          }
         }
       }
     }

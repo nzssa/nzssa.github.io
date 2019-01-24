@@ -1,9 +1,9 @@
 ---
 path: "/tutorial"
-cover: "../2019-01-20/finance.jpg"
+cover: "./finance.jpg"
 slug: "tutorial"
 date: "2019-01-20"
-title: "TEAM MEMBER"
+title: "SALES"
 tags: ['gatsby', 'tutorial']
 published: true
 ---
