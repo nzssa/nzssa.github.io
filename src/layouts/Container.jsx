@@ -24,6 +24,10 @@ const Container = ({ children, type, className, center }) => (
   </Wrapper>
 );
 
+// Container.defaultProps = {
+//   center:
+// }
+
 export default Container;
 
 Container.propTypes = {
