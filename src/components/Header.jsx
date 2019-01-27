@@ -2,9 +2,15 @@ import React from 'react';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
+import starHeader from '../../static/black-stars-header.png'
 
 const Wrapper = styled.header`
-  background: ${props => props.theme.gradient.rightToLeft};
+  // background-image: url('../../static/stars.svg');
+  // background-position: center;
+  // background-size: cover;
+  // background: ${props => props.theme.gradient.rightToLeft};
+  object-fit: cover;
+  object-position: 50% 50%;
   height: 300px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     height: 200px;
@@ -40,7 +46,10 @@ const Subtitle = styled.p`
 
 const Header = ({ children, title, date, cover }) => (
   <Wrapper>
-    <Img fluid={cover || {} || [] || ''} />
+    {/*<Img fluid={cover || {} || [] || ''} />*/}
+    <img src={starHeader} alt={"black star header"}
+         css={{width: '100%', top: '-100px', position: 'relative'}}
+    />
     <Text>
       <h1>{title}</h1>
       <h3>{date}</h3>
