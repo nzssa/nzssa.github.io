@@ -22,3 +22,4 @@ Our president Amber did a fantastic job of organising and hosting the conference
 And finally, another NZSSA exec member Daniel wrapped up our conference with a summary of the present and future of space
 NZSSA exec member Mason posing in one of the exhibits at Space Place. We were lucky to finish of our conference up at Space Place with a fantastic planetarium show, provided for conference attendees free of charge.
 
+ 
