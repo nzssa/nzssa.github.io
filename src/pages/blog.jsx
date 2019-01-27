@@ -51,7 +51,10 @@ Blog.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+    sort: { order: DESC, fields: [frontmatter___date] }
+    filter: { fileAbsolutePath: { regex: "/(/content/posts)/.*\\.md$/" } }
+    ) {
       edges {
         node {
           id
