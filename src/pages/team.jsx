@@ -42,7 +42,7 @@ const Card = styled.div`
   box-shadow: ${theme.shadow.navbar};
 `
 
-const Team = ({ data }) => {
+const Team = ({data}) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
@@ -111,14 +111,14 @@ Container.propTypes = {
 export const query = graphql`
 
 query teams {
-  missionControl: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/missionControl)/.*\\\\.md$/" }}) {
+  missionControl: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/missionControl)/.*\.md$/" }}) {
     edges {
       node {
             ...memberFields
       }
     }
   }
-  wellington: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/wellington)/.*\\\\.md$/" }}) {
+  wellington: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/wellington)/.*\.md$/" }}) {
     edges {
       node {
             ...memberFields
