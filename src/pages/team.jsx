@@ -109,29 +109,51 @@ Container.propTypes = {
 };
 
 export const query = graphql`
-  query {
-    allMarkdownRemark(
-      filter: {fileAbsolutePath: { regex: "/(/content/members)/.*\\.md$/" }}
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            cover {
-              childImageSharp {
-                fluid(
-                  maxWidth: 1000
-                  quality: 90
-                  traceSVG: { color: "#2B2B2F" }
-                ) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
-          }
+
+query teams {
+  missionControl: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/missionControl)/.*\\\\.md$/" }}) {
+    edges {
+      node {
+            ...memberFields
+      }
+    }
+  }
+  wellington: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/wellington)/.*\\\\.md$/" }}) {
+    edges {
+      node {
+            ...memberFields
+      }
+    }
+  }
+}
+
+
+fragment memberFields on MarkdownRemark {
+  id
+  frontmatter {
+    title
+    cover {
+      childImageSharp {
+        fluid(
+          maxWidth: 1000
+          quality: 90
+          traceSVG: { color: "#2B2B2F" }
+        ) {
+          base64
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+          originalImg
+          originalName
+          presentationWidth
+          presentationHeight
         }
       }
     }
   }
+} 
 `;
