@@ -1,9 +1,9 @@
 ---
 path: "/post-three"
-cover: "./finance.jpg"
+cover: "./gg.jpg"
 slug: "post-three"
 date: "2018-10-17"
-title: "Post Number Three"
+title: "Guardians of the Galaxy"
 tags: ['gatsby', 'news', 'other']
 published: true
 ---

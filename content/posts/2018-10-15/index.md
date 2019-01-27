@@ -2,7 +2,7 @@
 path: "/post-one"
 cover: "./actInSpace.jpg"
 slug: "post-one"
-date: "2018-10-15"
+date: "2018-05-28"
 title: "Act in Space Hackathon"
 published: false
 tags: ['hackathon', 'start-up', 'national']

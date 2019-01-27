@@ -111,14 +111,14 @@ Container.propTypes = {
 export const query = graphql`
 
 query teams {
-  missionControl: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/missionControl)/.*\.md$/" }}) {
+  missionControl: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/missionControl)/.*\\\\.md$/" }}) {
     edges {
       node {
             ...memberFields
       }
     }
   }
-  wellington: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/wellington)/.*\.md$/" }}) {
+  wellington: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/wellington)/.*\\\\.md$/" }}) {
     edges {
       node {
             ...memberFields
