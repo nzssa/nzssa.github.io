@@ -18,7 +18,7 @@ const Text = styled.div`
 const GridWrapper = styled.div`
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 300px 300px 300px 300px;
   grid-template-rows: 400px 400px;
   grid-row-gap: 20px;
   border: 2px solid red;
@@ -62,7 +62,9 @@ const Team = ({ data }) => {
             <MissionControlList
               key={node.id}
               title={node.frontmatter.title}
+              name={node.frontmatter.name}
               pic={node.frontmatter.cover.childImageSharp.fluid}
+              excerpt={node.excerpt}
             />
           ))}
         </GridWrapper>
@@ -113,30 +115,32 @@ query {
 }
 fragment memberFields on MarkdownRemark {
   id
-  frontmatter {
-    title
-    cover {
-      childImageSharp {
-        fluid(
-          maxWidth: 1000
-          quality: 90
-          traceSVG: { color: "#2B2B2F" }
-        ) {
-          base64
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-          originalImg
-          originalName
-          presentationWidth
-          presentationHeight
+  excerpt(pruneLength: 50)
+    frontmatter {
+      title
+      name
+      cover {
+        childImageSharp {
+          fluid(
+            maxWidth: 1000
+            quality: 90
+            traceSVG: { color: "#2B2B2F" }
+          ) {
+            base64
+            tracedSVG
+            aspectRatio
+            src
+            srcSet
+            srcWebp
+            srcSetWebp
+            sizes
+            originalImg
+            originalName
+            presentationWidth
+            presentationHeight
+          }
         }
       }
-    }
   }
 }
 `;

@@ -3,8 +3,8 @@ path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
 date: "2019-01-20"
-title: "SALES MANAGER"
-name: "Evie O'Connor"
+title: "EDUCATION EXEC"
+name: "Vaishnavi Anand"
 tags: ['gatsby', 'tutorial']
 published: true
 ---

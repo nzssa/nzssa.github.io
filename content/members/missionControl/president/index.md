@@ -3,7 +3,8 @@ path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
 date: "2019-01-20"
-title: "MC President"
+title: "NATIONAL PRESIDENT"
+name: "Amber Joseph"
 tags: ['gatsby', 'tutorial']
 published: true
 ---
