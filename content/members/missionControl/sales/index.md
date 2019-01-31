@@ -3,7 +3,7 @@ path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
 date: "2019-01-20"
-title: "MC President"
+title: "MC Sales"
 tags: ['gatsby', 'tutorial']
 published: true
 ---
