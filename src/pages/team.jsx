@@ -42,8 +42,8 @@ const Card = styled.div`
   box-shadow: ${theme.shadow.navbar};
 `
 
-const Team = ({data}) => {
-  const { edges } = data.allMarkdownRemark;
+const Team = () => {
+  const { edges } = console.log({missionControl: {}, wellington: {}});
   return (
     <Layout>
       <Helmet title={'Team Page'}/>
