@@ -24,6 +24,8 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: fix up /tags/tagName layout (and add author, date)
 
+:white_large_square: add polished article to About Us page
+
 ## Starter Features
 
 - Gatsby v2
