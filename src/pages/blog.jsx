@@ -17,6 +17,7 @@ const Blog = ({ data }) => {
           cover={node.frontmatter.cover.childImageSharp.fluid}
           path={node.frontmatter.path}
           title={node.frontmatter.title}
+          author={node.frontmatter.author}
           date={node.frontmatter.date}
           tags={node.frontmatter.tags}
           excerpt={node.excerpt}
@@ -39,6 +40,7 @@ Blog.propTypes = {
               cover: PropTypes.object.isRequired,
               path: PropTypes.string.isRequired,
               title: PropTypes.string.isRequired,
+              author: PropTypes.string,
               date: PropTypes.string.isRequired,
               tags: PropTypes.array,
             }),
@@ -61,6 +63,7 @@ export const query = graphql`
           excerpt(pruneLength: 200)
           frontmatter {
             title
+            author
             path
             tags
             date(formatString: "MM.DD.YYYY")

@@ -20,6 +20,7 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     path
                     title
+                    author
                     tags
                   }
                 }
