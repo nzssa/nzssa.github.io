@@ -15,7 +15,10 @@ const HeaderTitle = styled.h1`
 `
 
 const Events = ({ data }) => {
+  console.log(data)
   const { edges } = data.allMarkdownRemark;
+  console.log(edges)
+  console.log(edges[0]);
   return (
     <Layout>
       <Helmet title={'Events Page'} />

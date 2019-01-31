@@ -90,6 +90,7 @@ export const query = graphql`
     allMarkdownRemark(
       limit: 6
       sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/(/content/events)/.*\\.md$/" } }
     ) {
       edges {
         node {
