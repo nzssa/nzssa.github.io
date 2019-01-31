@@ -14,16 +14,16 @@ const Image = styled.div`
   margin: auto;
   position: relative;
   box-shadow: ${props => props.theme.shadow.feature.small.default};
-  transition: ${props => props.theme.transitions.boom.transition};
+  // transition: ${props => props.theme.transitions.boom.transition};
   border-radius: ${props => props.theme.borderRadius.default};
   min-height: 300px;
   img {
     border-radius: ${props => props.theme.borderRadius.default};
   }
-  &:hover {
-    box-shadow: ${props => props.theme.shadow.feature.small.hover};
-    transform: scale(1.04);
-  }
+  // &:hover {
+  //   box-shadow: ${props => props.theme.shadow.feature.small.hover};
+  //   transform: scale(1.04);
+  // }
   a {
     position: absolute;
     top: 0;
@@ -39,7 +39,7 @@ const Image = styled.div`
     }
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 5px ${props => props.theme.colors.primary.dark};
+      // box-shadow: 0 0 0 5px ${props => props.theme.colors.primary.dark};
     }
   }
   flex-basis: 100%;
@@ -99,13 +99,13 @@ const BlogList = ({ path, cover, title, author, date, excerpt, tags }) => (
     <Wrapper>
       <Image>
         <Link to={path} title={title}>
-          <Img fluid={cover} />
+          <Img fixed={cover} />
         </Link>
       </Image>
       <Information>
-        <Link to={path}>
+        {/*<Link to={path}>*/}
           <Title>{title}</Title>
-        </Link>
+        {/*</Link>*/}
         <Date>{date}</Date>
         <Byline author={author} />
         <p>{excerpt}</p>
