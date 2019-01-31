@@ -44,6 +44,8 @@ const Card = styled.div`
 
 const HeaderTitle = styled.h1`
   margin: 0;
+  padding: 20px;
+  text-align: center;
 `
 
 const Team = ({ data }) => {

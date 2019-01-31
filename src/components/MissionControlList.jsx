@@ -14,16 +14,17 @@ const Card = styled.div`
   box-shadow: ${theme.shadow.navbar};
 `;
 
-const heading = styled.text`
-  position: center;
-  padding: 50px;
+const HeadingName = styled.h2`
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
 `
-
 
 const MissionControlList = ({ key, pic, title }) => (
   <Card>
     <Img css={{border: '2px solid yellow', height: '200px', width: '200px', borderRadius: '50%', align: 'center', left: '50px'}} fluid={pic} />
-    <heading>{title}</heading>
+    <HeadingName>{title}</HeadingName>
   </Card>
 );
 
