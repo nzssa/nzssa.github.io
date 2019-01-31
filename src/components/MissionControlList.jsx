@@ -14,16 +14,18 @@ const Card = styled.div`
   box-shadow: ${theme.shadow.navbar};
 `;
 
-const Image = styled.img`
-  vertical-align: bottom
+const heading = styled.text`
+  position: center;
+  padding: 50px;
 `
 
 
 const MissionControlList = ({ key, pic, title }) => (
   <Card>
-    <h1>{title}</h1>
-    <Img fluid={pic} css={{border: '2px blue'}}/>
+    <Img css={{border: '2px solid yellow', height: '200px', width: '200px', borderRadius: '50%', align: 'center', left: '50px'}} fluid={pic} />
+    <heading>{title}</heading>
   </Card>
 );
 
 export default MissionControlList;
+
