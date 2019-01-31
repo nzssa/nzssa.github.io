@@ -40,18 +40,29 @@ const Subtitle = styled.p`
   z-index: 2;
 `;
 
-
-
 const HomeHeader = ({ children, title, date, cover }) => (
   <Wrapper>
-      <Img css={{zIndex: '-1'}} fluid={cover || {} || [] || ''}/>
-      <Text>
-        <h1 css={{fontSize: '70px', fontWeight: 'bold', zIndex: '2', textAlign: 'right'}}>{title}</h1>
+    <Img css={{ zIndex: '-1' }} fluid={cover || {} || [] || ''} />
+    <Text>
+      <h1
+        css={{
+          fontSize: '70px',
+          fontWeight: 'bold',
+          zIndex: '2',
+          textAlign: 'right',
+        }}
+      >
+        {title}
+      </h1>
 
-          <h3>{date}</h3>
+      <h3>{date}</h3>
 
-        {children && <Subtitle css={{fontSize: '30px', fontWeight: 'light'}}>{children}</Subtitle>}
-      </Text>
+      {children && (
+        <Subtitle css={{ fontSize: '30px', fontWeight: 'light' }}>
+          {children}
+        </Subtitle>
+      )}
+    </Text>
   </Wrapper>
 );
 

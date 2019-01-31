@@ -77,16 +77,24 @@ const Information = styled.div`
   }
 `;
 
-const Date = styled.div`
-  margin-top: 1rem;
+const Date = styled.p`
+  margin-top: 0;
+  margin-bottom: 0;
   color: ${props => props.theme.colors.black.lighter};
 `;
 
+const Byline = ({ author }) => (
+  <p css={{ marginBottom: '0.5rem' }}>
+    by <em>{author}</em>
+  </p>
+);
+
 const Title = styled.h1`
-  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 `;
 
-const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
+const BlogList = ({ path, cover, title, author, date, excerpt, tags }) => (
   <Container>
     <Wrapper>
       <Image>
@@ -95,12 +103,13 @@ const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
         </Link>
       </Image>
       <Information>
-        <Date>{date}</Date>
         <Link to={path}>
           <Title>{title}</Title>
         </Link>
+        <Date>{date}</Date>
+        <Byline author={author} />
+        <p>{excerpt}</p>
         <TagsBlock list={tags} />
-        {excerpt}
       </Information>
     </Wrapper>
   </Container>
@@ -108,11 +117,16 @@ const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
 
 export default BlogList;
 
+Byline.propTypes = {
+  author: PropTypes.string,
+};
+
 BlogList.propTypes = {
   cover: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired,
   excerpt: PropTypes.string,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  author: PropTypes.string,
   tags: PropTypes.array.isRequired,
 };
