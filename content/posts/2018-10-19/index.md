@@ -1,9 +1,9 @@
 ---
 path: "/post-five"
-cover: "../2018-10-16/speed.jpg"
+cover: "./mayor.jpg"
 slug: "post-five"
 date: "2018-10-19"
-title: "Post Number Five"
+title: "Meeting with Justin"
 tags: ['tutorial', 'javascript', 'frontend']
 published: true
 ---

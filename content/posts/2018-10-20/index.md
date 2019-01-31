@@ -1,9 +1,9 @@
 ---
 path: "/tutorial"
-cover: "../2018-10-17/finance.jpg"
+cover: "./pizza.jpg"
 slug: "tutorial"
 date: "2018-10-20"
-title: "Tutorial Article"
+title: "Social Event: Pizza Night"
 tags: ['gatsby', 'tutorial']
 published: true
 ---

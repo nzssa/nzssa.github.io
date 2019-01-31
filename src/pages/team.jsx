@@ -5,9 +5,14 @@ import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import theme from '../../config/theme';
+import { graphql } from 'gatsby';
+import MissionControlList from '../components/MissionControlList';
+import LaunchTeamList from '../components/LaunchTeamList';
+import ChristchurchList from '../components/ChristchurchList';
+import WellingtonList from '../components/WellingtonList';
 
 const Text = styled.div`
-    margin: 2rem 10rem;
+  margin: 2rem 10rem;
 `;
 
 const GridWrapper = styled.div`
@@ -30,46 +35,171 @@ const GridWrapper = styled.div`
   }
   max-width: ${props => props.theme.layout[props.type]};
   height: 100%;
-`
+`;
 
 const Card = styled.div`
   border: 2px solid blue;
   box-shadow: ${theme.shadow.navbar};
-`
+`;
 
-const Team = center => (
-  <Layout>
-    <Helmet title={'Team Page'} />
-    <Header title="Our Team">Gatsby Tutorial Starter</Header>
-    {/*<Container center={center}>*/}
-      {/*<Text>*/}
-        {/*<h3>*/}
-          {/*If you would like to build this site completely from scratch, you go*/}
-          {/*can go read the guide{' '}*/}
-          {/*<a href="https://justinformentin.com/gatsby-v2-guide">here.</a>*/}
-        {/*</h3>*/}
-        {/*<br />*/}
-        {/*<h3>*/}
-          {/*Or you can watch the video{' '}*/}
-          {/*<a href="https://youtube.com/#">on Youtube.</a>*/}
-        {/*</h3>*/}
-      {/*</Text>*/}
-    {/*</Container>*/}
-    <GridWrapper>
-      <Card>
-        
-      </Card>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-    </GridWrapper>
-  </Layout>
-);
+const Team = ({ data }) => {
+  const { missionControlMembers } = data.missionControl;
+  const { wellingtonMembers } = data.wellington;
+  return (
+    <Layout>
+      <Helmet title={'Team Page'} />
+      <Header title="Our Team">Gatsby Tutorial Starter</Header>
+      {data.missionControl.edges.map(({ node }) => (
+        <MissionControlList
+          key={node.id}
+          title={node.frontmatter.title}
+          pic={node.frontmatter.cover.childImageSharp.fluid}
+        />
+      ))}
+      {data.wellington.edges.map(({ node }) => (
+        <WellingtonList
+          key={node.id}
+          title={node.frontmatter.title}
+          pic={node.frontmatter.cover.childImageSharp.fluid}
+        />
+      ))}
+      {/*{data.missionControl.edges.map(({ node }) => (*/}
+      {/*<MissionControlList*/}
+      {/*key={node.id}*/}
+      {/*// title={node.frontmatter.title}*/}
+      {/*// cover={node.frontmatter.cover.childImageSharp.fluid}*/}
+      {/*/>*/}
+      {/*))}*/}
+      {/*{edges.map(({ node }) => (*/}
+      {/*<LaunchTeamList*/}
+      {/*key={node.id}*/}
+      {/*cover={node.frontmatter.cover.childImageSharp.fluid}*/}
+      {/*/>*/}
+      {/*))}*/}
+      {/*{edges.map(({ node }) => (*/}
+      {/*<ChristchurchList*/}
+      {/*key={node.id}*/}
+      {/*cover={node.frontmatter.cover.childImageSharp.fluid}*/}
+      {/*/>*/}
+      {/*))}*/}
+      {/*{edges.map(({ node }) => (*/}
+      {/*<WellingtonList*/}
+      {/*key={node.id}*/}
+      {/*cover={node.frontmatter.cover.childImageSharp.fluid}*/}
+      {/*/>*/}
+      {/*))}*/}
+
+      <GridWrapper>
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </GridWrapper>
+    </Layout>
+  );
+};
 
 export default Team;
 
 Container.propTypes = {
   center: PropTypes.object,
 };
+
+export const query = graphql`
+query {
+  missionControl: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/missionControl)/.*\\.md$/" }}) {
+    edges {
+      node {
+        ...memberFields
+      }
+    }
+  }
+
+  wellington: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/wellington)/.*\\.md$/" }}) {
+    edges {
+      node {
+        ...memberFields
+      }
+    }
+  }
+}
+fragment memberFields on MarkdownRemark {
+  id
+  frontmatter {
+    title
+    cover {
+      childImageSharp {
+        fluid(
+          maxWidth: 1000
+          quality: 90
+          traceSVG: { color: "#2B2B2F" }
+        ) {
+          base64
+          tracedSVG
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+          originalImg
+          originalName
+          presentationWidth
+          presentationHeight
+        }
+      }
+    }
+  }
+}
+`;
+// export const query = graphql`
+//
+// query teams {
+//   missionControl: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/missionControl)/.*\\\\.md$/" }}) {
+//     edges {
+//       node {
+//             ...memberFields
+//       }
+//     }
+//   }
+//   wellington: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/wellington)/.*\\\\.md$/" }}) {
+//     edges {
+//       node {
+//             ...memberFields
+//       }
+//     }
+//   }
+// }
+//
+//
+// fragment memberFields on MarkdownRemark {
+//   id
+//   frontmatter {
+//     title
+//     cover {
+//       childImageSharp {
+//         fluid(
+//           maxWidth: 1000
+//           quality: 90
+//           traceSVG: { color: "#2B2B2F" }
+//         ) {
+//           base64
+//           tracedSVG
+//           aspectRatio
+//           src
+//           srcSet
+//           srcWebp
+//           srcSetWebp
+//           sizes
+//           originalImg
+//           originalName
+//           presentationWidth
+//           presentationHeight
+//         }
+//       }
+//     }
+//   }
+// }
+// `;
