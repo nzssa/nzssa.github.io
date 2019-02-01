@@ -4,6 +4,7 @@ cover: "./finance.jpg"
 slug: "tutorial"
 date: "2019-01-20"
 title: "WELLINGTON"
+link: "https://www.linkedin.com/in/amber-joseph-a50771134/"
 tags: ['gatsby', 'tutorial']
 published: true
 ---

@@ -65,6 +65,7 @@ const Team = ({ data }) => {
               name={node.frontmatter.name}
               pic={node.frontmatter.cover.childImageSharp.fluid}
               excerpt={node.excerpt}
+              link={node.frontmatter.link}
             />
           ))}
         </GridWrapper>
@@ -125,6 +126,7 @@ fragment memberFields on MarkdownRemark {
     frontmatter {
       title
       name
+      link
       date
       cover {
         childImageSharp {

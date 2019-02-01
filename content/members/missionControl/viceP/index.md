@@ -5,7 +5,8 @@ slug: "tutorial"
 date: "2"
 title: "VICE PRESIDENT"
 name: "Nevin Jojo"
+link: "https://www.linkedin.com/in/nevinjojo/"
 tags: ['gatsby', 'tutorial']
 published: true
 ---
-https://www.linkedin.com/in/nevinjojo/
+

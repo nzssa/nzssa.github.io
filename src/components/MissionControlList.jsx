@@ -31,10 +31,11 @@ const HeadingPosition = styled.h4`
 `
 
 
-const MissionControlList = ({ key, pic, title, name, excerpt }) => (
+
+const MissionControlList = ({ key, pic, title, name, excerpt, link }) => (
   <Card>
     <Img css={{height: '200px', width: '200px', borderRadius: '50%', align: 'center', left: '100px'}} fluid={pic} />
-    <HeadingName  css={{fontWeight: 'bold'}}><a href={excerpt}>{name}</a></HeadingName>
+    <HeadingName  css={{fontWeight: 'bold'}}><a css={{color: 'black'}} href={link}>{name}</a></HeadingName>
     <HeadingPosition>{title}</HeadingPosition>
   </Card>
 );
