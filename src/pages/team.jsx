@@ -43,7 +43,9 @@ const Card = styled.div`
 const HeaderTitle = styled.h1`
   margin: 0;
   padding: 20px;
+  padding-bottom: 80px;
   text-align: center;
+  font-weight: bold;
 `
 
 const Team = ({ data }) => {
@@ -67,13 +69,19 @@ const Team = ({ data }) => {
           ))}
         </GridWrapper>
       </Container>
-      {data.wellington.edges.map(({ node }) => (
-        <WellingtonList
-          key={node.id}
-          title={node.frontmatter.title}
-          pic={node.frontmatter.cover.childImageSharp.fluid}
-        />
-      ))}
+        <HeaderTitle>Wellington Colony</HeaderTitle>
+        <GridWrapper>
+          {data.wellington.edges.map(({ node }) => (
+            <WellingtonList
+              key={node.id}
+              title={node.frontmatter.title}
+              pic={node.frontmatter.cover.childImageSharp.fluid}
+              excerpt={node.excerpt}
+            />
+          ))}
+        </GridWrapper>
+      <Container/>
+
 
       <GridWrapper>
         <Card/>
