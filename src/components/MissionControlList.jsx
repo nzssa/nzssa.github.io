@@ -29,19 +29,13 @@ const HeadingPosition = styled.h4`
   padding-left: 0px;
   padding-right: 0px;
 `
-const TextLink = styled.text`
-  text-align: center;
-`
 
 
 const MissionControlList = ({ key, pic, title, name, excerpt }) => (
   <Card>
     <Img css={{height: '200px', width: '200px', borderRadius: '50%', align: 'center', left: '100px'}} fluid={pic} />
-    <HeadingName  css={{fontWeight: 'bold'}}>{name}</HeadingName>
+    <HeadingName  css={{fontWeight: 'bold'}}><a href={excerpt}>{name}</a></HeadingName>
     <HeadingPosition>{title}</HeadingPosition>
-    <TextLink>
-      <a css={{align: 'center'}} href={excerpt}>LinkedIn</a>
-    </TextLink>
   </Card>
 );
 
