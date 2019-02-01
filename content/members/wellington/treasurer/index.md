@@ -2,9 +2,10 @@
 path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
-date: "2019-01-20"
+date: "2"
 title: "Welly Treasurer"
-link: "https://www.linkedin.com/in/amber-joseph-a50771134/"
+link: ""
+name: "Most wanted"
 tags: ['gatsby', 'tutorial']
 published: true
 ---

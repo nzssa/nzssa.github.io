@@ -55,6 +55,7 @@ const Team = ({ data }) => {
     <Layout>
       <Helmet title={'Team Page'} />
       <Header title="Our Team">Gatsby Tutorial Starter</Header>
+
       <Container>
         <HeaderTitle>Mission Control</HeaderTitle>
         <GridWrapper>
@@ -70,28 +71,39 @@ const Team = ({ data }) => {
           ))}
         </GridWrapper>
       </Container>
+
+      <Container>
         <HeaderTitle>Wellington Colony</HeaderTitle>
         <GridWrapper>
           {data.wellington.edges.map(({ node }) => (
             <WellingtonList
               key={node.id}
               title={node.frontmatter.title}
+              name={node.frontmatter.name}
               pic={node.frontmatter.cover.childImageSharp.fluid}
               excerpt={node.excerpt}
+              link={node.frontmatter.link}
             />
           ))}
         </GridWrapper>
-      <Container/>
+      </Container>
 
+      <Container>
+        <HeaderTitle>Christchurch Colony</HeaderTitle>
+        <GridWrapper>
+          {data.christchurch.edges.map(({ node }) => (
+            <ChristchurchList
+              key={node.id}
+              title={node.frontmatter.title}
+              name={node.frontmatter.name}
+              pic={node.frontmatter.cover.childImageSharp.fluid}
+              excerpt={node.excerpt}
+              link={node.frontmatter.link}
+            />
+          ))}
+        </GridWrapper>
+      </Container>
 
-      <GridWrapper>
-        <Card/>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </GridWrapper>
     </Layout>
   );
 };
@@ -112,7 +124,15 @@ query {
     }
   }
 
-  wellington: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/wellington)/.*\\.md$/" }}) {
+  wellington: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/wellington)/.*\\.md$/" }}sort: { order: ASC, fields: [frontmatter___date] }) {
+    edges {
+      node {
+        ...memberFields
+      }
+    }
+  }
+  
+  christchurch: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/christchurch)/.*\\.md$/" }}sort: { order: ASC, fields: [frontmatter___date] }) {
     edges {
       node {
         ...memberFields

@@ -2,10 +2,10 @@
 path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
-date: "1"
-title: "WELLINGTON PRESIDENT"
-link: """
-name: "Daniel Wrench"
+date: "2019-01-20"
+title: "Boss Lady 3"
+name: "Anushka Kharbanda"
+link: ""
 tags: ['gatsby', 'tutorial']
 published: true
 ---
