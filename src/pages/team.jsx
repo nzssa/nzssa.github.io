@@ -19,7 +19,7 @@ const GridWrapper = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: 400px;
   grid-row-gap: 20px;
   width: 75%;
   justify-content: space-around;

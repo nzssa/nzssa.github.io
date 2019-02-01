@@ -4,7 +4,7 @@ cover: "./finance.jpg"
 slug: "tutorial"
 date: "1"
 title: "WELLINGTON PRESIDENT"
-link: """
+link: ""
 name: "Daniel Wrench"
 tags: ['gatsby', 'tutorial']
 published: true
