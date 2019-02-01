@@ -56,6 +56,7 @@
     "typeface-open-sans": "0.0.54",
     "typography": "^0.16.18",
     "typography-theme-st-annes": "^0.16.18",
+    "yarn": "^1.13.0",
     "yup": "^0.26.10"
   },
   "devDependencies": {

@@ -3,7 +3,9 @@ path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
 date: "2019-01-20"
-title: "CHRISTCHURCH"
+title: "Boss Lady 3"
+name: "Aayushi Verma"
+link: ""
 tags: ['gatsby', 'tutorial']
 published: true
 ---

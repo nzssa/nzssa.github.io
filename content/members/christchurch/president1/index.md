@@ -2,10 +2,10 @@
 path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
-date: "1"
-title: "WELLINGTON PRESIDENT"
+date: "2019-01-20"
+title: "Boss Lady 1"
 link: ""
-name: "Daniel Wrench"
+name: "Megan Poehler"
 tags: ['gatsby', 'tutorial']
 published: true
 ---

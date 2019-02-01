@@ -2,10 +2,10 @@
 path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
-date: "1"
-title: "WELLINGTON PRESIDENT"
+date: "2"
+title: "Welly Treasurer"
 link: ""
-name: "Daniel Wrench"
+name: "Most wanted"
 tags: ['gatsby', 'tutorial']
 published: true
 ---
