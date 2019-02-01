@@ -2,7 +2,7 @@
 path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
-date: "2019-01-20"
+date: "4"
 title: "EDUCATION EXEC"
 name: "Vaishnavi Anand"
 tags: ['gatsby', 'tutorial']

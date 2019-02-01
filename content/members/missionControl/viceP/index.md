@@ -2,7 +2,7 @@
 path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
-date: "2019-01-20"
+date: "2"
 title: "VICE PRESIDENT"
 name: "Nevin Jojo"
 tags: ['gatsby', 'tutorial']

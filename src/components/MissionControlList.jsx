@@ -11,7 +11,6 @@ const Wrapper = styled.article`
 
 
 const Card = styled.div`
-  border: 2px solid blue;
   box-shadow: ${theme.shadow.navbar};
 `;
 
@@ -30,13 +29,19 @@ const HeadingPosition = styled.h4`
   padding-left: 0px;
   padding-right: 0px;
 `
+const TextLink = styled.text`
+  text-align: center;
+`
+
 
 const MissionControlList = ({ key, pic, title, name, excerpt }) => (
   <Card>
-    <Img css={{border: '2px solid yellow', height: '200px', width: '200px', borderRadius: '50%', align: 'center', left: '50px'}} fluid={pic} />
+    <Img css={{height: '200px', width: '200px', borderRadius: '50%', align: 'center', left: '100px'}} fluid={pic} />
     <HeadingName  css={{fontWeight: 'bold'}}>{name}</HeadingName>
     <HeadingPosition>{title}</HeadingPosition>
-    <text>{excerpt}</text>
+    <TextLink>
+      <a css={{align: 'center'}} href={excerpt}>LinkedIn</a>
+    </TextLink>
   </Card>
 );
 

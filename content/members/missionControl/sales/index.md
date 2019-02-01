@@ -1,8 +1,8 @@
 ---
 path: "/tutorial"
-cover: "./finance.jpg"
+cover: "./profile.jpg"
 slug: "tutorial"
-date: "2019-01-20"
+date: "5"
 title: "SALES MANAGER"
 name: "Evie O'Connor"
 tags: ['gatsby', 'tutorial']

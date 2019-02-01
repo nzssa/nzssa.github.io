@@ -2,7 +2,7 @@
 path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
-date: "2019-01-20"
+date: "3"
 title: "INTERNAL OPS"
 name: "Celine Jane"
 tags: ['gatsby', 'tutorial']

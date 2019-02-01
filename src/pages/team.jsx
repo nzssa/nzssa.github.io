@@ -18,10 +18,9 @@ const Text = styled.div`
 const GridWrapper = styled.div`
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-columns: 400px 400px 400px;
   grid-template-rows: 400px 400px;
   grid-row-gap: 20px;
-  border: 2px solid red;
   width: 75%;
   justify-content: space-around;
   align-content: space-around;
@@ -38,7 +37,6 @@ const GridWrapper = styled.div`
 `;
 
 const Card = styled.div`
-  border: 2px solid blue;
   box-shadow: ${theme.shadow.navbar};
 `;
 
@@ -97,7 +95,7 @@ Container.propTypes = {
 
 export const query = graphql`
 query {
-  missionControl: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/missionControl)/.*\\.md$/" }}) {
+  missionControl: allMarkdownRemark(filter: {fileAbsolutePath: { regex: "/(/content/members/missionControl)/.*\\.md$/" }}sort: { order: ASC, fields: [frontmatter___date] }) {
     edges {
       node {
         ...memberFields
@@ -115,10 +113,11 @@ query {
 }
 fragment memberFields on MarkdownRemark {
   id
-  excerpt(pruneLength: 50)
+  excerpt
     frontmatter {
       title
       name
+      date
       cover {
         childImageSharp {
           fluid(
