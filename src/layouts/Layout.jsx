@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import 'typeface-open-sans';
 import 'typeface-candal';
 import 'typeface-chivo';
+import 'typeface-rubik';
+
 import { SEO } from 'components';
 import { NavBar, Footer } from 'layouts';
 import theme from '../../config/theme';

@@ -7,7 +7,6 @@ import { Layout, Container } from 'layouts';
 import theme from '../../config/theme';
 import { graphql } from 'gatsby';
 import MissionControlList from '../components/MissionControlList';
-import LaunchTeamList from '../components/LaunchTeamList';
 import ChristchurchList from '../components/ChristchurchList';
 import WellingtonList from '../components/WellingtonList';
 
