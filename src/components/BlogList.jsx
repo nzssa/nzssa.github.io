@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'react-emotion';
+import { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
@@ -14,16 +15,16 @@ const Image = styled.div`
   margin: auto;
   position: relative;
   box-shadow: ${props => props.theme.shadow.feature.small.default};
-  // transition: ${props => props.theme.transitions.boom.transition};
+  transition: ${props => props.theme.transitions.boom.transition};
   border-radius: ${props => props.theme.borderRadius.default};
   min-height: 300px;
   img {
     border-radius: ${props => props.theme.borderRadius.default};
   }
-  // &:hover {
-  //   box-shadow: ${props => props.theme.shadow.feature.small.hover};
-  //   transform: scale(1.04);
-  // }
+  &:hover {
+    // box-shadow: ${props => props.theme.shadow.feature.small.hover};
+    transform: translateY(-10px);
+  }
   a {
     position: absolute;
     top: 0;
@@ -103,9 +104,9 @@ const BlogList = ({ path, cover, title, author, date, excerpt, tags }) => (
         </Link>
       </Image>
       <Information>
-        {/*<Link to={path}>*/}
+        <Link to={path}>
           <Title>{title}</Title>
-        {/*</Link>*/}
+        </Link>
         <Date>{date}</Date>
         <Byline author={author} />
         <p>{excerpt}</p>
