@@ -9,21 +9,25 @@ const Wrapper = styled.article`
   border-radius: 10px;
   padding: 1rem;
   box-shadow: ${props => props.theme.shadow.card};
+  border-left: 15px solid;
 `;
+
 
 const EventTitle = styled.h2`
   margin: 0;
 `;
+
 const Excerpt = styled.p`
   margin: 0;
 `;
+
 const Date = styled.p`
   margin: 0;
   font-weight: bold;
 `;
 
-const SingleEvent = ({ title, date, excerpt }) => (
-  <Wrapper>
+const SingleEvent = ({ title, date, excerpt, colour }) => (
+  <Wrapper css={{borderColor: colour}}>
     <EventTitle>{title}</EventTitle>
     <Date>{date}</Date>
     <Excerpt>{excerpt}</Excerpt>
