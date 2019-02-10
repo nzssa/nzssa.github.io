@@ -5,11 +5,11 @@ import { Container } from 'layouts';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.article`
-  margin: 20px;
+  margin: 2rem 1rem;
   border-radius: 10px;
   padding: 1rem;
   box-shadow: ${props => props.theme.shadow.card};
-  border-left: solid blue 10px;
+  border-left: 15px solid #69BACC;
 `;
 
 
@@ -27,11 +27,12 @@ const Date = styled.p`
 `;
 
 const SingleEvent = ({ title, date, excerpt }) => (
-    <Wrapper>
-      <EventTitle>{title}</EventTitle>
-      <Date>{date}</Date>
-      <Excerpt>{excerpt}</Excerpt>
-    </Wrapper>
+  <Wrapper>
+
+    <EventTitle>{title}</EventTitle>
+    <Date>{date}</Date>
+    <Excerpt>{excerpt}</Excerpt>
+  </Wrapper>
 );
 
 export default SingleEvent;
