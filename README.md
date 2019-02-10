@@ -12,7 +12,9 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: incorporate brand into site design
 
-:white_large_square: add copy
+:white_large_square: finish and order all blog posts
+
+:white_large_square: hard-code about us page for design review
 
 :white_large_square: add form submission to Contact Us
 
@@ -24,7 +26,7 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: fix up /tags/tagName layout (and add author, date)
 
-:white_large_square: add polished article to About Us page
+:white_check_mark: finish polished article for About Us page
 
 :white_check_mark: add colour labels to events to indicate location
 
