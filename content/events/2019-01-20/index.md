@@ -4,6 +4,7 @@ cover: "../2019-01-20/finance.jpg"
 slug: "tutorial"
 date: "2019-01-20"
 title: "Event Numero Uno"
+colour: "#69BACC"
 tags: ['gatsby', 'tutorial']
 published: true
 ---
