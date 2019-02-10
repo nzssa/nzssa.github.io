@@ -4,6 +4,7 @@ cover: "./blocks.jpg"
 slug: "tutorial"
 date: "2018-10-20"
 title: "Member wins Global Space Innovation Competition!"
+author: "Amber Joseph"
 tags: ['gatsby', 'tutorial']
 published: true
 ---

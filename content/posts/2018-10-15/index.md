@@ -4,6 +4,7 @@ cover: "./actInSpace.jpg"
 slug: "post-one"
 date: "2018-05-28"
 title: "Act in Space Hackathon"
+author: "Amber Joseph"
 published: false
 tags: ['hackathon', 'start-up', 'national']
 ---

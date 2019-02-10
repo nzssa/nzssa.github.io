@@ -4,6 +4,7 @@ cover: "./rasnz.jpg"
 slug: "post-two"
 date: "2018-10-16"
 title: "RASNZ Conference"
+author: "Amber Joseph"
 published: true
 tags: ['astronomy', 'conference', 'presentation']
 ---

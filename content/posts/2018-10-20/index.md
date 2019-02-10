@@ -4,6 +4,7 @@ cover: "./pizza.jpg"
 slug: "tutorial"
 date: "2018-10-20"
 title: "Social Event: Pizza Night"
+author: "Amber Joseph"
 tags: ['gatsby', 'tutorial']
 published: true
 ---

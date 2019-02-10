@@ -4,6 +4,7 @@ cover: "./daniel.jpg"
 slug: "post-four"
 date: "2018-10-18"
 title: "Students' In Space Conference"
+author: "Amber Joseph"
 tags: ['gatsby', 'other']
 published: false
 ---

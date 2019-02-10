@@ -4,6 +4,7 @@ cover: "./gg.jpg"
 slug: "post-three"
 date: "2018-10-17"
 title: "Guardians of the Galaxy"
+author: "Amber Joseph"
 tags: ['gatsby', 'news', 'other']
 published: true
 ---

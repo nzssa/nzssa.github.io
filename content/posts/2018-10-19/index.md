@@ -4,6 +4,7 @@ cover: "./mayor.jpg"
 slug: "post-five"
 date: "2018-10-19"
 title: "Meeting with Justin"
+author: "Amber Joseph"
 tags: ['tutorial', 'javascript', 'frontend']
 published: true
 ---
