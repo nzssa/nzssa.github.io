@@ -12,6 +12,10 @@ const StyledLink = styled(Link)`
   padding: 5px 10px;
   border: solid 1px #fff;
   border-radius: 20px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
   &:hover {
     color: ${props => props.theme.colors.black.blue};
     background: ${props => props.theme.colors.white.light};
@@ -20,13 +24,23 @@ const StyledLink = styled(Link)`
 
 const Information = styled.div`
   text-align: center;
+  font-family: ${props => props.theme.fontFamily.body};
   h1 {
     font-size: 2rem;
     margin-bottom: 1.25rem;
   }
 `;
 
+const PostLink = styled.h3`
+  display: table;
+  font-weight: normal;
+  :hover {
+    font-weight: bold;
+  }
+`;
+
 const Tag = ({ pageContext }) => {
+  console.log(pageContext);
   const { posts, tagName } = pageContext;
   const upperTag = tagName.charAt(0).toUpperCase() + tagName.slice(1);
   return (
@@ -39,7 +53,7 @@ const Tag = ({ pageContext }) => {
         <Information>
           {posts.map((post, index) => (
             <Link key={index} to={post.frontmatter.path}>
-              <h3>{post.frontmatter.title}</h3>
+              <PostLink>{post.frontmatter.title}</PostLink>
             </Link>
           ))}
         </Information>
