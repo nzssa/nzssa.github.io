@@ -18,9 +18,9 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: add form submission to Contact Us
 
-:white_large_square: fix up blog post tags 
+:white_check_mark: fix up blog post tags 
 
-:white_large_square: add author to blog posts 
+:white_check_mark: add author to blog posts 
 
 :white_large_square: finish team page (add members)
 
