@@ -6,10 +6,8 @@ import { Header, HomeHeader } from 'components';
 import { Layout, Container } from 'layouts';
 import theme from '../../config/theme';
 import { graphql } from 'gatsby';
-import MissionControlList from '../components/MissionControlList';
-import LaunchTeamList from '../components/LaunchTeamList';
-import ChristchurchList from '../components/ChristchurchList';
-import WellingtonList from '../components/WellingtonList';
+import TeamList from '../components/TeamList';
+
 
 const Text = styled.div`
   margin: 2rem 10rem;
@@ -60,7 +58,7 @@ const Team = ({ data }) => {
         <HeaderTitle>Mission Control</HeaderTitle>
         <GridWrapper>
           {data.missionControl.edges.map(({ node }) => (
-            <MissionControlList
+            <TeamList
               key={node.id}
               title={node.frontmatter.title}
               name={node.frontmatter.name}
@@ -76,7 +74,7 @@ const Team = ({ data }) => {
         <HeaderTitle>Wellington Colony</HeaderTitle>
         <GridWrapper>
           {data.wellington.edges.map(({ node }) => (
-            <WellingtonList
+            <TeamList
               key={node.id}
               title={node.frontmatter.title}
               name={node.frontmatter.name}
@@ -92,7 +90,7 @@ const Team = ({ data }) => {
         <HeaderTitle>Christchurch Colony</HeaderTitle>
         <GridWrapper>
           {data.christchurch.edges.map(({ node }) => (
-            <ChristchurchList
+            <TeamList
               key={node.id}
               title={node.frontmatter.title}
               name={node.frontmatter.name}

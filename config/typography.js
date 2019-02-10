@@ -11,6 +11,7 @@ const typography = new Typography({
     'BlinkMacSystemFont',
     'Segoe UI',
     'Roboto',
+    'Rubik',
     'Helvetica',
     'sans-serif',
   ],
