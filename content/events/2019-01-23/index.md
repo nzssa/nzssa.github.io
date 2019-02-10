@@ -4,6 +4,7 @@ cover: "../2019-01-23/speed.jpg"
 slug: "post-five"
 date: "2019-01-23"
 title: "Event 2"
+colour: "#71B585"
 tags: ['tutorial', 'javascript', 'frontend']
 published: true
 ---
