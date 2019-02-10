@@ -6,7 +6,9 @@ import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import AboutUsArticle from '../components/AboutUsArticle';
 import planet from '../../static/planet.svg'
-import backpackGirl from '../../static/backpackGirl.svg';
+import line from '../../static/line.svg';
+import line2 from '../../static/line2.svg';
+import rocket from '../../static/rocket.svg';
 
 
 
@@ -93,11 +95,63 @@ const GridWrapper2 = styled.div`
   height: 100%;
 `;
 
+const Image = styled.img`
+  position: absolute;
+  right: -30px;
+  top: 330px;
+  z-index: 3;
+  background-repeat: repeat-x;
+  background-image: url('../../static/stars.svg');
+`;
+
+const Image2 = styled.img`
+  position: absolute;
+  left: 40px;
+  top: 350px;
+  z-index: 3;
+  background-repeat: repeat-x;
+  background-image: url('../../static/stars.svg');
+`;
+
+const Image3 = styled.img`
+  position: absolute;
+  left: 160px;
+  top: 450px;
+  z-index: 2;
+  background-repeat: repeat-x;
+  background-image: url('../../static/stars.svg');
+`;
+
 const About = center => (
     <Layout>
       <Helmet title={'About Page'}/>
       <Header title="About Page">Gatsby Tutorial Starter</Header>
+
       <Container center={center}>
+        <Image
+          src={line}
+          styles={'background-color: #ffffff'}
+          alt={'line'}
+          height={'400px'}
+          width={'400px'}
+          vspace="0"
+        />
+        <Image2
+          src={rocket}
+          styles={'background-color: #ffffff'}
+          alt={'line'}
+          height={'150px'}
+          width={'200px'}
+          vspace="0"
+        />
+        <Image3
+          src={line2}
+          styles={'background-color: #ffffff'}
+          alt={'line'}
+          height={'150px'}
+          width={'200px'}
+          vspace="0"
+        />
         <PurposeText>
           OUR PURPOSE
         </PurposeText>
