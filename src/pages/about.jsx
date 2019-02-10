@@ -9,23 +9,42 @@ const Text = styled.div`
     margin: 2rem 10rem;
 `;
 
+const DesignText = styled.text`
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+`;
+
+const EmphasisBlue = styled.text`
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #69BACC;
+`;
+
+const EmphasisYellow = styled.text`
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #F8E074;
+`;
+
 const About = center => (
   <Layout>
     <Helmet title={'About Page'} />
     <Header title="About Page">Gatsby Tutorial Starter</Header>
     <Container center={center}>
-      <Text>
+        <DesignText>
+          OUR PURPOSE
+        </DesignText>
+        <br />
         <h3>
-          If you would like to build this site completely from scratch, you go
-          can go read the guide{' '}
-          <a href="https://justinformentin.com/gatsby-v2-guide">here.</a>
+          To <EmphasisBlue>empower</EmphasisBlue> and <EmphasisBlue>inspire</EmphasisBlue> students to realise their potential to contribute to the future of the space industry.
         </h3>
         <br />
         <h3>
-          Or you can watch the video{' '}
-          <a href="https://youtube.com/#">on Youtube.</a>
+          This involves keeping their <EmphasisYellow>passion</EmphasisYellow> for all things space related alive, connecting them with industry professionals, and surrounding them with positive, like-minded people who challenge each other to explore their abilities in space related subjects.
         </h3>
-      </Text>
     </Container>
   </Layout>
 );
