@@ -26,9 +26,9 @@ const Date = styled.p`
   font-weight: bold;
 `;
 
-const SingleEvent = ({ title, date, excerpt }) => (
+const SingleEvent = ({ title, date, excerpt, colour }) => (
   <Wrapper>
-
+    <Date>{colour}</Date>
     <EventTitle>{title}</EventTitle>
     <Date>{date}</Date>
     <Excerpt>{excerpt}</Excerpt>

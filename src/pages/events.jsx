@@ -31,6 +31,7 @@ const Events = ({ data }) => {
           title={node.frontmatter.title}
           date={node.frontmatter.date}
           excerpt={node.excerpt}
+          colour={node.frontmatter.colour}
         />
       ))}
       </Container>
@@ -50,6 +51,7 @@ Events.propTypes = {
             frontmatter: PropTypes.shape({
               title: PropTypes.string.isRequired,
               date: PropTypes.string.isRequired,
+              colour: PropTypes.string.isRequired,
               tags: PropTypes.array,
             }),
           }),
@@ -76,6 +78,7 @@ export const query = graphql`
             title
             slug
             date
+            colour
             published
             _PARENT
           }
