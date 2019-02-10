@@ -124,8 +124,8 @@ const Image3 = styled.img`
 
 const About = center => (
     <Layout>
-      <Helmet title={'About Page'}/>
-      <Header title="About Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={'About Us'}/>
+      <Header title="About Us">"A long time ago in a galaxy far, far away..."</Header>
 
       <Container center={center}>
         <Image
