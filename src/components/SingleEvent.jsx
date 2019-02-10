@@ -9,7 +9,7 @@ const Wrapper = styled.article`
   border-radius: 10px;
   padding: 1rem;
   box-shadow: ${props => props.theme.shadow.card};
-  border-left: 15px solid ${props => props.colour};
+  border-left: 15px solid;
 `;
 
 
@@ -27,8 +27,7 @@ const Date = styled.p`
 `;
 
 const SingleEvent = ({ title, date, excerpt, colour }) => (
-  <Wrapper>
-    <Date>${props => props.colour}</Date>
+  <Wrapper css={{borderColor: colour}}>
     <EventTitle>{title}</EventTitle>
     <Date>{date}</Date>
     <Excerpt>{excerpt}</Excerpt>
