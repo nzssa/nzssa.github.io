@@ -26,7 +26,9 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: add polished article to About Us page
 
-:white_large_square: add colour labels to events to indicate location
+:white_check_mark: add colour labels to events to indicate location
+
+:white_large_square: update events colour var so only location needs to be indicated
 
 :white_large_square: update previous/next link at bottom of blog posts
 
