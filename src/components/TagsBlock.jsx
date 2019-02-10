@@ -15,6 +15,10 @@ const TagsContainer = styled.div`
     padding: .3rem .6rem;
     background: ${props => props.theme.colors.white.grey};
     border-radius: 10px;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
     &:hover {
       color: ${props => props.theme.colors.white.light};
       background: ${props => props.theme.colors.primary.light};

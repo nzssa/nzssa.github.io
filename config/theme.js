@@ -35,8 +35,8 @@ const shadow = {
       hover: '0 50px 50px rgba(0, 0, 0, 0.1)',
     },
     small: {
-      default: '0 15px 25px rgba(0, 0, 0, 0.2)',
-      hover: '0 40px 45px rgba(0, 0, 0, 0.1)',
+      default: '0 5px 25px rgba(0, 0, 0, 0.2)',
+      hover: '0 20px 45px rgba(0, 0, 0, 0.1)',
     },
   },
   text: {

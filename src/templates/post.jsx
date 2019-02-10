@@ -28,6 +28,7 @@ const Post = ({ data, pageContext }) => {
   const post = data.markdownRemark;
   const image = post.frontmatter.cover.childImageSharp.fluid;
   const title = post.frontmatter.title;
+  const author = post.frontmatter.author;
   const date = post.frontmatter.date;
   const html = post.html;
   return (

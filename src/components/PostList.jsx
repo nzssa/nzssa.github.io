@@ -16,8 +16,8 @@ const Wrapper = styled.article`
   transition: ${props => props.theme.transitions.boom.transition};
   height: 17rem;
   &:hover {
-    box-shadow: ${props => props.theme.shadow.feature.small.hover};
-    transform: scale(1.04);
+    // box-shadow: ${props => props.theme.shadow.feature.small.hover};
+    transform: translateY(-10px);
     }
   }
   flex-basis: calc(99.9% * 1 / 3 - 2.5rem);

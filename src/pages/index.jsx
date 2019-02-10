@@ -5,15 +5,15 @@ import Helmet from 'react-helmet';
 import styled from 'react-emotion';
 import { HomeHeader, Header, PostList } from 'components';
 import { Layout } from 'layouts';
-import backpackGirl from '../../static/backpackGirl.svg'
-import stars from '../../static/stars.svg'
+import backpackGirl from '../../static/backpackGirl.svg';
+import stars from '../../static/stars.svg';
 
 const PostWrapper = styled.div`
   top: 600px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  place-content: space-between space-evenly; 
+  place-content: space-between space-evenly;
   margin: 4rem 4rem 1rem 4rem;
   @media (max-width: 1000px) {
     margin: 4rem 2rem 1rem 2rem;
@@ -23,26 +23,35 @@ const PostWrapper = styled.div`
   }
 `;
 
-
 const Image = styled.img`
   position: absolute;
   left: 500px;
   top: -140px;
   z-index: 3;
   background-repeat: repeat-x;
-  background-image: url("../../static/stars.svg");
-  
-`
+  background-image: url('../../static/stars.svg');
+`;
 
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Image src={stars} styles={"background-color: #ffffff"} alt={"stars"} height={"400px"} width={"400px"}
-           vspace="0"  ></Image>
-      <img src={backpackGirl} styles={"background-color: #ffffff"} alt={"backpackGirl"} height={"600px"}
-           align="left"></img>
-      <Helmet title={"Home Page"} />
+      <Image
+        src={stars}
+        styles={'background-color: #ffffff'}
+        alt={'stars'}
+        height={'400px'}
+        width={'400px'}
+        vspace="0"
+      />
+      <img
+        src={backpackGirl}
+        styles={'background-color: #ffffff'}
+        alt={'backpackGirl'}
+        height={'600px'}
+        align="left"
+      />
+      <Helmet title={'Home Page'} />
       <HomeHeader title="New Zealand Students' Space Association">
         Be bold. Have fun. Build a better world.
       </HomeHeader>
@@ -53,6 +62,7 @@ const Index = ({ data }) => {
             cover={node.frontmatter.cover.childImageSharp.fluid}
             path={node.frontmatter.path}
             title={node.frontmatter.title}
+            author={node.frontmatter.author}
             date={node.frontmatter.date}
             excerpt={node.excerpt}
           />
@@ -98,6 +108,7 @@ export const query = graphql`
           excerpt(pruneLength: 75)
           frontmatter {
             title
+            author
             path
             tags
             date(formatString: "MM.DD.YYYY")

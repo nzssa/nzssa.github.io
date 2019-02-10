@@ -9,8 +9,8 @@ const headroom = css`
     width: 100%;
     z-index: 2000;
     top: 0;
-  }h
-  .headroom-wrapper img {
+  }
+  h .headroom-wrapper img {
     margin-bottom: 0;
   }
   .headroom {
