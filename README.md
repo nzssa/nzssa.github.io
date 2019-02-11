@@ -34,6 +34,8 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: update previous/next link at bottom of blog posts
 
+:white_large_square: add facebook links to repspective colonies and "where to find more info" to contact us page
+
 ## Starter Features
 
 - Gatsby v2
