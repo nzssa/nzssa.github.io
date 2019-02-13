@@ -10,6 +10,7 @@ import stars from '../../static/stars.svg';
 
 const PostWrapper = styled.div`
   top: 600px;
+  background: ${props => props.theme.colors.black.base};
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -38,7 +39,7 @@ const Index = ({ data }) => {
     <Layout>
       <Image
         src={stars}
-        styles={'background-color: #ffffff'}
+        styles={'background-color: #000000'}
         alt={'stars'}
         height={'400px'}
         width={'400px'}

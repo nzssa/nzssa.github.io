@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
-  background: ${props => props.theme.colors.white.base};
+  background: ${props => props.theme.colors.black.base};
   height: 600px;
   top: 60px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
@@ -18,7 +18,7 @@ const Wrapper = styled.header`
 `;
 
 const Text = styled.div`
-  color: ${props => props.theme.colors.black.base};
+  color: ${props => props.theme.colors.white.base};
   z-index: 1;
   position: relative;
   top: 50%;
@@ -36,7 +36,7 @@ const Text = styled.div`
 
 const Subtitle = styled.p`
   max-width: 650px;
-  color: ${props => props.theme.colors.black.base};
+  color: ${props => props.theme.colors.white.base};
   z-index: 2;
 `;
 

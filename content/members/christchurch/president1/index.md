@@ -1,8 +1,8 @@
 ---
 path: "/tutorial"
-cover: "./finance.jpg"
+cover: "./profile.jpg"
 slug: "tutorial"
-date: "2019-01-20"
+date: "1"
 title: "Boss Lady 1"
 link: ""
 name: "Megan Poehler"
