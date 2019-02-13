@@ -3,7 +3,7 @@ import theme from '../../config/theme';
 
 const headroom = css`
   .headroom-wrapper {
-    background-color: ${theme.colors.black.base};
+    background-color: #000000;
     box-shadow: ${theme.shadow.navbar};
     position: fixed;
     width: 100%;
