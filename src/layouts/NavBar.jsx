@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'react-emotion';
 import Headroom from 'react-headroom';
-import logo from '../../static/logo/header-logo.png';
+import logo from '../../static/logo/white-logo.png';
 
 const StyledLink = styled(Link)`
   display: flex;
