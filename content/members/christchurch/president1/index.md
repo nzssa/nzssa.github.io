@@ -3,7 +3,7 @@ path: "/tutorial"
 cover: "./profile.jpg"
 slug: "tutorial"
 date: "1"
-title: "Boss Lady 1"
+title: "CO-PRESIDENT"
 link: ""
 name: "Megan Poehler"
 tags: ['gatsby', 'tutorial']

@@ -1,9 +1,9 @@
 ---
 path: "/tutorial"
-cover: "./finance.jpg"
+cover: "./profile.jpg"
 slug: "tutorial"
-date: "2019-01-20"
-title: "Boss Lady 3"
+date: "3"
+title: "CO-PRESIDENT"
 name: "Aayushi Verma"
 link: ""
 tags: ['gatsby', 'tutorial']
