@@ -5,15 +5,13 @@ import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import AboutUsArticle from '../components/AboutUsArticle';
-import planet from '../../static/planet.svg'
+import planet from '../../static/planet.svg';
 import line from '../../static/line.svg';
 import line2 from '../../static/line2.svg';
 import rocket from '../../static/rocket.svg';
 
-
-
 const Text = styled.div`
-    margin: 2rem 10rem;
+  margin: 2rem 10rem;
 `;
 
 const PurposeText = styled.text`
@@ -31,7 +29,7 @@ const HeadingName = styled.h2`
   padding-right: 0px;
   padding-bottom: 0px;
   margin: 10px;
-`
+`;
 
 const SubHeading = styled.text`
   font-family: 'Rubik', sans-serif;
@@ -43,14 +41,14 @@ const EmphasisBlue = styled.text`
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   font-size: 30px;
-  color: #69BACC;
+  color: #69bacc;
 `;
 
 const EmphasisYellow = styled.text`
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   font-size: 30px;
-  color: #F8E074;
+  color: #f8e074;
 `;
 
 const GridWrapper = styled.div`
@@ -118,97 +116,136 @@ const Image3 = styled.img`
 `;
 
 const About = center => (
-    <Layout>
-      <Helmet title={'About Us'}/>
-      <Header title="About Us">"A long time ago in a galaxy far, far away..."</Header>
+  <Layout>
+    <Helmet title={'About Us'} />
+    <Header title="About Us" />
+    <p css={{textAlign: 'center'}}>"A long time ago in a galaxy far, far away..."</p>
+    <Container center={center}>
+      <Image
+        src={line}
+        alt={'line'}
+        height={'400px'}
+        width={'400px'}
+        vspace="0"
+      />
+      <Image2
+        src={rocket}
+        alt={'line'}
+        height={'150px'}
+        width={'200px'}
+        vspace="0"
+      />
+      <Image3
+        src={line2}
+        alt={'line'}
+        height={'150px'}
+        width={'200px'}
+        vspace="0"
+      />
+      <PurposeText>OUR PURPOSE</PurposeText>
+      <br />
+      <h3 css={{ color: '#ffffff' }}>
+        To <EmphasisBlue>empower</EmphasisBlue> and{' '}
+        <EmphasisBlue>inspire</EmphasisBlue> students to realise their potential
+        to contribute to the future of the space industry.
+      </h3>
+      <br />
+      <h3>
+        This involves keeping their <EmphasisYellow>passion</EmphasisYellow> for
+        all things space related alive, connecting them with industry
+        professionals, and surrounding them with positive, like-minded people
+        who challenge each other to explore their abilities in space related
+        subjects.
+      </h3>
+      <br />
+    </Container>
+    <GridWrapper>
+      <AboutUsArticle />
+      <img src={planet} alt={'planet'} height={'600px'} />
+      {/*<svg height="800" width="800">*/}
+      {/*<circle cx="300" cy="250" r="200" stroke="black" fill="white" />*/}
+      {/*</svg>*/}
+    </GridWrapper>
 
-      <Container center={center}>
-        <Image
-          src={line}
-          alt={'line'}
-          height={'400px'}
-          width={'400px'}
-          vspace="0"
-        />
-        <Image2
-          src={rocket}
-          alt={'line'}
-          height={'150px'}
-          width={'200px'}
-          vspace="0"
-        />
-        <Image3
-          src={line2}
-          alt={'line'}
-          height={'150px'}
-          width={'200px'}
-          vspace="0"
-        />
-        <PurposeText>
-          OUR PURPOSE
+    <GridWrapper2>
+      <h3>
+        <svg height="200" width="300">
+          <circle cx="170" cy="100" r="80" fill="#69BACC" />
+        </svg>
+        <PurposeText
+          css={{ fontWeight: 'bold', fontSize: '40px', padding: '80px' }}
+        >
+          Primary
         </PurposeText>
-        <br/>
-        <h3 css={{color: '#ffffff'}}>
-          To <EmphasisBlue>empower</EmphasisBlue> and <EmphasisBlue>inspire</EmphasisBlue> students to realise their
-          potential to contribute to the future of the space industry.
-        </h3>
-        <br/>
-        <h3>
-          This involves keeping their <EmphasisYellow>passion</EmphasisYellow> for all things space related alive,
-          connecting them with industry professionals, and surrounding them with positive, like-minded people who
-          challenge each other to explore their abilities in space related subjects.
-        </h3>
-        <br/>
-
-      </Container>
-      <GridWrapper>
-        <AboutUsArticle/>
-        <img src={planet} alt={"planet"} height={"600px"} ></img>
-        {/*<svg height="800" width="800">*/}
-          {/*<circle cx="300" cy="250" r="200" stroke="black" fill="white" />*/}
-        {/*</svg>*/}
-      </GridWrapper>
-
-      <GridWrapper2>
-        <h3>
-          <svg height="200" width="300">
-            <circle cx="170" cy="100" r="80" fill="#69BACC" />
-          </svg>
-          <PurposeText css={{fontWeight: 'bold', fontSize: '40px',padding: '80px'}}>Primary</PurposeText>
-          <br/><br/>
-          <h4>
-            Creating opportunities for Primary School children to experience the wonder of space through Single and Multiple Event Learning Modules, some of which include ‘Rocket Building’, ‘Training Like an Astronaut’, and ‘Going to Space’.
-          </h4>
-        </h3>
-        <h3>
-          <svg height="200" width="300">
-            <circle cx="170" cy="100" r="80" fill="#71B585" />
-          </svg>
-          <PurposeText css={{fontWeight: 'bold', fontSize: '40px', padding: '80px'}}>Secondary</PurposeText>
-          <br/><br/>
-          <h4>
-            Encourage Secondary students to consider space as a viable career option through presentations at school assembly's, workshops, and competitions. Our long term goal is to introduce a NCEA Space Standard.
-          </h4>
-        </h3>
-        <h3>
-          <svg height="200" width="300">
-            <circle cx="170" cy="100" r="80" fill="#6F4D88" />
-          </svg>
-          <PurposeText css={{fontWeight: 'bold', fontSize: '40px', align: 'right', padding: '80px'}}>Tertiary</PurposeText>
-          <br/><br/>
-          <h4>
-            Empower Tertiary students to explore the current Space Industry through networking, inter-university competitions, Space Conferences, Industry tours, and networking events.  A strong focus on Entrepreneurship and what a career in space looks like.
-          </h4>
-        </h3>
-      </GridWrapper2>
-      <svg width="1000" height="110">
-        <g>
-          <rect y="50" x="650" rx="20" ry="20" width="200" height="50" fill="white" stroke="black" />
-          <text y="80" x="670" font-family="Rubik" font-size="20" fill="black">Book a workshop</text>
-        </g>
-      </svg>
-
-    </Layout>
+        <br />
+        <br />
+        <h4>
+          Creating opportunities for Primary School children to experience the
+          wonder of space through Single and Multiple Event Learning Modules,
+          some of which include ‘Rocket Building’, ‘Training Like an Astronaut’,
+          and ‘Going to Space’.
+        </h4>
+      </h3>
+      <h3>
+        <svg height="200" width="300">
+          <circle cx="170" cy="100" r="80" fill="#71B585" />
+        </svg>
+        <PurposeText
+          css={{ fontWeight: 'bold', fontSize: '40px', padding: '80px' }}
+        >
+          Secondary
+        </PurposeText>
+        <br />
+        <br />
+        <h4>
+          Encourage Secondary students to consider space as a viable career
+          option through presentations at school assembly's, workshops, and
+          competitions. Our long term goal is to introduce a NCEA Space
+          Standard.
+        </h4>
+      </h3>
+      <h3>
+        <svg height="200" width="300">
+          <circle cx="170" cy="100" r="80" fill="#6F4D88" />
+        </svg>
+        <PurposeText
+          css={{
+            fontWeight: 'bold',
+            fontSize: '40px',
+            align: 'right',
+            padding: '80px',
+          }}
+        >
+          Tertiary
+        </PurposeText>
+        <br />
+        <br />
+        <h4>
+          Empower Tertiary students to explore the current Space Industry
+          through networking, inter-university competitions, Space Conferences,
+          Industry tours, and networking events. A strong focus on
+          Entrepreneurship and what a career in space looks like.
+        </h4>
+      </h3>
+    </GridWrapper2>
+    <svg width="1000" height="110">
+      <g>
+        <rect
+          y="50"
+          x="650"
+          rx="20"
+          ry="20"
+          width="200"
+          height="50"
+          fill="white"
+          stroke="black"
+        />
+        <text y="80" x="670" fontFamily="Rubik" fontSize="20" fill="black">
+          Book a workshop
+        </text>
+      </g>
+    </svg>
+  </Layout>
 );
 
 export default About;
@@ -216,4 +253,3 @@ export default About;
 Container.propTypes = {
   center: PropTypes.object,
 };
-

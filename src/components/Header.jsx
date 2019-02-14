@@ -12,12 +12,12 @@ const Wrapper = styled.header`
   // background: ${props => props.theme.gradient.rightToLeft};
   object-fit: cover;
   object-position: 50% 50%;
-  height: 300px;
+  height: 200px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
-    height: 200px;
+    height: 150px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 150px;
+    height: 100px;
   }
   position: relative;
   overflow: hidden;
@@ -28,7 +28,7 @@ const Text = styled.div`
   background-color: #000000;
   z-index: 0;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -37,7 +37,7 @@ const Text = styled.div`
   width: 100%;
   max-width: ${props => props.theme.layout.base};
   padding: 0 2rem;
-  margin-bottom: 3rem;
+  // margin-bottom: 3rem;
   align-items: center;
 `;
 
