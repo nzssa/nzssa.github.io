@@ -2,9 +2,9 @@
 path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
-date: "4"
-title: "TREASURER"
-name: "Diana Timchur Kommedal"
+date: "9.1"
+title: "INTERNAL COMMUNICATIONS OFFICER"
+name: "Jake McNaughton"
 link: ""
 tags: ['gatsby', 'tutorial']
 published: true

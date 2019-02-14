@@ -11,6 +11,7 @@ const Wrapper = styled.article`
   margin-bottom: 2rem;
   position: relative;
   z-index: 100;
+  background: ${props => props.theme.colors.black.base};
   border-radius: ${props => props.theme.borderRadius.default};
   box-shadow: ${props => props.theme.shadow.feature.small.default};
   transition: ${props => props.theme.transitions.boom.transition};

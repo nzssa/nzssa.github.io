@@ -2,9 +2,9 @@
 path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
-date: "4"
-title: "TREASURER"
-name: "Diana Timchur Kommedal"
+date: "9"
+title: "SOCIAL MEDIA OFFICER"
+name: "Seth Hibbert"
 link: ""
 tags: ['gatsby', 'tutorial']
 published: true

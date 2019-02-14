@@ -22,9 +22,10 @@ injectGlobal`
     overflow-x: hidden;
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(, 0, 0, 0);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
   }
   html, body {
     width: 100%;
@@ -49,7 +50,21 @@ injectGlobal`
   }
   h1{
     font-family: ${theme.fontFamily.heading};
+    color: #ffffff;
   }
+  h2 {
+    color: #ffffff;
+  }
+  h3 {
+    color: #ffffff;
+  }
+  h4 {
+    color: #ffffff;
+  }
+  p {
+    color: #ffffff;
+  }
+
 
   ${headroom}
 `;

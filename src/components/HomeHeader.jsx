@@ -4,30 +4,29 @@ import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
-  background: ${props => props.theme.colors.white.base};
+  background: #000000;;
   height: 600px;
   top: 60px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
-    height: 300px;
+    height: 400px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 275px;
+    height: 375px;
   }
   position: relative;
   overflow: hidden;
 `;
 
 const Text = styled.div`
-  color: ${props => props.theme.colors.black.base};
+  color: ${props => props.theme.colors.white.base};
   z-index: 1;
   position: relative;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 100%;
   max-width: ${props => props.theme.layout.base};
   padding: 0 3rem 0 0;
   margin-bottom: 3rem;
@@ -35,8 +34,11 @@ const Text = styled.div`
 `;
 
 const Subtitle = styled.p`
-  max-width: 650px;
-  color: ${props => props.theme.colors.black.base};
+  position: absolute;
+  max-width: 600px;
+  top: 90%;
+  left: 50%;
+  color: ${props => props.theme.colors.white.base};
   z-index: 2;
 `;
 
@@ -50,6 +52,7 @@ const HomeHeader = ({ children, title, date, cover }) => (
           fontWeight: 'bold',
           zIndex: '2',
           textAlign: 'right',
+          paddingLeft: '400px'
         }}
       >
         {title}
