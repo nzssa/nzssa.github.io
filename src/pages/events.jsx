@@ -21,8 +21,8 @@ const Events = ({ data }) => {
   console.log(edges[0]);
   return (
     <Layout>
-      <Helmet title={'Events Page'} />
-      <Header title="Events Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={'Events'} />
+      <Header title="Events"></Header>
       <Container>
         <HeaderTitle>Upcoming</HeaderTitle>
         {edges.map(({ node }) => (

@@ -13,7 +13,7 @@ const Text = styled.div`
 const Contact = center => (
   <Layout>
     <Helmet title={'Contact Page'} />
-    <Header title="Contact us">Gatsby Tutorial Starter</Header>
+    <Header title="Contact us"></Header>
     <NameForm css={{border: '2px solid blue', height: '75%', fitContent: '40%', display: 'inline-block', width: '50px'}}></NameForm>
   </Layout>
 );
