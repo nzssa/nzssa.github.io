@@ -100,18 +100,14 @@ const Image = styled.img`
   position: absolute;
   right: -30px;
   top: 330px;
-  z-index: 3;
-  background-repeat: repeat-x;
-  background-image: url('../../static/stars.svg');
+  z-index: 2;
 `;
 
 const Image2 = styled.img`
   position: absolute;
   left: 40px;
   top: 350px;
-  z-index: 3;
-  background-repeat: repeat-x;
-  background-image: url('../../static/stars.svg');
+  z-index: 2;
 `;
 
 const Image3 = styled.img`
@@ -119,8 +115,6 @@ const Image3 = styled.img`
   left: 160px;
   top: 450px;
   z-index: 2;
-  background-repeat: repeat-x;
-  background-image: url('../../static/stars.svg');
 `;
 
 const About = center => (
@@ -131,7 +125,6 @@ const About = center => (
       <Container center={center}>
         <Image
           src={line}
-          styles={'background-color: #ffffff'}
           alt={'line'}
           height={'400px'}
           width={'400px'}
@@ -139,7 +132,6 @@ const About = center => (
         />
         <Image2
           src={rocket}
-          styles={'background-color: #ffffff'}
           alt={'line'}
           height={'150px'}
           width={'200px'}
@@ -147,7 +139,6 @@ const About = center => (
         />
         <Image3
           src={line2}
-          styles={'background-color: #ffffff'}
           alt={'line'}
           height={'150px'}
           width={'200px'}
@@ -172,7 +163,7 @@ const About = center => (
       </Container>
       <GridWrapper>
         <AboutUsArticle/>
-        <img src={planet} styles={"background-color: #ffffff"} alt={"planet"} height={"600px"} ></img>
+        <img src={planet} alt={"planet"} height={"600px"} ></img>
         {/*<svg height="800" width="800">*/}
           {/*<circle cx="300" cy="250" r="200" stroke="black" fill="white" />*/}
         {/*</svg>*/}
