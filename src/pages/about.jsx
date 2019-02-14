@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import AboutUsArticle from '../components/AboutUsArticle';
-import planet from '../../static/planet.svg'
-import line from '../../static/line.svg';
-import line2 from '../../static/line2.svg';
-import rocket from '../../static/rocket.svg';
+import planet from '../../static/planet.jpg'
+import line from '../../static/line.png';
+import line2 from '../../static/line2.png';
+import rocket from '../../static/rocket.jpg';
 
 
 
@@ -99,7 +99,7 @@ const GridWrapper2 = styled.div`
 const Image = styled.img`
   position: absolute;
   right: -30px;
-  top: 330px;
+  top: 470px;
   z-index: 2;
 `;
 
@@ -112,8 +112,8 @@ const Image2 = styled.img`
 
 const Image3 = styled.img`
   position: absolute;
-  left: 160px;
-  top: 450px;
+  left: 180px;
+  top: 480px;
   z-index: 2;
 `;
 
@@ -126,22 +126,22 @@ const About = center => (
         <Image
           src={line}
           alt={'line'}
-          height={'400px'}
-          width={'400px'}
+          height={'100px'}
+          width={'360px'}
           vspace="0"
         />
         <Image2
           src={rocket}
           alt={'line'}
           height={'150px'}
-          width={'200px'}
+          width={'150px'}
           vspace="0"
         />
         <Image3
           src={line2}
           alt={'line'}
-          height={'150px'}
-          width={'200px'}
+          height={'100px'}
+          width={'150px'}
           vspace="0"
         />
         <PurposeText>
@@ -170,33 +170,31 @@ const About = center => (
       </GridWrapper>
 
       <GridWrapper2>
-        <h3>
-          <svg height="200" width="300">
-            <circle cx="170" cy="100" r="80" fill="#69BACC" />
-          </svg>
-          <PurposeText css={{fontWeight: 'bold', fontSize: '40px',padding: '80px'}}>Primary</PurposeText>
+        <h3 css={{textAlign: 'center'}}>
+          <svg height="200" width="300"><circle cx="150" cy="100" r="80" fill="#69BACC" /></svg>
+          <PurposeText css={{fontWeight: 'bold', fontSize: '40px'}}>Primary</PurposeText>
           <br/><br/>
-          <h4>
+          <h4 css={{textAlign: 'center'}}>
             Creating opportunities for Primary School children to experience the wonder of space through Single and Multiple Event Learning Modules, some of which include ‘Rocket Building’, ‘Training Like an Astronaut’, and ‘Going to Space’.
           </h4>
         </h3>
-        <h3>
+        <h3 css={{textAlign: 'center'}}>
           <svg height="200" width="300">
-            <circle cx="170" cy="100" r="80" fill="#71B585" />
+            <circle cx="150" cy="100" r="80" fill="#71B585" />
           </svg>
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px', padding: '80px'}}>Secondary</PurposeText>
           <br/><br/>
-          <h4>
+          <h4 css={{textAlign: 'center'}}>
             Encourage Secondary students to consider space as a viable career option through presentations at school assembly's, workshops, and competitions. Our long term goal is to introduce a NCEA Space Standard.
           </h4>
         </h3>
-        <h3>
+        <h3 css={{textAlign: 'center'}}>
           <svg height="200" width="300">
-            <circle cx="170" cy="100" r="80" fill="#6F4D88" />
+            <circle cx="150" cy="100" r="80" fill="#6F4D88" />
           </svg>
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px', align: 'right', padding: '80px'}}>Tertiary</PurposeText>
           <br/><br/>
-          <h4>
+          <h4 css={{textAlign: 'center'}}>
             Empower Tertiary students to explore the current Space Industry through networking, inter-university competitions, Space Conferences, Industry tours, and networking events.  A strong focus on Entrepreneurship and what a career in space looks like.
           </h4>
         </h3>

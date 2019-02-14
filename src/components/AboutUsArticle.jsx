@@ -52,7 +52,7 @@ const AboutUsArticle = ({ key, title, excerpt}) => (
       < br />< br />
       Despite this, there is still <EmphasisBlue>no clear path</EmphasisBlue> for students to immerse themselves, or even explore what the future of space is all about. There isn't exactly a degree for getting into the space industry; the closest we get is Astronomy or Physics, however neither of these include the wide and diverse range of skills the future space industry requires. It is apparent that the future of Space cannot be limited to Physicists, Engineers, and Scientists, despite the perceived “space career” image.
       < br />< br />
-      The problem is clear; for most students, regardless of their passion for space, a future in the space Industry is not even on their agenda. And so we decided that <EmphasisYellow>every student in New Zealand</EmphasisYellow> should be able to recognise their ability to contribute to the future of the space industry.
+      <EmphasisBlue>The problem </EmphasisBlue>is clear; for most students, regardless of their passion for space, a future in the space Industry is not even on their agenda. And so we decided that <EmphasisYellow>every student in New Zealand</EmphasisYellow> should be able to recognise their ability to contribute to the future of the space industry.
     </HeadingPosition>
   </Card>
 );
