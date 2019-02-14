@@ -124,7 +124,7 @@ export const query = graphql`
             author
             path
             tags
-            date(formatString: "MM.DD.YYYY")
+            date
             cover {
               childImageSharp {
                 fluid(

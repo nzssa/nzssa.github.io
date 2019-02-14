@@ -40,7 +40,7 @@ const Post = ({ data, pageContext }) => {
         pathname={post.frontmatter.path}
         article
       />
-      <Header title={title} date={date} cover={image} />
+      <Header title={title} date={date} cover={image}/>
       <Container>
         <Content input={html} />
         <TagsBlock list={post.frontmatter.tags || []} />

@@ -24,16 +24,16 @@ const Events = ({ data }) => {
       <Helmet title={'Events Page'} />
       <Header title="Events Page">Gatsby Tutorial Starter</Header>
       <Container>
-      <HeaderTitle>Upcoming</HeaderTitle>
-      {edges.map(({ node }) => (
-        <SingleEvent
-          key={node.id}
-          title={node.frontmatter.title}
-          date={node.frontmatter.date}
-          excerpt={node.excerpt}
-          colour={node.frontmatter.colour}
-        />
-      ))}
+        <HeaderTitle>Upcoming</HeaderTitle>
+        {edges.map(({ node }) => (
+          <SingleEvent
+            key={node.id}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+            excerpt={node.excerpt}
+            colour={node.frontmatter.colour}
+          />
+        ))}
       </Container>
     </Layout>
   );

@@ -25,7 +25,7 @@ injectGlobal`
     -webkit-tap-highlight-color: rgba(, 0, 0, 0);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
+    background-color: #000000;
   }
   html, body {
     width: 100%;
