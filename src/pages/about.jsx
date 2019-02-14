@@ -9,8 +9,10 @@ import planet from '../../static/planet.jpg'
 import line from '../../static/line.png';
 import line2 from '../../static/line2.png';
 import rocket from '../../static/rocket.jpg';
+import stats from '../../static/stats.png';
 
-
+const Card = styled.div`
+`;
 
 const Text = styled.div`
     margin: 2rem 10rem;
@@ -39,6 +41,13 @@ const SubHeading = styled.text`
   font-size: 40px;
 `;
 
+const HeadingPosition = styled.h4`
+  text-align: left;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+`
+
 const EmphasisBlue = styled.text`
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
@@ -51,6 +60,20 @@ const EmphasisYellow = styled.text`
   font-weight: bold;
   font-size: 30px;
   color: #F8E074;
+`;
+
+const EmphasisOrange = styled.text`
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #DF9551;
+`;
+
+const EmphasisRed = styled.text`
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #C97369;
 `;
 
 const GridWrapper = styled.div`
@@ -117,6 +140,7 @@ const Image3 = styled.img`
   z-index: 2;
 `;
 
+
 const About = center => (
     <Layout>
       <Helmet title={'About Us'}/>
@@ -164,9 +188,6 @@ const About = center => (
       <GridWrapper>
         <AboutUsArticle/>
         <img src={planet} alt={"planet"} height={"600px"} ></img>
-        {/*<svg height="800" width="800">*/}
-          {/*<circle cx="300" cy="250" r="200" stroke="black" fill="white" />*/}
-        {/*</svg>*/}
       </GridWrapper>
 
       <GridWrapper2>
@@ -205,6 +226,30 @@ const About = center => (
           <text y="80" x="670" font-family="Rubik" font-size="20" fill="black">Book a workshop</text>
         </g>
       </svg>
+
+      <GridWrapper>
+        <Card>
+          <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>OUR VALUES</HeadingName>
+          <HeadingPosition >
+            < br />< br />
+            <EmphasisRed>Be Bold</EmphasisRed>< br />
+            EXPLORE > TAKE RISKS > CREATE > CHALLENGE YOURSELF
+            < br />< br />
+            <EmphasisOrange>Have Fun</EmphasisOrange>< br />
+            JOIN A COMMUNITY > MAKE MISTAKES > SUCCEED TOGETHER
+          < br />< br />
+            <EmphasisYellow>Build a better world</EmphasisYellow>< br />
+            NEW KNOWLEDGE > INNOVATION > MAKE YOUR DIFFERENCE
+
+
+          </HeadingPosition>
+        </Card>
+      </GridWrapper>
+
+        <HeadingName  css={{textAlign: 'center', fontWeight: 'bold', fontSize: '40px'}}>CURRENT STATS</HeadingName>
+        <img src={stats} alt={"planet"} height={"400px"} align={"center"} ></img>
+
+
 
     </Layout>
 );
