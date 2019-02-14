@@ -1,9 +1,9 @@
 ---
 path: "/tutorial"
-cover: "./finance.jpg"
+cover: "./profile.jpg"
 slug: "tutorial"
-date: "2019-01-20"
-title: "Boss Lady 3"
+date: "2"
+title: "CO-PRESIDENT"
 name: "Anushka Kharbanda"
 link: ""
 tags: ['gatsby', 'tutorial']

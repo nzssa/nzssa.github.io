@@ -7,9 +7,11 @@ import { HomeHeader, Header, PostList } from 'components';
 import { Layout } from 'layouts';
 import backpackGirl from '../../static/backpackGirl.svg';
 import stars from '../../static/stars.svg';
+import logo from '../../static/logo/white-logo.png';
 
 const PostWrapper = styled.div`
   top: 600px;
+  background: #000000;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -27,10 +29,21 @@ const Image = styled.img`
   position: absolute;
   left: 500px;
   top: -140px;
-  z-index: 3;
+  z-index: 1;
+  background-color: #000000;
   background-repeat: repeat-x;
   background-image: url('../../static/stars.svg');
 `;
+
+const Image2 = styled.img`
+  background-color: #000000;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+
+
+`
 
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
@@ -38,17 +51,17 @@ const Index = ({ data }) => {
     <Layout>
       <Image
         src={stars}
-        styles={'background-color: #ffffff'}
+        styles={'background-color: #000000'}
         alt={'stars'}
         height={'400px'}
         width={'400px'}
         vspace="0"
       />
-      <img
-        src={backpackGirl}
-        styles={'background-color: #ffffff'}
+      <Image2
+        src={logo}
+        styles={'background-color: #000000'}
         alt={'backpackGirl'}
-        height={'600px'}
+        height={'500px'}
         align="left"
       />
       <Helmet title={'Home Page'} />
