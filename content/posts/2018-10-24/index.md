@@ -1,5 +1,5 @@
 ---
-path: "/tutorial"
+path: "/global-space-innovation-competition"
 cover: "./blocks.jpg"
 slug: "tutorial"
 date: "2018-10-20"

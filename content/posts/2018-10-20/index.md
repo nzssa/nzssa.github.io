@@ -1,5 +1,5 @@
 ---
-path: "/tutorial"
+path: "/social-event-pizza-night"
 cover: "./pizza.jpg"
 slug: "tutorial"
 date: "2018-10-20"

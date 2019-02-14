@@ -1,5 +1,5 @@
 ---
-path: "/post-two"
+path: "/rasnz-conference"
 cover: "./rasnz.jpg"
 slug: "post-two"
 date: "2018-10-16"
