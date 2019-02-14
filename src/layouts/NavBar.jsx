@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'react-emotion';
 import Headroom from 'react-headroom';
-import logo from '../../static/logo/header-logo.png';
+import logo from '../../static/logo/white-logo.png';
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -18,7 +18,7 @@ const Nav = styled.nav`
   font-size: 1.1rem;
   align-items: center;
   a {
-    color: ${props => props.theme.colors.black.base};
+    color: ${props => props.theme.colors.white.base};
     margin-left: 2rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {

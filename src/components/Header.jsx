@@ -3,6 +3,7 @@ import styled from 'react-emotion';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import starHeader from '../../static/black-stars-header.png'
+//import starHeader from '../../static/stars.svg'
 
 const Wrapper = styled.header`
   // background-image: url('../../static/stars.svg');
@@ -24,6 +25,7 @@ const Wrapper = styled.header`
 
 const Text = styled.div`
   color: ${props => props.theme.colors.white.base};
+  background-color: #000000;
   z-index: 0;
   position: absolute;
   top: 50%;
@@ -47,11 +49,17 @@ const Subtitle = styled.p`
 const Header = ({ children, title, date, cover }) => (
   <Wrapper>
     {/*<Img fluid={cover || {} || [] || ''} />*/}
+    {/*<img src={starHeader} alt={"black star header"}*/}
+         {/*css={{width: '100%', top: '-100px', position: 'relative'}}*/}
     <img src={starHeader} alt={"black star header"}
-         css={{width: '100%', top: '-100px', position: 'relative'}}
+         css={{width: '35%', top: '30px', position: 'relative', zIndex: '1'}}
+    />
+    <img src={starHeader} alt={"black star header"}
+         css={{width: '35%', top: '30px', position: 'absolute', transform: 'scaleX(-1)', right: '0px',zIndex: '1'}}
     />
     <Text>
-      <h1>{title}</h1>
+      <br /><br />
+      <h1 css={{fontSize: '60px'}}>{title}</h1><hr css={{width: '300px',border: '0.5px solid white'}}/>
       <h3>{date}</h3>
 
       {children && <Subtitle>{children}</Subtitle>}

@@ -6,7 +6,9 @@ import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import AboutUsArticle from '../components/AboutUsArticle';
 import planet from '../../static/planet.svg'
-import backpackGirl from '../../static/backpackGirl.svg';
+import line from '../../static/line.svg';
+import line2 from '../../static/line2.svg';
+import rocket from '../../static/rocket.svg';
 
 
 
@@ -18,6 +20,7 @@ const PurposeText = styled.text`
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   font-size: 64px;
+  color: #ffffff;
 `;
 
 const HeadingName = styled.h2`
@@ -93,16 +96,59 @@ const GridWrapper2 = styled.div`
   height: 100%;
 `;
 
+const Image = styled.img`
+  position: absolute;
+  right: -30px;
+  top: 330px;
+  z-index: 2;
+`;
+
+const Image2 = styled.img`
+  position: absolute;
+  left: 40px;
+  top: 350px;
+  z-index: 2;
+`;
+
+const Image3 = styled.img`
+  position: absolute;
+  left: 160px;
+  top: 450px;
+  z-index: 2;
+`;
+
 const About = center => (
     <Layout>
-      <Helmet title={'About Page'}/>
-      <Header title="About Page">Gatsby Tutorial Starter</Header>
+      <Helmet title={'About Us'}/>
+      <Header title="About Us">"A long time ago in a galaxy far, far away..."</Header>
+
       <Container center={center}>
+        <Image
+          src={line}
+          alt={'line'}
+          height={'400px'}
+          width={'400px'}
+          vspace="0"
+        />
+        <Image2
+          src={rocket}
+          alt={'line'}
+          height={'150px'}
+          width={'200px'}
+          vspace="0"
+        />
+        <Image3
+          src={line2}
+          alt={'line'}
+          height={'150px'}
+          width={'200px'}
+          vspace="0"
+        />
         <PurposeText>
           OUR PURPOSE
         </PurposeText>
         <br/>
-        <h3>
+        <h3 css={{color: '#ffffff'}}>
           To <EmphasisBlue>empower</EmphasisBlue> and <EmphasisBlue>inspire</EmphasisBlue> students to realise their
           potential to contribute to the future of the space industry.
         </h3>
@@ -117,7 +163,7 @@ const About = center => (
       </Container>
       <GridWrapper>
         <AboutUsArticle/>
-        <img src={planet} styles={"background-color: #ffffff"} alt={"planet"} height={"600px"} ></img>
+        <img src={planet} alt={"planet"} height={"600px"} ></img>
         {/*<svg height="800" width="800">*/}
           {/*<circle cx="300" cy="250" r="200" stroke="black" fill="white" />*/}
         {/*</svg>*/}
