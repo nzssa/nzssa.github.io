@@ -31,12 +31,20 @@ const Information = styled.div`
   }
 `;
 
-const PostLink = styled.h3`
-  display: table;
+const PostTitleLink = styled.h3`
+  display: inline-block;
   font-weight: normal;
   :hover {
     font-weight: bold;
   }
+`;
+
+const PostWrapper = styled.div`
+  display: table;
+`;
+
+const Byline = styled.span`
+  
 `;
 
 const Tag = ({ pageContext }) => {
@@ -52,9 +60,12 @@ const Tag = ({ pageContext }) => {
       <Container>
         <Information>
           {posts.map((post, index) => (
-            <Link key={index} to={post.frontmatter.path}>
-              <PostLink>{post.frontmatter.title}</PostLink>
-            </Link>
+            <PostWrapper>
+              <Link key={index} to={post.frontmatter.path}>
+                <PostTitleLink>{post.frontmatter.title}</PostTitleLink>
+              </Link>
+              <Byline> — by AJ</Byline>
+            </PostWrapper>
           ))}
         </Information>
       </Container>

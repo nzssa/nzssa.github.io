@@ -12,27 +12,27 @@ const Text = styled.div`
 
 const HeaderTitle = styled.h1`
   margin: 0;
-`
+`;
 
 const Events = ({ data }) => {
-  console.log(data)
+  console.log(data);
   const { edges } = data.allMarkdownRemark;
-  console.log(edges)
+  console.log(edges);
   console.log(edges[0]);
   return (
     <Layout>
       <Helmet title={'Events Page'} />
       <Header title="Events Page">Gatsby Tutorial Starter</Header>
       <Container>
-      <HeaderTitle>Upcoming</HeaderTitle>
-      {edges.map(({ node }) => (
-        <SingleEvent
-          key={node.id}
-          title={node.frontmatter.title}
-          date={node.frontmatter.date}
-          excerpt={node.excerpt}
-        />
-      ))}
+        <HeaderTitle>Upcoming</HeaderTitle>
+        {edges.map(({ node }) => (
+          <SingleEvent
+            key={node.id}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+            excerpt={node.excerpt}
+          />
+        ))}
       </Container>
     </Layout>
   );
