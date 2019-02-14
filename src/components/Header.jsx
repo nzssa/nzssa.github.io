@@ -72,7 +72,7 @@ const Header = ({ children, title, date, cover }) => (
       {/*<br />*/}
       {/*<br />*/}
       <h1 css={{ fontSize: '3rem', zIndex: 100 }}>{title}</h1>
-      <hr css={{ width: '300px', border: '0.5px solid white' }} />
+      <hr css={{ width: '300px', border: '0.5px solid white', marginBottom: 0 }} />
       <h3>{date}</h3>
 
       {children && <Subtitle>{children}</Subtitle>}

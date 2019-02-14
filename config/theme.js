@@ -80,7 +80,7 @@ const theme = {
   },
   layout: {
     article: '46rem',
-    base: '70rem',
+    base: '60%',
     big: '83.33333rem',
   },
   borderRadius: {

@@ -61,7 +61,8 @@ const Index = ({ data }) => {
         src={logo}
         styles={'background-color: #000000'}
         alt={'backpackGirl'}
-        height={'500px'}
+        // height={'500px'}
+        width={'35%'}
         align="left"
       />
       <Helmet title={'Home Page'} />
