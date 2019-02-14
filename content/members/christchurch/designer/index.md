@@ -2,9 +2,9 @@
 path: "/tutorial"
 cover: "./finance.jpg"
 slug: "tutorial"
-date: "4"
-title: "TREASURER"
-name: "Diana Timchur Kommedal"
+date: "5"
+title: "HEAD DESIGNER"
+name: "Megan Taylor"
 link: ""
 tags: ['gatsby', 'tutorial']
 published: true
