@@ -24,15 +24,16 @@ const Events = ({ data }) => {
       <Helmet title={'Events Page'} />
       <Header title="Events Page">Gatsby Tutorial Starter</Header>
       <Container>
-        <HeaderTitle>Upcoming</HeaderTitle>
-        {edges.map(({ node }) => (
-          <SingleEvent
-            key={node.id}
-            title={node.frontmatter.title}
-            date={node.frontmatter.date}
-            excerpt={node.excerpt}
-          />
-        ))}
+      <HeaderTitle>Upcoming</HeaderTitle>
+      {edges.map(({ node }) => (
+        <SingleEvent
+          key={node.id}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          excerpt={node.excerpt}
+          colour={node.frontmatter.colour}
+        />
+      ))}
       </Container>
     </Layout>
   );
@@ -50,6 +51,7 @@ Events.propTypes = {
             frontmatter: PropTypes.shape({
               title: PropTypes.string.isRequired,
               date: PropTypes.string.isRequired,
+              colour: PropTypes.string.isRequired,
               tags: PropTypes.array,
             }),
           }),
@@ -76,6 +78,7 @@ export const query = graphql`
             title
             slug
             date
+            colour
             published
             _PARENT
           }

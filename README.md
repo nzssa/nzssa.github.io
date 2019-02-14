@@ -12,23 +12,31 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: incorporate brand into site design
 
-:white_large_square: add copy
+:white_large_square: finish and order all blog posts
+
+:white_large_square: hard-code about us page for design review
 
 :white_large_square: add form submission to Contact Us
 
-:white_large_square: fix up blog post tags 
+:white_check_mark: fix up blog post tags 
 
-:white_large_square: add author to blog posts 
+:white_check_mark: add author to blog posts 
 
 :white_large_square: finish team page (add members)
 
 :white_large_square: fix up /tags/tagName layout (and add author, date)
 
-:white_large_square: add polished article to About Us page
+:white_check_mark: finish polished article for About Us page
 
-:white_large_square: add colour labels to events to indicate location
+:white_check_mark: add colour labels to events to indicate location
+
+:white_large_square: update events colour var so only location needs to be indicated
 
 :white_large_square: update previous/next link at bottom of blog posts
+
+:white_large_square: update contact page with appropriate linked in profiles
+
+:white_large_square: add facebook links to repspective colonies and "where to find more info" to contact us page
 
 ## Starter Features
 
