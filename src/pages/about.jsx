@@ -20,6 +20,7 @@ const PurposeText = styled.text`
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   font-size: 64px;
+  color: #ffffff;
 `;
 
 const HeadingName = styled.h2`
@@ -156,7 +157,7 @@ const About = center => (
           OUR PURPOSE
         </PurposeText>
         <br/>
-        <h3>
+        <h3 css={{color: '#ffffff'}}>
           To <EmphasisBlue>empower</EmphasisBlue> and <EmphasisBlue>inspire</EmphasisBlue> students to realise their
           potential to contribute to the future of the space industry.
         </h3>

@@ -61,7 +61,7 @@ const Information = styled.div`
   h1 {
     font-size: 2rem;
     display: inline-block;
-    color: ${props => props.theme.colors.black.base};
+    color: ${props => props.theme.colors.white.base};
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
       color: ${props => props.theme.colors.primary.base};

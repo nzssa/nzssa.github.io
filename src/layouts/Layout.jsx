@@ -50,7 +50,21 @@ injectGlobal`
   }
   h1{
     font-family: ${theme.fontFamily.heading};
+    color: #ffffff;
   }
+  h2 {
+    color: #ffffff;
+  }
+  h3 {
+    color: #ffffff;
+  }
+  h4 {
+    color: #ffffff;
+  }
+  p {
+    color: #ffffff;
+  }
+
 
   ${headroom}
 `;
