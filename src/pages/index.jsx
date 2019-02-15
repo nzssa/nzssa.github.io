@@ -62,6 +62,9 @@ const Index = ({ data }) => {
         styles={'background-color: #000000'}
         alt={'logo'}
         height={'500px'}
+        alt={'backpackGirl'}
+        // height={'500px'}
+        width={'35%'}
         align="left"
       />
       <Helmet title={'Home Page'} />
@@ -124,7 +127,7 @@ export const query = graphql`
             author
             path
             tags
-            date(formatString: "MM.DD.YYYY")
+            date
             cover {
               childImageSharp {
                 fluid(

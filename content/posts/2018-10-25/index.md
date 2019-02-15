@@ -1,5 +1,5 @@
 ---
-path: "/tutorial"
+path: "/industry-tour-to-kiwistar"
 cover: "./blocks.jpg"
 slug: "tutorial"
 date: "2018-10-20"

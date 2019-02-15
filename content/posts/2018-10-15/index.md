@@ -1,5 +1,5 @@
 ---
-path: "/post-one"
+path: "/act-in-space-hackathon"
 cover: "./actInSpace.jpg"
 slug: "post-one"
 date: "2018-05-28"

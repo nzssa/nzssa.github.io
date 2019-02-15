@@ -1,5 +1,5 @@
 ---
-path: "/post-three"
+path: "/guardians-of-the-galaxy"
 cover: "./gg.jpg"
 slug: "post-three"
 date: "2018-10-17"

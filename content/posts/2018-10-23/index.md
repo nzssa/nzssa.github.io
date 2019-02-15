@@ -1,5 +1,5 @@
 ---
-path: "/tutorial"
+path: "/talk-from-sarah-kessans"
 cover: "./blocks.jpg"
 slug: "tutorial"
 date: "2018-10-20"

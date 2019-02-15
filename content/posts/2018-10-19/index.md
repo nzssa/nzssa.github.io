@@ -1,5 +1,5 @@
 ---
-path: "/post-five"
+path: "/meeting-with-justin"
 cover: "./mayor.jpg"
 slug: "post-five"
 date: "2018-10-19"

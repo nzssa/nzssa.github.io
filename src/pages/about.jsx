@@ -5,13 +5,12 @@ import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import AboutUsArticle from '../components/AboutUsArticle';
-import planet from '../../static/planet.jpg'
+import planet from '../../static/planet.jpg';
 import line from '../../static/line.png';
 import line2 from '../../static/line2.png';
 import line3 from '../../static/line3.png';
 import rocket from '../../static/rocket.jpg';
 import test from '../../static/backpack-girl.jpg';
-import { Link } from 'gatsby';
 
 const Card = styled.div`
 `;
@@ -24,8 +23,7 @@ const ButtonText = styled.div`
     &:hover {
     color: ${props => props.theme.colors.primary.base};
   }
-
-`;
+`
 
 const PurposeText = styled.text`
   font-family: 'Rubik', sans-serif;
@@ -42,7 +40,7 @@ const HeadingName = styled.h2`
   padding-right: 0px;
   padding-bottom: 0px;
   margin: 10px;
-`
+`;
 
 const SubHeading = styled.text`
   font-family: 'Rubik', sans-serif;
@@ -61,14 +59,14 @@ const EmphasisBlue = styled.text`
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   font-size: 30px;
-  color: #69BACC;
+  color: #69bacc;
 `;
 
 const EmphasisYellow = styled.text`
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   font-size: 30px;
-  color: #F8E074;
+  color: #f8e074;
 `;
 
 
@@ -194,6 +192,8 @@ const About = center => (
     <Layout>
       <Helmet title={'About Us'}/>
       <Header title="About Us">"A long time ago in a galaxy far, far away..."</Header>
+      <p css={{textAlign: 'center'}}>"A long time ago in a galaxy far, far away..."</p>
+
 
       {/*OUR PURPOSE*/}
       <Container center={center}>
@@ -363,4 +363,3 @@ export default About;
 Container.propTypes = {
   center: PropTypes.object,
 };
-

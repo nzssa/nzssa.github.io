@@ -10,7 +10,8 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Blog Page'} />
-      <Header title="Blog">Gatsby Tutorial Starter</Header>
+      <Header title="Blog"></Header>
+      <p css={{textAlign: 'center'}}>Check out what we've been up to!</p>
       {edges.map(({ node }) => (
         <BlogList
           key={node.id}
@@ -66,7 +67,7 @@ export const query = graphql`
             author
             path
             tags
-            date(formatString: "MM.DD.YYYY")
+            date
             cover {
               childImageSharp {
                 fluid(
