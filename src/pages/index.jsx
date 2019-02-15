@@ -65,6 +65,7 @@ const Index = ({ data }) => {
         alt={'backpackGirl'}
         // height={'500px'}
         width={'35%'}
+        height={'auto'}
         align="left"
       />
       <Helmet title={'Home Page'} />
