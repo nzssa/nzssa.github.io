@@ -11,12 +11,20 @@ import line2 from '../../static/line2.png';
 import line3 from '../../static/line3.png';
 import rocket from '../../static/rocket.jpg';
 import test from '../../static/backpack-girl.jpg';
+import { Link } from 'gatsby';
 
 const Card = styled.div`
 `;
 
-const Text = styled.div`
-    margin: 2rem 10rem;
+const ButtonText = styled.div`
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    transition: all ${props => props.theme.transitions.default.duration};
+    &:hover {
+    color: ${props => props.theme.colors.primary.base};
+  }
+
 `;
 
 const PurposeText = styled.text`
@@ -144,7 +152,7 @@ const Line4 = styled.img`
   z-index: 2;
 `;
 
-const Button = styled.button` {
+const Button = styled.button` 
   background-color: #ffffff;
   border: none;
   color: black;
@@ -157,7 +165,30 @@ const Button = styled.button` {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
+
 `;
+
+const LinkColor = styled.div`
+  h1 {
+    font-size: 2rem;
+    display: inline-block;
+    color: ${props => props.theme.colors.white.base};
+    transition: all ${props => props.theme.transitions.default.duration};
+    &:hover {
+      color: ${props => props.theme.colors.primary.base};
+    }
+  }
+  text-align: center;
+  flex-basis: 100%;
+  max-width: 100%;
+  width: 100%;
+  @media (max-width: 800px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+`;
+
 
 const About = center => (
     <Layout>
@@ -227,9 +258,10 @@ const About = center => (
 
 
       {/*BUTTON TO BOOK WORKSHOP*/}
-      <h2 css={{textAlign: 'center', paddingTop: '50px'}}>
-        <Button><a href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></Button>
-      </h2>
+      <h1 css={{textAlign: 'center', paddingTop: '50px', color: 'black'}}>
+        <Button><a href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!" >Book a workshop</a></Button>
+      </h1>
+
 
 
       {/*VALUES AND CODE OF CONDUCT*/}
@@ -252,6 +284,7 @@ const About = center => (
           {/*CODE OF CONDUCT*/}
           <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>CODE OF CONDUCT</HeadingName>
           <HeadingPosition >
+            < br />< br />
             It's pretty simple.
             < br />< br />
             DON'T BE A <EmphasisBlue>J.E.R.K</EmphasisBlue>
@@ -270,6 +303,20 @@ const About = center => (
         </Card>
       </GridWrapperHalf>
 
+      <GridWrapperThirds css={{paddingTop: '250px'}}>
+        {/*BUTTON TO BOOK WORKSHOP*/}
+        <ButtonText css={{align: 'left'}}>
+          <Button><a href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></Button>
+        </ButtonText>
+        {/*BUTTON TO START A BRANCH*/}
+        <ButtonText css={{align: 'center'}}>
+          <Button><a href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></Button>
+        </ButtonText>
+        {/*BUTTON TO BECOME AN AMBASSADOR*/}
+        <ButtonText css={{align: 'right'}}>
+          <Button><a href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!">Become an ambassador</a></Button>
+        </ButtonText>
+      </GridWrapperThirds>
 
       {/*ADDED IMAGES*/}
       <Line1
