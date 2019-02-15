@@ -142,26 +142,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 75)
-          frontmatter {
-            title
-            author
-            path
-            tags
-            date
-            cover {
-              childImageSharp {
-                fluid(
-                  maxWidth: 1000
-                  quality: 90
-                  traceSVG: { color: "#2B2B2F" }
-                ) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
-          }
+          ...contentFields
         }
       }
     }
@@ -173,7 +154,14 @@ export const query = graphql`
     ) {
       edges {
         node {
-          id
+          ...contentFields
+        }
+      }
+    }
+  }
+  
+  fragment contentFields on MarkdownRemark {
+            id
           excerpt(pruneLength: 75)
           frontmatter {
             title
@@ -193,8 +181,5 @@ export const query = graphql`
               }
             }
           }
-        }
-      }
-    }
   }
 `;
