@@ -8,8 +8,9 @@ import AboutUsArticle from '../components/AboutUsArticle';
 import planet from '../../static/planet.jpg'
 import line from '../../static/line.png';
 import line2 from '../../static/line2.png';
+import line3 from '../../static/line3.png';
 import rocket from '../../static/rocket.jpg';
-import stats from '../../static/stats.png';
+import test from '../../static/backpack-girl.jpg';
 
 const Card = styled.div`
 `;
@@ -62,19 +63,7 @@ const EmphasisYellow = styled.text`
   color: #F8E074;
 `;
 
-const EmphasisOrange = styled.text`
-  font-family: 'Rubik', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  color: #DF9551;
-`;
 
-const EmphasisRed = styled.text`
-  font-family: 'Rubik', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  color: #C97369;
-`;
 
 const GridWrapper = styled.div`
   margin: 0 auto;
@@ -87,14 +76,14 @@ const GridWrapper = styled.div`
   align-content: space-around;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     width: 90%;
-    grid: 1000px 600px / 1000px 600px;
+    grid: 300px 600px / 300px 600px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     width: 95%;
     grid: repeat(6, 600px) / 600px;
   }
   max-width: ${props => props.theme.layout[props.type]};
-  height: 100%;
+  height: 30%;
 `;
 
 const GridWrapper2 = styled.div`
@@ -119,24 +108,39 @@ const GridWrapper2 = styled.div`
   height: 100%;
 `;
 
-const Image = styled.img`
+
+const Line1 = styled.img`
   position: absolute;
   right: -30px;
   top: 470px;
   z-index: 2;
 `;
 
-const Image2 = styled.img`
+const RocketImage = styled.img`
   position: absolute;
   left: 40px;
   top: 350px;
   z-index: 2;
 `;
 
-const Image3 = styled.img`
+const Line2 = styled.img`
   position: absolute;
   left: 180px;
   top: 480px;
+  z-index: 2;
+`;
+
+const Line3 = styled.img`
+  position: absolute;
+  left: -210px;
+  top: 1250px;
+  z-index: 2;
+`;
+
+const Line4 = styled.img`
+  position: absolute;
+  left: 1510px;
+  top: 1750px;
   z-index: 2;
 `;
 
@@ -147,21 +151,21 @@ const About = center => (
       <Header title="About Us">"A long time ago in a galaxy far, far away..."</Header>
 
       <Container center={center}>
-        <Image
+        <Line1
           src={line}
           alt={'line'}
           height={'100px'}
           width={'360px'}
           vspace="0"
         />
-        <Image2
+        <RocketImage
           src={rocket}
           alt={'line'}
           height={'150px'}
           width={'150px'}
           vspace="0"
         />
-        <Image3
+        <Line2
           src={line2}
           alt={'line'}
           height={'100px'}
@@ -232,22 +236,45 @@ const About = center => (
           <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>OUR VALUES</HeadingName>
           <HeadingPosition >
             < br />< br />
-            <EmphasisRed>Be Bold</EmphasisRed>< br />
+            <EmphasisYellow>Be Bold</EmphasisYellow>< br />
             EXPLORE > TAKE RISKS > CREATE > CHALLENGE YOURSELF
             < br />< br />
-            <EmphasisOrange>Have Fun</EmphasisOrange>< br />
+            <EmphasisYellow>Have Fun</EmphasisYellow>< br />
             JOIN A COMMUNITY > MAKE MISTAKES > SUCCEED TOGETHER
           < br />< br />
             <EmphasisYellow>Build a better world</EmphasisYellow>< br />
             NEW KNOWLEDGE > INNOVATION > MAKE YOUR DIFFERENCE
-
-
           </HeadingPosition>
+
+          <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>CODE OF CONDUCT</HeadingName>
+          <HeadingPosition >
+            It's pretty simple. < br />< br />
+            DON'T BE A <EmphasisBlue>J.E.R.K</EmphasisBlue>< br />< br />
+            <EmphasisBlue>J</EmphasisBlue>udgmental, <EmphasisBlue>E</EmphasisBlue>xclusive, <EmphasisBlue>R</EmphasisBlue>ude, <EmphasisBlue>K</EmphasisBlue>now-it-all
+            < br />< br />< br />< br />
+            INSTEAD, BE <EmphasisBlue>N.I.C.E</EmphasisBlue>< br />< br />
+            <EmphasisBlue>N</EmphasisBlue>o pre-bias, <EmphasisBlue>I</EmphasisBlue>nclusive, <EmphasisBlue>C</EmphasisBlue>ommunicate, <EmphasisBlue>E</EmphasisBlue>ncouraging
+          </HeadingPosition>
+        </Card>
+        <Card>
+          <img css={{paddingLeft: '10px'}} src={test} alt={"planet"} height={"800px"} ></img>
         </Card>
       </GridWrapper>
 
-        <HeadingName  css={{textAlign: 'center', fontWeight: 'bold', fontSize: '40px'}}>CURRENT STATS</HeadingName>
-        <img src={stats} alt={"planet"} height={"400px"} align={"center"} ></img>
+      <Line3
+        src={line3}
+        alt={'line'}
+        height={'200px'}
+        width={'460px'}
+        vspace="0"
+      />
+      <Line4
+        src={line3}
+        alt={'line'}
+        height={'200px'}
+        width={'460px'}
+        vspace="0"
+      />
 
 
 
