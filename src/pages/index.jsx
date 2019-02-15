@@ -5,8 +5,8 @@ import Helmet from 'react-helmet';
 import styled from 'react-emotion';
 import { HomeHeader, Header, PostList } from 'components';
 import { Layout } from 'layouts';
-import backpackGirl from '../../static/backpackGirl.svg';
-import stars from '../../static/stars.svg';
+// import backpackGirl from '../../static/backpackGirl.svg';
+// import stars from '../../static/stars.svg';
 import logo from '../../static/logo/white-logo.png';
 
 const PostWrapper = styled.div`
@@ -25,15 +25,15 @@ const PostWrapper = styled.div`
   }
 `;
 
-const Image = styled.img`
-  position: absolute;
-  left: 500px;
-  top: -140px;
-  z-index: 1;
-  background-color: #000000;
-  background-repeat: repeat-x;
-  background-image: url('../../static/stars.svg');
-`;
+// const Image = styled.img`
+//   position: absolute;
+//   left: 500px;
+//   top: -140px;
+//   z-index: 1;
+//   background-color: #000000;
+//   background-repeat: repeat-x;
+//   background-image: url('../../static/stars.svg');
+// `;
 
 const Image2 = styled.img`
   background-color: #000000;
@@ -49,17 +49,19 @@ const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <Image
-        src={stars}
-        styles={'background-color: #000000'}
-        alt={'stars'}
-        height={'400px'}
-        width={'400px'}
-        vspace="0"
-      />
+      {/*<Image*/}
+        {/*src={stars}*/}
+        {/*styles={'background-color: #000000'}*/}
+        {/*alt={'stars'}*/}
+        {/*height={'400px'}*/}
+        {/*width={'400px'}*/}
+        {/*vspace="0"*/}
+      {/*/>*/}
       <Image2
         src={logo}
         styles={'background-color: #000000'}
+        alt={'logo'}
+        height={'500px'}
         alt={'backpackGirl'}
         // height={'500px'}
         width={'35%'}
