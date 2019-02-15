@@ -16,12 +16,12 @@ const PostWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   place-content: space-between space-evenly;
-  margin: 4rem 4rem 1rem 4rem;
+  margin: 2rem 4rem 1rem 4rem;
   @media (max-width: 1000px) {
-    margin: 4rem 2rem 1rem 2rem;
+    margin: 2rem 2rem 1rem 2rem;
   }
   @media (max-width: 700px) {
-    margin: 4rem 1rem 1rem 1rem;
+    margin: 2rem 1rem 1rem 1rem;
   }
 `;
 
@@ -41,21 +41,24 @@ const Image2 = styled.img`
   top: 100px;
   left: 100px;
   z-index: 1;
+`;
 
-
-`
+const Subheading = styled.h2`
+  font-family: 'Rubik', sans-serif;
+  margin: 0 6rem;
+`;
 
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
       {/*<Image*/}
-        {/*src={stars}*/}
-        {/*styles={'background-color: #000000'}*/}
-        {/*alt={'stars'}*/}
-        {/*height={'400px'}*/}
-        {/*width={'400px'}*/}
-        {/*vspace="0"*/}
+      {/*src={stars}*/}
+      {/*styles={'background-color: #000000'}*/}
+      {/*alt={'stars'}*/}
+      {/*height={'400px'}*/}
+      {/*width={'400px'}*/}
+      {/*vspace="0"*/}
       {/*/>*/}
       <Image2
         src={logo}
@@ -72,6 +75,8 @@ const Index = ({ data }) => {
       <HomeHeader title="New Zealand Students' Space Association">
         Be bold. Have fun. Build a better world.
       </HomeHeader>
+      <Subheading>Upcoming Events</Subheading>
+      <hr css={{ width: '230px', border: '0.5px solid white', marginLeft: '6rem', marginTop: '1rem' }} />
       <PostWrapper>
         {edges.map(({ node }) => (
           <PostList
@@ -85,6 +90,8 @@ const Index = ({ data }) => {
           />
         ))}
       </PostWrapper>
+      <Subheading>Blog Posts</Subheading>
+      <hr css={{ width: '140px', border: '0.5px solid white', marginLeft: '6rem', marginTop: '1rem' }} />
     </Layout>
   );
 };
