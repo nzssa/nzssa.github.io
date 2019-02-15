@@ -49,7 +49,8 @@ const Subheading = styled.h2`
 `;
 
 const Index = ({ data }) => {
-  const { edges } = data.allMarkdownRemark;
+  // const { eventsEdges } = data.upcomingEvents;
+  // const { postsEdges } = data.blogPosts;
   return (
     <Layout>
       {/*<Image*/}
@@ -78,7 +79,7 @@ const Index = ({ data }) => {
       <Subheading>Upcoming Events</Subheading>
       <hr css={{ width: '230px', border: '0.5px solid white', marginLeft: '6rem', marginTop: '1rem' }} />
       <PostWrapper>
-        {edges.map(({ node }) => (
+        {data.upcomingEvents.edges.map(({ node }) => (
           <PostList
             key={node.id}
             cover={node.frontmatter.cover.childImageSharp.fluid}
@@ -92,6 +93,19 @@ const Index = ({ data }) => {
       </PostWrapper>
       <Subheading>Blog Posts</Subheading>
       <hr css={{ width: '140px', border: '0.5px solid white', marginLeft: '6rem', marginTop: '1rem' }} />
+      <PostWrapper>
+        {data.blogPosts.edges.map(({ node }) => (
+          <PostList
+            key={node.id}
+            cover={node.frontmatter.cover.childImageSharp.fluid}
+            path={node.frontmatter.path}
+            title={node.frontmatter.title}
+            author={node.frontmatter.author}
+            date={node.frontmatter.date}
+            excerpt={node.excerpt}
+          />
+        ))}
+      </PostWrapper>
     </Layout>
   );
 };
@@ -121,10 +135,41 @@ Index.propTypes = {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
-      limit: 6
+    upcomingEvents: allMarkdownRemark(
+      limit: 3
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "/(/content/events)/.*\\.md$/" } }
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 75)
+          frontmatter {
+            title
+            author
+            path
+            tags
+            date
+            cover {
+              childImageSharp {
+                fluid(
+                  maxWidth: 1000
+                  quality: 90
+                  traceSVG: { color: "#2B2B2F" }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+      blogPosts: allMarkdownRemark(
+      limit: 3
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/(/content/posts)/.*\\.md$/" } }
     ) {
       edges {
         node {
