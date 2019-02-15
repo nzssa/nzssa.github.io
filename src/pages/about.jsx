@@ -65,7 +65,7 @@ const EmphasisYellow = styled.text`
 
 
 
-const GridWrapper = styled.div`
+const GridWrapperHalf = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 600px 600px;
@@ -86,7 +86,7 @@ const GridWrapper = styled.div`
   height: 30%;
 `;
 
-const GridWrapper2 = styled.div`
+const GridWrapperThirds = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 400px 400px 400px;
@@ -144,37 +144,29 @@ const Line4 = styled.img`
   z-index: 2;
 `;
 
+const Button = styled.button` {
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+`;
 
 const About = center => (
     <Layout>
       <Helmet title={'About Us'}/>
       <Header title="About Us">"A long time ago in a galaxy far, far away..."</Header>
 
+      {/*OUR PURPOSE*/}
       <Container center={center}>
-        <Line1
-          src={line}
-          alt={'line'}
-          height={'100px'}
-          width={'360px'}
-          vspace="0"
-        />
-        <RocketImage
-          src={rocket}
-          alt={'line'}
-          height={'150px'}
-          width={'150px'}
-          vspace="0"
-        />
-        <Line2
-          src={line2}
-          alt={'line'}
-          height={'100px'}
-          width={'150px'}
-          vspace="0"
-        />
-        <PurposeText>
-          OUR PURPOSE
-        </PurposeText>
+        <PurposeText>OUR PURPOSE</PurposeText>
         <br/>
         <h3 css={{color: '#ffffff'}}>
           To <EmphasisBlue>empower</EmphasisBlue> and <EmphasisBlue>inspire</EmphasisBlue> students to realise their
@@ -187,14 +179,18 @@ const About = center => (
           challenge each other to explore their abilities in space related subjects.
         </h3>
         <br/>
-
       </Container>
-      <GridWrapper>
+
+      {/*WHY WE EXIST*/}
+      <GridWrapperHalf>
         <AboutUsArticle/>
         <img src={planet} alt={"planet"} height={"600px"} ></img>
-      </GridWrapper>
+      </GridWrapperHalf>
 
-      <GridWrapper2>
+      {/*PRIMARY SECONDARY TERTIARY DISPLAY*/}
+      <GridWrapperThirds>
+
+        {/*PRIMARY*/}
         <h3 css={{textAlign: 'center'}}>
           <svg height="200" width="300"><circle cx="150" cy="100" r="80" fill="#69BACC" /></svg>
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px'}}>Primary</PurposeText>
@@ -203,6 +199,8 @@ const About = center => (
             Creating opportunities for Primary School children to experience the wonder of space through Single and Multiple Event Learning Modules, some of which include ‘Rocket Building’, ‘Training Like an Astronaut’, and ‘Going to Space’.
           </h4>
         </h3>
+
+        {/*SECONDARY*/}
         <h3 css={{textAlign: 'center'}}>
           <svg height="200" width="300">
             <circle cx="150" cy="100" r="80" fill="#71B585" />
@@ -213,6 +211,8 @@ const About = center => (
             Encourage Secondary students to consider space as a viable career option through presentations at school assembly's, workshops, and competitions. Our long term goal is to introduce a NCEA Space Standard.
           </h4>
         </h3>
+
+        {/*TERTIARY*/}
         <h3 css={{textAlign: 'center'}}>
           <svg height="200" width="300">
             <circle cx="150" cy="100" r="80" fill="#6F4D88" />
@@ -223,16 +223,19 @@ const About = center => (
             Empower Tertiary students to explore the current Space Industry through networking, inter-university competitions, Space Conferences, Industry tours, and networking events.  A strong focus on Entrepreneurship and what a career in space looks like.
           </h4>
         </h3>
-      </GridWrapper2>
-      <svg width="1000" height="110">
-        <g>
-          <rect y="50" x="650" rx="20" ry="20" width="200" height="50" fill="white" stroke="black" />
-          <text y="80" x="670" font-family="Rubik" font-size="20" fill="black">Book a workshop</text>
-        </g>
-      </svg>
+      </GridWrapperThirds>
 
-      <GridWrapper>
+
+      {/*BUTTON TO BOOK WORKSHOP*/}
+      <h2 css={{textAlign: 'center', paddingTop: '50px'}}>
+        <Button><a href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></Button>
+      </h2>
+
+
+      {/*VALUES AND CODE OF CONDUCT*/}
+      <GridWrapperHalf>
         <Card>
+          {/*VALUES*/}
           <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>OUR VALUES</HeadingName>
           <HeadingPosition >
             < br />< br />
@@ -241,26 +244,48 @@ const About = center => (
             < br />< br />
             <EmphasisYellow>Have Fun</EmphasisYellow>< br />
             JOIN A COMMUNITY > MAKE MISTAKES > SUCCEED TOGETHER
-          < br />< br />
+            < br />< br />
             <EmphasisYellow>Build a better world</EmphasisYellow>< br />
             NEW KNOWLEDGE > INNOVATION > MAKE YOUR DIFFERENCE
           </HeadingPosition>
 
+          {/*CODE OF CONDUCT*/}
           <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>CODE OF CONDUCT</HeadingName>
           <HeadingPosition >
-            It's pretty simple. < br />< br />
-            DON'T BE A <EmphasisBlue>J.E.R.K</EmphasisBlue>< br />< br />
+            It's pretty simple.
+            < br />< br />
+            DON'T BE A <EmphasisBlue>J.E.R.K</EmphasisBlue>
+            < br />< br />
             <EmphasisBlue>J</EmphasisBlue>udgmental, <EmphasisBlue>E</EmphasisBlue>xclusive, <EmphasisBlue>R</EmphasisBlue>ude, <EmphasisBlue>K</EmphasisBlue>now-it-all
             < br />< br />< br />< br />
-            INSTEAD, BE <EmphasisBlue>N.I.C.E</EmphasisBlue>< br />< br />
+            INSTEAD, BE <EmphasisBlue>N.I.C.E</EmphasisBlue>
+            < br />< br />
             <EmphasisBlue>N</EmphasisBlue>o pre-bias, <EmphasisBlue>I</EmphasisBlue>nclusive, <EmphasisBlue>C</EmphasisBlue>ommunicate, <EmphasisBlue>E</EmphasisBlue>ncouraging
           </HeadingPosition>
         </Card>
-        <Card>
-          <img css={{paddingLeft: '10px'}} src={test} alt={"planet"} height={"800px"} ></img>
-        </Card>
-      </GridWrapper>
 
+        {/*BACKPACK-GIRL IMAGE*/}
+        <Card>
+          <img css={{paddingLeft: '0px'}} src={test} alt={"planet"} height={"800px"} ></img>
+        </Card>
+      </GridWrapperHalf>
+
+
+      {/*ADDED IMAGES*/}
+      <Line1
+        src={line}
+        alt={'line'}
+        height={'100px'}
+        width={'360px'}
+        vspace="0"
+      />
+      <Line2
+        src={line2}
+        alt={'line'}
+        height={'100px'}
+        width={'150px'}
+        vspace="0"
+      />
       <Line3
         src={line3}
         alt={'line'}
@@ -275,8 +300,13 @@ const About = center => (
         width={'460px'}
         vspace="0"
       />
-
-
+      <RocketImage
+        src={rocket}
+        alt={'line'}
+        height={'150px'}
+        width={'150px'}
+        vspace="0"
+      />
 
     </Layout>
 );
