@@ -1,5 +1,5 @@
 ---
-path: "/tutorial"
+path: "/star-gazing"
 cover: "./blocks.jpg"
 slug: "tutorial"
 date: "2018-10-20"

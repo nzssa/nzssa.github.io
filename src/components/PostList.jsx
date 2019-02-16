@@ -104,6 +104,7 @@ const Info = styled.div`
 
 const Title = styled.h2`
   margin-bottom: 0.6rem;
+  font-family: 'Rubik', sans-serif;
 `;
 
 const PostList = ({ cover, path, date, title, excerpt }) => (
@@ -113,7 +114,7 @@ const PostList = ({ cover, path, date, title, excerpt }) => (
     </Image>
     <StyledLink to={path}>
       <Info>
-        <span>{date}</span>
+        <p css={{marginBottom: '10px'}}>{date}</p>
         <Title>{title}</Title>
         <span>{excerpt}</span>
       </Info>

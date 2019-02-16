@@ -15,31 +15,29 @@ const Wrapper = styled.header`
   }
   position: relative;
   overflow: hidden;
+  margin: 4rem;
 `;
 
 const Text = styled.div`
   color: ${props => props.theme.colors.white.base};
   z-index: 1;
   position: relative;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   text-align: left;
   max-width: ${props => props.theme.layout.base};
-  padding: 0 3rem 0 0;
+  padding: 0 0 0 0;
   margin-bottom: 3rem;
   align-items: center;
+  float: right;
 `;
 
 const Subtitle = styled.p`
-  position: absolute;
-  max-width: 600px;
-  top: 90%;
-  left: 50%;
+  // position: relative;
+  width: 100%;
   color: ${props => props.theme.colors.white.base};
   z-index: 2;
+  text-align: right;
 `;
 
 const HomeHeader = ({ children, title, date, cover }) => (
@@ -48,11 +46,11 @@ const HomeHeader = ({ children, title, date, cover }) => (
     <Text>
       <h1
         css={{
-          fontSize: '70px',
+          fontSize: '4rem',
           fontWeight: 'bold',
           zIndex: '2',
           textAlign: 'right',
-          paddingLeft: '400px'
+          paddingLeft: '0'
         }}
       >
         {title}

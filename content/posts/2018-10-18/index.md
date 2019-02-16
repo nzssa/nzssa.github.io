@@ -1,5 +1,5 @@
 ---
-path: "/post-four"
+path: "/students-in-space-conference"
 cover: "./daniel.jpg"
 slug: "post-four"
 date: "2018-10-18"

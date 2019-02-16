@@ -52,7 +52,7 @@ const Team = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Team Page'} />
-      <Header title="Our Team">Gatsby Tutorial Starter</Header>
+      <Header title="Our Team"></Header>
 
       <Container>
         <HeaderTitle>Mission Control</HeaderTitle>

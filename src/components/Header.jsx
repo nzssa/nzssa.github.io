@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
-import starHeader from '../../static/black-stars-header.png'
+import starHeader from '../../static/black-stars-header.png';
 //import starHeader from '../../static/stars.svg'
 
 const Wrapper = styled.header`
@@ -12,12 +12,12 @@ const Wrapper = styled.header`
   // background: ${props => props.theme.gradient.rightToLeft};
   object-fit: cover;
   object-position: 50% 50%;
-  height: 300px;
+  height: 200px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
-    height: 200px;
+    height: 150px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 150px;
+    height: 100px;
   }
   position: relative;
   overflow: hidden;
@@ -28,7 +28,7 @@ const Text = styled.div`
   background-color: #000000;
   z-index: 0;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -37,7 +37,7 @@ const Text = styled.div`
   width: 100%;
   max-width: ${props => props.theme.layout.base};
   padding: 0 2rem;
-  margin-bottom: 3rem;
+  // margin-bottom: 3rem;
   align-items: center;
 `;
 
@@ -50,16 +50,29 @@ const Header = ({ children, title, date, cover }) => (
   <Wrapper>
     {/*<Img fluid={cover || {} || [] || ''} />*/}
     {/*<img src={starHeader} alt={"black star header"}*/}
-         {/*css={{width: '100%', top: '-100px', position: 'relative'}}*/}
-    <img src={starHeader} alt={"black star header"}
-         css={{width: '35%', top: '30px', position: 'relative', zIndex: '1'}}
+    {/*css={{width: '100%', top: '-100px', position: 'relative'}}*/}
+    <img
+      src={starHeader}
+      alt={'black star header'}
+      css={{ width: '35%', top: '30px', position: 'relative', zIndex: '-1' }}
     />
-    <img src={starHeader} alt={"black star header"}
-         css={{width: '35%', top: '30px', position: 'absolute', transform: 'scaleX(-1)', right: '0px',zIndex: '1'}}
+    <img
+      src={starHeader}
+      alt={'black star header'}
+      css={{
+        width: '35%',
+        top: '30px',
+        position: 'absolute',
+        transform: 'scaleX(-1)',
+        right: '0px',
+        zIndex: '-1',
+      }}
     />
     <Text>
-      <br /><br />
-      <h1 css={{fontSize: '60px'}}>{title}</h1><hr css={{width: '300px',border: '0.5px solid white'}}/>
+      {/*<br />*/}
+      {/*<br />*/}
+      <h1 css={{ fontSize: '3rem', zIndex: 100 }}>{title}</h1>
+      <hr css={{ width: '300px', border: '0.5px solid white', marginBottom: 0 }} />
       <h3>{date}</h3>
 
       {children && <Subtitle>{children}</Subtitle>}

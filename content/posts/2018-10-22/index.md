@@ -1,5 +1,5 @@
 ---
-path: "/tutorial"
+path: "/space-week-art-in-space"
 cover: "./blocks.jpg"
 slug: "tutorial"
 date: "2018-10-20"

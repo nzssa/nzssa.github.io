@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Wrapper = styled.section`
   text-align: ${props => (props.center ? 'center' : '')};
   margin: auto;
-  padding: 3rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   width: 60%;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     width: 90%;
