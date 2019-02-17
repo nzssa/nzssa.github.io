@@ -121,6 +121,19 @@ const Contact = center => (
     <Header title="Contact us"></Header>
 
     <GridWrapper css={{paddingTop: '100px'}}>
+
+      <Card>
+        <Logo css={{height: '140px', align: 'center'}}  src={nationalLogo} alt={"nationalLogo"} />
+        <Information>
+          <HeadingName style={{ color: '#FFF' }} css={{fontWeight: 'bold'}}>MISSION CONTROL</HeadingName>
+        </Information>
+        <HeadingPosition>
+          National Organisation
+          < br />< br />
+          sample@gmail.com
+        </HeadingPosition>
+      </Card>
+
       <Card>
         <a href="https://www.facebook.com/nzssachch/"><Logo css={{height: '150px', align: 'center'}}  src={christchurchLogo} alt={"christchurchLogo"} /></a>
         <Information>
@@ -144,18 +157,6 @@ const Contact = center => (
           Victoria University of Wellington
           < br />< br />
           <a style={{ color: '#FFF' }} href="https://www.facebook.com/studentsInSpace/">Visit our <UnderlineText>Facebook Page</UnderlineText></a>
-          < br />< br />
-          sample@gmail.com
-        </HeadingPosition>
-      </Card>
-
-      <Card>
-        <Logo css={{height: '140px', align: 'center'}}  src={nationalLogo} alt={"nationalLogo"} />
-        <Information>
-          <HeadingName style={{ color: '#FFF' }} css={{fontWeight: 'bold'}}>MISSION CONTROL</HeadingName>
-        </Information>
-        <HeadingPosition>
-          National Organisation
           < br />< br />
           sample@gmail.com
         </HeadingPosition>
