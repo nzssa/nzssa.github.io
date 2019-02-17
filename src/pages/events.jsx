@@ -7,11 +7,42 @@ import { Layout, Container } from 'layouts';
 import { graphql } from 'gatsby';
 
 const Text = styled.div`
-  margin: 2rem 10rem;
+  margin: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 220px;
 `;
 
 const HeaderTitle = styled.h1`
   margin: 0;
+`;
+
+const GridWrapperThirds = styled.div`
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 40px;
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  width: 75%;
+  align-content: space-around;
+  @media (max-width: ${props => props.theme.breakpoints.m}) {
+    width: 90%;
+    grid: 400px 400px 400px/ 300px 300px;
+  }
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+    width: 95%;
+    grid: repeat(6, 400px) / 300px;
+  }
+  max-width: ${props => props.theme.layout[props.type]};
+  height: 100%;
+`;
+
+const Card = styled.div`
 `;
 
 const Events = ({ data }) => {
@@ -23,6 +54,23 @@ const Events = ({ data }) => {
     <Layout>
       <Helmet title={'Events'} />
       <Header title="Events"></Header>
+
+      {/*LOCATION KEY DISPLAY*/}
+      <GridWrapperThirds>
+
+        {/*WELLINGTON*/}
+        <h3 css={{textAlign: 'center'}}>
+          <svg height="40" width="40"><circle cx="20" cy="20" r="20" fill="#6F4D88" /></svg>
+          <Text css={{fontWeight: 'bold', fontSize: '20px'}}>Wellington</Text>
+        </h3>
+
+        {/*SECONDARY*/}
+        <h3 css={{textAlign: 'center'}}>
+          <svg height="40" width="40"><circle cx="20" cy="20" r="20" fill="#1A4174" /></svg>
+          <Text css={{fontWeight: 'bold', fontSize: '20px'}}>Christchurch</Text>
+        </h3>
+      </GridWrapperThirds>
+
       <Container>
         <HeaderTitle>Upcoming</HeaderTitle>
         {edges.map(({ node }) => (
