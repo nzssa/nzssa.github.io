@@ -33,6 +33,7 @@ const GridWrapper = styled.div`
   }
   max-width: ${props => props.theme.layout[props.type]};
   height: 100%;
+  padding-bottom: 80px;
 `;
 
 const Card = styled.div`
@@ -88,26 +89,25 @@ const Logo = styled.img`
 
 const Button = styled.button` 
   background-color: #ffffff;
-  border: none;
   color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
+  padding: 15px 5px;
+  align: center;
   display: inline-block;
   font-size: 20px;
   font-family: 'Rubik', sans-serif;
-  margin: 4px 2px;
+  margin: 2px 2px;
   cursor: pointer;
   border-radius: 25px;
-  margin-left: 80px;
+  width: 300px;
+  margin:auto;
+  display:block;
 `;
 
 const ButtonText = styled.div`
     display: inline-block;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
-    padding-bottom: 160px;
-    padding-top: 60px;
+    align: center;
   }
 `
 
@@ -162,17 +162,17 @@ const Contact = center => (
       </Card>
 
       {/*BUTTON TO BOOK WORKSHOP*/}
-      <ButtonText css={{align: 'center'}}>
-        <Button><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></Button>
-      </ButtonText>
-      {/*BUTTON TO START A BRANCH*/}
-      <ButtonText css={{align: 'center'}}>
-        <Button><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></Button>
-      </ButtonText>
+      <Button>
+        <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></ButtonText>
+      </Button>
       {/*BUTTON TO BECOME AN AMBASSADOR*/}
-      <ButtonText css={{align: 'center'}}>
-        <Button><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!">Become an ambassador</a></Button>
-      </ButtonText>
+      <Button>
+        <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!">Become an ambassador</a></ButtonText>
+      </Button>
+      {/*BUTTON TO START A BRANCH*/}
+      <Button>
+        <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></ButtonText>
+      </Button>
 
     </GridWrapper>
 
