@@ -108,9 +108,12 @@ const ButtonText = styled.div`
     font-weight: bold;
     padding-bottom: 160px;
     padding-top: 60px;
-
   }
 `
+
+const UnderlineText = styled.text`
+  text-decoration: underline;
+`;
 
 const Contact = center => (
   <Layout>
@@ -119,28 +122,28 @@ const Contact = center => (
 
     <GridWrapper css={{paddingTop: '100px'}}>
       <Card>
-        <Logo css={{height: '150px', align: 'center'}}  src={christchurchLogo} alt={"christchurchLogo"} />
+        <a href="https://www.facebook.com/nzssachch/"><Logo css={{height: '150px', align: 'center'}}  src={christchurchLogo} alt={"christchurchLogo"} /></a>
         <Information>
-          <HeadingName css={{fontWeight: 'bold'}}>CHRISTCHURCH</HeadingName>
+          <a style={{ color: '#FFF' }} href="https://www.facebook.com/nzssachch/"><HeadingName css={{fontWeight: 'bold'}}> CHRISTCHURCH</HeadingName></a>
         </Information>
         <HeadingPosition>
           University of Canterbury
           < br />< br />
-          <a href="https://www.facebook.com/nzssachch/">Visit our Facebook Page</a>
+          <a style={{ color: '#FFF' }} href="https://www.facebook.com/nzssachch/">Visit our <UnderlineText>Facebook Page</UnderlineText></a>
           < br />< br />
           sample@gmail.com
         </HeadingPosition>
       </Card>
 
       <Card>
-        <Logo css={{height: '145px', align: 'center'}}  src={wellingtonLogo} alt={"wellingtonLogo"} />
+        <a href="https://www.facebook.com/studentsInSpace/"><Logo css={{height: '145px', align: 'center'}}  src={wellingtonLogo} alt={"wellingtonLogo"} /></a>
         <Information>
-          <HeadingName css={{fontWeight: 'bold'}}>WELLINGTON</HeadingName>
+          <a style={{ color: '#FFF' }} href="https://www.facebook.com/studentsInSpace/"><HeadingName css={{fontWeight: 'bold'}}>WELLINGTON</HeadingName></a>
         </Information>
         <HeadingPosition>
           Victoria University of Wellington
           < br />< br />
-          <a href="https://www.facebook.com/studentsInSpace/">Visit our Facebook Page</a>
+          <a style={{ color: '#FFF' }} href="https://www.facebook.com/studentsInSpace/">Visit our <UnderlineText>Facebook Page</UnderlineText></a>
           < br />< br />
           sample@gmail.com
         </HeadingPosition>
@@ -149,7 +152,7 @@ const Contact = center => (
       <Card>
         <Logo css={{height: '140px', align: 'center'}}  src={nationalLogo} alt={"nationalLogo"} />
         <Information>
-          <HeadingName css={{fontWeight: 'bold'}}>MISSON CONTROL</HeadingName>
+          <HeadingName style={{ color: '#FFF' }} css={{fontWeight: 'bold'}}>MISSION CONTROL</HeadingName>
         </Information>
         <HeadingPosition>
           National Organisation
@@ -160,15 +163,15 @@ const Contact = center => (
 
       {/*BUTTON TO BOOK WORKSHOP*/}
       <ButtonText css={{align: 'center'}}>
-        <Button><a href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></Button>
+        <Button><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></Button>
       </ButtonText>
       {/*BUTTON TO START A BRANCH*/}
       <ButtonText css={{align: 'center'}}>
-        <Button><a href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></Button>
+        <Button><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></Button>
       </ButtonText>
       {/*BUTTON TO BECOME AN AMBASSADOR*/}
       <ButtonText css={{align: 'center'}}>
-        <Button><a href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!">Become an ambassador</a></Button>
+        <Button><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!">Become an ambassador</a></Button>
       </ButtonText>
 
     </GridWrapper>
