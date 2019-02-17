@@ -5,7 +5,7 @@ slug: "tutorial"
 date: "3"
 title: "INTERNAL OPS"
 name: "Celine Jane"
-link: ""
+link: "https://www.linkedin.com/in/celine-jane-a6997b17a/"
 tags: ['gatsby', 'tutorial']
 published: true
 ---

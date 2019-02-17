@@ -59,11 +59,9 @@ const Information = styled.div`
 const TeamList = ({ key, pic, title, name, excerpt, link }) => (
   <Card>
     <Img css={{height: '200px', width: '200px', borderRadius: '50%', align: 'center', left: '100px'}} fluid={pic} />
-    <Information>
-      <Link to={link}>
+      <a href={link}>
         <HeadingName css={{fontWeight: 'bold'}}>{name}</HeadingName>
-      </Link>
-    </Information>
+      </a>
     <HeadingPosition>{title}</HeadingPosition>
   </Card>
 );
