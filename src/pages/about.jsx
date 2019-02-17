@@ -97,7 +97,7 @@ const GridWrapperThirds = styled.div`
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 400px;
-  grid-row-gap: 20px;
+  grid-row-gap: 0px;
   grid-column-gap: 40px;
   width: 75%;
   justify-content: space-around;
@@ -152,18 +152,18 @@ const Line4 = styled.img`
 
 const Button = styled.button` 
   background-color: #ffffff;
-  border: none;
   color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
+  padding: 15px 5px;
+  text-align: top;
   display: inline-block;
   font-size: 20px;
   font-family: 'Rubik', sans-serif;
-  margin: 4px 2px;
+  margin: 2px 2px;
   cursor: pointer;
   border-radius: 25px;
-
+  width: 300px;
+  margin:auto;
+  display:block;
 `;
 
 const LinkColor = styled.div`
@@ -255,12 +255,12 @@ const About = center => (
           </h4>
         </h3>
       </GridWrapperThirds>
-
+      < br />< br />
 
       {/*BUTTON TO BOOK WORKSHOP*/}
-      <h1 css={{textAlign: 'center', paddingTop: '50px', color: 'black'}}>
-        <Button><a href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!" >Book a workshop</a></Button>
-      </h1>
+      <Button>
+        <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></ButtonText>
+      </Button>
 
 
 
@@ -303,19 +303,19 @@ const About = center => (
         </Card>
       </GridWrapperHalf>
 
-      <GridWrapperThirds css={{paddingTop: '250px'}}>
+      <GridWrapperThirds css={{paddingTop: '60px'}}>
         {/*BUTTON TO BOOK WORKSHOP*/}
-        <ButtonText css={{align: 'left'}}>
-          <Button><a href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></Button>
-        </ButtonText>
-        {/*BUTTON TO START A BRANCH*/}
-        <ButtonText css={{align: 'center'}}>
-          <Button><a href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></Button>
-        </ButtonText>
+        <Button>
+          <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></ButtonText>
+        </Button>
         {/*BUTTON TO BECOME AN AMBASSADOR*/}
-        <ButtonText css={{align: 'right'}}>
-          <Button><a href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!">Become an ambassador</a></Button>
-        </ButtonText>
+        <Button>
+          <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!">Become an ambassador</a></ButtonText>
+        </Button>
+        {/*BUTTON TO START A BRANCH*/}
+        <Button>
+          <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></ButtonText>
+        </Button>
       </GridWrapperThirds>
 
       {/*ADDED IMAGES*/}
