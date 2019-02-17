@@ -191,7 +191,7 @@ const LinkColor = styled.div`
 const About = center => (
     <Layout>
       <Helmet title={'About Us'}/>
-      <Header title="About Us">"A long time ago in a galaxy far, far away..."</Header>
+      <Header title="About Us"></Header>
       <p css={{textAlign: 'center'}}>"A long time ago in a galaxy far, far away..."</p>
 
 
