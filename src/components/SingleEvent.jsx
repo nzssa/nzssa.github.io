@@ -15,19 +15,22 @@ const Wrapper = styled.article`
 
 const EventTitle = styled.h2`
   margin: 0;
+  color: #000;
 `;
 
 const Excerpt = styled.p`
   margin: 0;
+  color: #000;
 `;
 
 const Date = styled.p`
   margin: 0;
   font-weight: bold;
+  color: #000;
 `;
 
 const SingleEvent = ({ title, date, excerpt, colour }) => (
-  <Wrapper css={{borderColor: colour}}>
+  <Wrapper css={{borderColor: colour, backgroundColor: '#fff'}}>
     <EventTitle>{title}</EventTitle>
     <Date>{date}</Date>
     <Excerpt>{excerpt}</Excerpt>
