@@ -73,10 +73,12 @@ const Index = ({ data }) => {
         align="left"
       />
       <Helmet title={'Home Page'} />
+      < br />< br />< br />< br />< br />< br />
       <HomeHeader title="New Zealand Students' Space Association">
         Be bold. Have fun. Build a better world.
       </HomeHeader>
       <Subheading>Upcoming Events</Subheading>
+
       <hr css={{ width: '230px', border: '0.5px solid white', marginLeft: '6rem', marginTop: '1rem' }} />
       <PostWrapper>
         {data.upcomingEvents.edges.map(({ node }) => (
