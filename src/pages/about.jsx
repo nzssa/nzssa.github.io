@@ -234,7 +234,7 @@ const About = center => (
         {/*SECONDARY*/}
         <h3 css={{textAlign: 'center'}}>
           <svg height="200" width="300">
-            <circle cx="150" cy="100" r="80" fill="#71B585" />
+            <circle cx="150" cy="100" r="80" fill="#F6CA68" />
           </svg>
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px', padding: '80px'}}>Secondary</PurposeText>
           <br/><br/>
@@ -246,7 +246,7 @@ const About = center => (
         {/*TERTIARY*/}
         <h3 css={{textAlign: 'center'}}>
           <svg height="200" width="300">
-            <circle cx="150" cy="100" r="80" fill="#6F4D88" />
+            <circle cx="150" cy="100" r="80" fill="#1A4174" />
           </svg>
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px', align: 'right', padding: '80px'}}>Tertiary</PurposeText>
           <br/><br/>
