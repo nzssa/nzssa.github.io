@@ -21,6 +21,10 @@ const colors = {
     light: '#3a558a',
     dark: '#162135',
   },
+  teams: {
+    christchurch: '#1B4273',
+    wellington: '#6E4E86',
+  }
 };
 
 const shadow = {
