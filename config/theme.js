@@ -78,9 +78,9 @@ const theme = {
   },
   fontFamily: {
     // eslint-disable-next-line
-    body: `Open Sans,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+    body: `Open Sans`,
     // eslint-disable-next-line
-    heading: `Rubik, Chivo, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+    heading: `Rubik`,
   },
   layout: {
     article: '46rem',

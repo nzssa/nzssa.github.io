@@ -10,7 +10,6 @@ const Wrapper = styled.article`
   margin: 0 3rem;
 `;
 
-
 const Card = styled.div`
   box-shadow: ${theme.shadow.navbar};
 `;
@@ -22,18 +21,20 @@ const HeadingName = styled.h2`
   padding-right: 0px;
   padding-bottom: 0px;
   margin: 10px;
+  font-family: 'Open Sans', sans-serif;
   transition: all ${props => props.theme.transitions.default.duration};
   &:hover {
     color: ${props => props.theme.colors.primary.base};
   }
-`
+`;
 
 const HeadingPosition = styled.h4`
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
-`
+`;
 
 const Information = styled.div`
   h1 {
@@ -58,13 +59,21 @@ const Information = styled.div`
 
 const TeamList = ({ key, pic, title, name, excerpt, link }) => (
   <Card>
-    <Img css={{height: '200px', width: '200px', borderRadius: '50%', align: 'center', left: '100px'}} fluid={pic} />
-      <a href={link}>
-        <HeadingName css={{fontWeight: 'bold'}}>{name}</HeadingName>
-      </a>
+    <Img
+      css={{
+        height: '200px',
+        width: '200px',
+        borderRadius: '50%',
+        align: 'center',
+        left: '100px',
+      }}
+      fluid={pic}
+    />
+    <a href={link}>
+      <HeadingName css={{ fontWeight: 'bold' }}>{name}</HeadingName>
+    </a>
     <HeadingPosition>{title}</HeadingPosition>
   </Card>
 );
 
 export default TeamList;
-
