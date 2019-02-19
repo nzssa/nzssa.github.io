@@ -13,11 +13,13 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 :white_large_square: incorporate brand into site design
 
 
+
 INDEX PAGE
 
 :white_large_square: Add Join Us button
 
 :white_large_square: Fix formatting
+
 
 
 ABOUT US PAGE
@@ -31,6 +33,7 @@ ABOUT US PAGE
 :white_large_square: remove doodles, add proper visuals
 
 
+
 EVENTS PAGE
 
 :white_check_mark: add colour labels to events to indicate location
@@ -40,6 +43,7 @@ EVENTS PAGE
 :white_large_square: make events clickable
 
 :white_large_square: add location icon and text to event box
+
 
 
 BLOG PAGE
@@ -55,11 +59,13 @@ BLOG PAGE
 :white_large_square: update previous/next link at bottom of blog posts
 
 
+
 TEAM PAGE
 
 :white_check_mark: finish team page (add members)
 
 :white_large_square: If members don't have a linked in profile (or other links), remove hover colour.
+
 
 
 CONTACT US PAGE
