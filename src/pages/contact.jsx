@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'react-emotion';
+import { jsx, css } from '@emotion/core';
 import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
@@ -8,10 +9,10 @@ import christchurchLogo from '../../static/christchurchLogo.jpg';
 import nationalLogo from '../../static/logo/white-logo.png';
 import wellingtonLogo from '../../static/wellingtonLogo.png';
 import theme from '../../config/theme';
-
+import { FaFacebookSquare } from 'react-icons/fa';
 
 const Text = styled.div`
-    margin: 2rem 10rem;
+  margin: 2rem 10rem;
 `;
 
 const GridWrapper = styled.div`
@@ -39,7 +40,6 @@ const GridWrapper = styled.div`
 const Card = styled.div`
   box-shadow: ${theme.shadow.navbar};
 `;
-
 
 const HeadingName = styled.h2`
   text-align: center;
@@ -87,7 +87,7 @@ const Logo = styled.img`
   margin-left: 120px;
 `;
 
-const Button = styled.button` 
+const Button = styled.button`
   background-color: #ffffff;
   color: black;
   padding: 15px 5px;
@@ -99,8 +99,8 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 25px;
   width: 300px;
-  margin:auto;
-  display:block;
+  margin: auto;
+  display: block;
 `;
 
 const ButtonText = styled.div`
@@ -109,7 +109,7 @@ const ButtonText = styled.div`
     font-weight: bold;
     align: center;
   }
-`
+`;
 
 const UnderlineText = styled.text`
   text-decoration: underline;
@@ -118,66 +118,143 @@ const UnderlineText = styled.text`
 const Contact = center => (
   <Layout>
     <Helmet title={'Contact Page'} />
-    <Header title="Contact us"></Header>
+    <Header title="Contact us" />
 
-    <GridWrapper css={{paddingTop: '100px'}}>
-
+    <GridWrapper css={{ paddingTop: '100px' }}>
       <Card>
-        <Logo css={{height: '140px', align: 'center'}}  src={nationalLogo} alt={"nationalLogo"} />
+        <a href="https://www.facebook.com/nzssachch/">
+          <Logo
+            css={{ height: '150px', align: 'center' }}
+            src={christchurchLogo}
+            alt={'christchurchLogo'}
+          />
+        </a>
         <Information>
-          <HeadingName style={{ color: '#FFF' }} css={{fontWeight: 'bold'}}>MISSION CONTROL</HeadingName>
-        </Information>
-        <HeadingPosition>
-          National Organisation
-          < br />< br />
-          sample@gmail.com
-        </HeadingPosition>
-      </Card>
-
-      <Card>
-        <a href="https://www.facebook.com/nzssachch/"><Logo css={{height: '150px', align: 'center'}}  src={christchurchLogo} alt={"christchurchLogo"} /></a>
-        <Information>
-          <a style={{ color: '#FFF' }} href="https://www.facebook.com/nzssachch/"><HeadingName css={{fontWeight: 'bold'}}> CHRISTCHURCH</HeadingName></a>
+          <a
+            style={{ color: '#FFF' }}
+            href="https://www.facebook.com/nzssachch/"
+          >
+            <HeadingName css={{ fontWeight: 'bold' }}>
+              {' '}
+              CHRISTCHURCH
+            </HeadingName>
+          </a>
         </Information>
         <HeadingPosition>
           University of Canterbury
-          < br />< br />
-          <a style={{ color: '#FFF' }} href="https://www.facebook.com/nzssachch/">Visit our <UnderlineText>Facebook Page</UnderlineText></a>
-          < br />< br />
+          <br />
+          <br />
+          <a
+            css={{
+              color: '#FFF',
+              transition: 'all 0.1s ease-in-out',
+              ':hover': {
+                color: theme.colors.teams.christchurch,
+              },
+            }}
+            href="https://www.facebook.com/nzssachch/"
+          >
+            <FaFacebookSquare />
+          </a>
+          <br />
+          <br />
           sample@gmail.com
         </HeadingPosition>
       </Card>
 
       <Card>
-        <a href="https://www.facebook.com/studentsInSpace/"><Logo css={{height: '145px', align: 'center'}}  src={wellingtonLogo} alt={"wellingtonLogo"} /></a>
+        <a href="https://www.facebook.com/studentsInSpace/">
+          <Logo
+            css={{ height: '145px', align: 'center' }}
+            src={wellingtonLogo}
+            alt={'wellingtonLogo'}
+          />
+        </a>
         <Information>
-          <a style={{ color: '#FFF' }} href="https://www.facebook.com/studentsInSpace/"><HeadingName css={{fontWeight: 'bold'}}>WELLINGTON</HeadingName></a>
+          <a
+            style={{ color: '#FFF' }}
+            href="https://www.facebook.com/studentsInSpace/"
+          >
+            <HeadingName css={{ fontWeight: 'bold' }}>WELLINGTON</HeadingName>
+          </a>
         </Information>
         <HeadingPosition>
           Victoria University of Wellington
-          < br />< br />
-          <a style={{ color: '#FFF' }} href="https://www.facebook.com/studentsInSpace/">Visit our <UnderlineText>Facebook Page</UnderlineText></a>
-          < br />< br />
+          <br />
+          <br />
+          <a
+            css={{
+              color: '#FFF',
+              transition: 'all 0.1s ease-in-out',
+              ':hover': {
+                color: theme.colors.teams.wellington,
+              },
+            }}
+            href="https://www.facebook.com/studentsInSpace/"
+          >
+            <FaFacebookSquare />
+          </a>
+          <br />
+          <br />
+          sample@gmail.com
+        </HeadingPosition>
+      </Card>
+
+      <Card>
+        <Logo
+          css={{ height: '140px', align: 'center' }}
+          src={nationalLogo}
+          alt={'nationalLogo'}
+        />
+        <Information>
+          <HeadingName style={{ color: '#FFF' }} css={{ fontWeight: 'bold' }}>
+            MISSION CONTROL
+          </HeadingName>
+        </Information>
+        <HeadingPosition>
+          National Organisation
+          <br />
+          <br />
           sample@gmail.com
         </HeadingPosition>
       </Card>
 
       {/*BUTTON TO BOOK WORKSHOP*/}
       <Button>
-        <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></ButtonText>
+        <ButtonText>
+          <a
+            style={{ color: '#000' }}
+            href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!"
+          >
+            Book a workshop
+          </a>
+        </ButtonText>
       </Button>
       {/*BUTTON TO BECOME AN AMBASSADOR*/}
       <Button>
-        <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!">Become an ambassador</a></ButtonText>
+        <ButtonText>
+          <a
+            style={{ color: '#000' }}
+            href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!"
+          >
+            Become an ambassador
+          </a>
+        </ButtonText>
       </Button>
       {/*BUTTON TO START A BRANCH*/}
       <Button>
-        <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></ButtonText>
+        <ButtonText>
+          <a
+            style={{ color: '#000' }}
+            href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!"
+          >
+            Start a branch
+          </a>
+        </ButtonText>
       </Button>
-
     </GridWrapper>
 
-    <h1 css={{textAlign: 'center'}}>We look forward to hearing from you!</h1>
+    <h1 css={{ textAlign: 'center' }}>We look forward to hearing from you!</h1>
 
     {/*<img css={{textAlign: 'center'}} src={christchurchLogo} alt={"christchurchLogo"} height={"100px"} ></img>*/}
 
@@ -188,14 +265,14 @@ const Contact = center => (
 class NameForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = { value: '' };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({ value: event.target.value });
   }
 
   handleSubmit(event) {
@@ -205,20 +282,36 @@ class NameForm extends React.Component {
 
   render() {
     return (
-      <form export ={this.handleSubmit}>
+      <form export={this.handleSubmit}>
         <label>
           Name:
-          <input css={{border: '2px solid blue'}} type="text" value={this.state.name} onChange={this.handleChange} />
-        </label><br />
+          <input
+            css={{ border: '2px solid blue' }}
+            type="text"
+            value={this.state.name}
+            onChange={this.handleChange}
+          />
+        </label>
+        <br />
         <label>
           Email:
-          <input type="text" value={this.state.email} onChange={this.handleChange} />
-        </label><br />
+          <input
+            type="text"
+            value={this.state.email}
+            onChange={this.handleChange}
+          />
+        </label>
+        <br />
         <label>
           Message:
-          <textarea css={{height: '200px', width: '400px'}} value={this.state.message} onChange={this.handleChange} />
-        </label><br />
-        <input type="submit" value="Submit"/>
+          <textarea
+            css={{ height: '200px', width: '400px' }}
+            value={this.state.message}
+            onChange={this.handleChange}
+          />
+        </label>
+        <br />
+        <input type="submit" value="Submit" />
       </form>
     );
   }

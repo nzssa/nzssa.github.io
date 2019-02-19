@@ -21,6 +21,10 @@ const colors = {
     light: '#3a558a',
     dark: '#162135',
   },
+  teams: {
+    christchurch: '#1B4273',
+    wellington: '#6E4E86',
+  }
 };
 
 const shadow = {
@@ -74,9 +78,9 @@ const theme = {
   },
   fontFamily: {
     // eslint-disable-next-line
-    body: `Open Sans,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+    body: `Open Sans`,
     // eslint-disable-next-line
-    heading: `Rubik, Chivo, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
+    heading: `Rubik`,
   },
   layout: {
     article: '46rem',
