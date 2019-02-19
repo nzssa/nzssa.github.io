@@ -12,31 +12,63 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: incorporate brand into site design
 
-:white_large_square: finish and order all blog posts
 
-:white_large_square: hard-code about us page for design review
+INDEX PAGE
 
-:white_large_square: add form submission to Contact Us
+:white_large_square: Add Join Us button
 
-:white_check_mark: fix up blog post tags 
+:white_large_square: Fix formatting
 
-:white_check_mark: add author to blog posts 
 
-:white_large_square: finish team page (add members)
+ABOUT US PAGE
 
-:white_large_square: fix up /tags/tagName layout (and add author, date)
+:white_check_mark: hard-code about us page for design review
 
 :white_check_mark: finish polished article for About Us page
 
+:white_large_square: Fix text spacing
+
+:white_large_square: remove doodles, add proper visuals
+
+
+EVENTS PAGE
+
 :white_check_mark: add colour labels to events to indicate location
 
-:white_large_square: update events colour var so only location needs to be indicated
+:white_check_mark: update events colour var so only location needs to be indicated
+
+:white_large_square: make events clickable
+
+:white_large_square: add location icon and text to event box
+
+
+BLOG PAGE
+
+:white_check_mark: fix up blog post tags 
+
+:white_check_mark: add author to blog posts
+
+:white_large_square: finish and order all blog posts
+
+:white_large_square: fix up /tags/tagName layout (and add author, date)
 
 :white_large_square: update previous/next link at bottom of blog posts
 
-:white_large_square: update contact page with appropriate linked in profiles
+
+TEAM PAGE
+
+:white_check_mark: finish team page (add members)
+
+:white_large_square: If members don't have a linked in profile (or other links), remove hover colour.
+
+
+CONTACT US PAGE
 
 :white_large_square: add facebook links to repspective colonies and "where to find more info" to contact us page
+
+:white_large_square: <strike>add form submission to Contact Us</strike>
+
+:white_large_square: change layout to vertically list branches and horizontally list buttons
 
 ## Starter Features
 
