@@ -1,6 +1,6 @@
 ---
 path: "/tutorial"
-cover: "./finance.jpg"
+cover: "./profile.jpg"
 slug: "tutorial"
 date: "9"
 title: "SOCIAL MEDIA OFFICER"

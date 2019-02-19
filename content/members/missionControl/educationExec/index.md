@@ -5,7 +5,7 @@ slug: "tutorial"
 date: "4"
 title: "EDUCATION EXEC"
 name: "Vaishnavi Anand"
-link: "https://www.linkedin.com/in/amber-joseph-a50771134/"
+link: "https://www.linkedin.com/in/vaishnavi-anand-1a8b4517b/"
 tags: ['gatsby', 'tutorial']
 published: true
 ---
