@@ -12,7 +12,6 @@ const Wrapper = styled.article`
   border-left: 15px solid;
 `;
 
-
 const EventTitle = styled.h2`
   margin: 0;
   color: #000;
@@ -29,9 +28,18 @@ const Date = styled.p`
   color: #000;
 `;
 
-const SingleEvent = ({ title, date, excerpt, colour }) => (
-  <Wrapper css={{borderColor: colour, backgroundColor: '#fff'}}>
-    <EventTitle>{title}</EventTitle>
+const EventLink = styled.a`
+  color: ${props => props.theme.colors.black.blue};
+  transition: color 0.2s;
+  &:hover {
+    color: ${props => props.theme.colors.primary.base};
+  }
+`;
+const SingleEvent = ({ title, date, excerpt, colour, path }) => (
+  <Wrapper css={{ borderColor: colour, backgroundColor: '#fff' }}>
+    <EventTitle>
+      <EventLink href={'/' + path}>{title}</EventLink>
+    </EventTitle>
     <Date>{date}</Date>
     <Excerpt>{excerpt}</Excerpt>
   </Wrapper>

@@ -80,6 +80,7 @@ const Events = ({ data }) => {
             date={node.frontmatter.date}
             excerpt={node.excerpt}
             colour={node.frontmatter.colour}
+            path={node.frontmatter.slug}
           />
         ))}
       </Container>
