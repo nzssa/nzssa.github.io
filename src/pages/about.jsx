@@ -5,12 +5,8 @@ import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import AboutUsArticle from '../components/AboutUsArticle';
-import planet from '../../static/planet.jpg';
-import line from '../../static/line.png';
-import line2 from '../../static/line2.png';
-import line3 from '../../static/line3.png';
-import rocket from '../../static/rocket.jpg';
 import backpackGirl from '../../static/backpack-girl.jpg';
+import committee from '../../static/committee.png';
 
 const Card = styled.div`
 `;
@@ -297,9 +293,9 @@ const About = center => (
           </HeadingPosition>
         </Card>
 
-        {/*BACKPACK-GIRL IMAGE*/}
+        {/*COMMITTEE IMAGE*/}
         <Card>
-          <img css={{paddingLeft: '0px'}} src={backpackGirl} alt={"planet"} height={"800px"} ></img>
+          <img css={{paddingTop: '100px'}} src={committee} alt={"committee"}></img>
         </Card>
       </GridWrapperHalf>
 
