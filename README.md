@@ -15,7 +15,7 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 ### INDEX PAGE
 
-:white_large_square: Add Join Us button
+:white_check_mark: Add Join Us button
 
 :white_large_square: Fix formatting
 
