@@ -10,7 +10,7 @@ import line from '../../static/line.png';
 import line2 from '../../static/line2.png';
 import line3 from '../../static/line3.png';
 import rocket from '../../static/rocket.jpg';
-import test from '../../static/backpack-girl.jpg';
+import backpackGirl from '../../static/backpack-girl.jpg';
 
 const Card = styled.div`
 `;
@@ -215,7 +215,7 @@ const About = center => (
       {/*WHY WE EXIST*/}
       <GridWrapperHalf>
         <AboutUsArticle/>
-        <img src={planet} alt={"planet"} height={"600px"} ></img>
+        <img src={backpackGirl} alt={"backpackGirl"} height={"600px"} ></img>
       </GridWrapperHalf>
 
       {/*PRIMARY SECONDARY TERTIARY DISPLAY*/}
@@ -299,7 +299,7 @@ const About = center => (
 
         {/*BACKPACK-GIRL IMAGE*/}
         <Card>
-          <img css={{paddingLeft: '0px'}} src={test} alt={"planet"} height={"800px"} ></img>
+          <img css={{paddingLeft: '0px'}} src={backpackGirl} alt={"planet"} height={"800px"} ></img>
         </Card>
       </GridWrapperHalf>
 
@@ -317,43 +317,6 @@ const About = center => (
           <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></ButtonText>
         </Button>
       </GridWrapperThirds>
-
-      {/*ADDED IMAGES*/}
-      <Line1
-        src={line}
-        alt={'line'}
-        height={'100px'}
-        width={'360px'}
-        vspace="0"
-      />
-      <Line2
-        src={line2}
-        alt={'line'}
-        height={'100px'}
-        width={'150px'}
-        vspace="0"
-      />
-      <Line3
-        src={line3}
-        alt={'line'}
-        height={'200px'}
-        width={'460px'}
-        vspace="0"
-      />
-      <Line4
-        src={line3}
-        alt={'line'}
-        height={'200px'}
-        width={'460px'}
-        vspace="0"
-      />
-      <RocketImage
-        src={rocket}
-        alt={'line'}
-        height={'150px'}
-        width={'150px'}
-        vspace="0"
-      />
 
     </Layout>
 );
