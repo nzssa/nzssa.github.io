@@ -27,9 +27,9 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_check_mark: finish polished article for About Us page
 
-:white_large_square: Fix text spacing
+:white_check_mark: Fix text spacing
 
-:white_large_square: remove doodles, add proper visuals
+:white_check_mark: remove doodles, add proper visuals
 
 
 
