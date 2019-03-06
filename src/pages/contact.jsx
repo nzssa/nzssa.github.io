@@ -62,15 +62,7 @@ const HeadingPosition = styled.h4`
 `;
 
 const Information = styled.div`
-  h1 {
-    font-size: 2rem;
-    display: inline-block;
-    color: ${props => props.theme.colors.white.base};
-    transition: all ${props => props.theme.transitions.default.duration};
-    &:hover {
-      color: ${props => props.theme.colors.primary.base};
-    }
-  }
+
   text-align: center;
   flex-basis: 100%;
   max-width: 100%;
@@ -142,10 +134,17 @@ const Contact = center => (
         </a>
         <Information>
           <a
-            style={{ color: '#FFF' }}
+
             href="https://www.facebook.com/nzssachch/"
           >
-            <HeadingName css={{ fontWeight: 'bold' }}>
+            <HeadingName css={{
+              fontWeight: 'bold',
+              color: '#FFF',
+              transition: 'all 0.1s ease-in-out',
+              ':hover': {
+                color: theme.colors.teams.christchurch,
+              },
+            }}>
               {' '}
               CHRISTCHURCH
             </HeadingName>
@@ -183,10 +182,16 @@ const Contact = center => (
         </a>
         <Information>
           <a
-            style={{ color: '#FFF' }}
             href="https://www.facebook.com/studentsInSpace/"
           >
-            <HeadingName css={{ fontWeight: 'bold' }}>WELLINGTON</HeadingName>
+            <HeadingName css={{
+              fontWeight: 'bold',
+              color: '#FFF',
+              transition: 'all 0.1s ease-in-out',
+              ':hover': {
+                color: theme.colors.teams.wellington,
+              },
+            }}>WELLINGTON</HeadingName>
           </a>
         </Information>
         <HeadingPosition>
