@@ -115,6 +115,17 @@ const UnderlineText = styled.text`
   text-decoration: underline;
 `;
 
+const Line = styled.div`
+  background-color: #ffffff;
+  display: block;
+  margin: auto;
+  width: 50%;
+  align: center;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+`;
+
 const Contact = center => (
   <Layout>
     <Helmet title={'Contact Page'} />
@@ -218,7 +229,11 @@ const Contact = center => (
           sample@gmail.com
         </HeadingPosition>
       </Card>
+    </GridWrapper>
 
+    <Line></Line>
+
+    <GridWrapper>
       {/*BUTTON TO BOOK WORKSHOP*/}
       <Button>
         <ButtonText>
