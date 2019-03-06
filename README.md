@@ -113,11 +113,11 @@ TEAM PAGE
 CONTACT US PAGE
 >>>>>>> parent of f232cd0... Update README.md
 
-:white_large_square: add facebook links to repspective colonies and "where to find more info" to contact us page
+:white_check_mark: add facebook links to repspective colonies and "where to find more info" to contact us page
 
 :white_large_square: <strike>add form submission to Contact Us</strike>
 
-:white_large_square: change layout to vertically list branches and horizontally list buttons
+:white_check_mark: change layout to vertically list branches and horizontally list buttons
 
 ## Starter Features
 
