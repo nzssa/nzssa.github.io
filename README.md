@@ -14,10 +14,13 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### INDEX PAGE
 
 :white_check_mark: Add Join Us button
 =======
+=======
+>>>>>>> parent of f232cd0... Update README.md
 INDEX PAGE
 
 :white_large_square: Add Join Us button
@@ -27,9 +30,12 @@ INDEX PAGE
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### ABOUT US PAGE
 =======
+=======
+>>>>>>> parent of f232cd0... Update README.md
 ABOUT US PAGE
 >>>>>>> parent of f232cd0... Update README.md
 
@@ -43,9 +49,12 @@ ABOUT US PAGE
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### EVENTS PAGE
 =======
+=======
+>>>>>>> parent of f232cd0... Update README.md
 EVENTS PAGE
 >>>>>>> parent of f232cd0... Update README.md
 
@@ -59,9 +68,12 @@ EVENTS PAGE
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### BLOG PAGE
 =======
+=======
+>>>>>>> parent of f232cd0... Update README.md
 BLOG PAGE
 >>>>>>> parent of f232cd0... Update README.md
 
@@ -77,9 +89,12 @@ BLOG PAGE
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### TEAM PAGE
 =======
+=======
+>>>>>>> parent of f232cd0... Update README.md
 TEAM PAGE
 >>>>>>> parent of f232cd0... Update README.md
 
@@ -89,9 +104,12 @@ TEAM PAGE
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### CONTACT US PAGE
 =======
+=======
+>>>>>>> parent of f232cd0... Update README.md
 CONTACT US PAGE
 >>>>>>> parent of f232cd0... Update README.md
 
