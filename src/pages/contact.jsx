@@ -62,15 +62,7 @@ const HeadingPosition = styled.h4`
 `;
 
 const Information = styled.div`
-  h1 {
-    font-size: 2rem;
-    display: inline-block;
-    color: ${props => props.theme.colors.white.base};
-    transition: all ${props => props.theme.transitions.default.duration};
-    &:hover {
-      color: ${props => props.theme.colors.primary.base};
-    }
-  }
+
   text-align: center;
   flex-basis: 100%;
   max-width: 100%;
@@ -115,91 +107,24 @@ const UnderlineText = styled.text`
   text-decoration: underline;
 `;
 
+const Line = styled.div`
+  background-color: #ffffff;
+  display: block;
+  margin: auto;
+  width: 50%;
+  align: center;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+`;
+
 const Contact = center => (
   <Layout>
     <Helmet title={'Contact Page'} />
     <Header title="Contact us" />
 
     <GridWrapper css={{ paddingTop: '100px' }}>
-      <Card>
-        <a href="https://www.facebook.com/nzssachch/">
-          <Logo
-            css={{ height: '150px', align: 'center' }}
-            src={christchurchLogo}
-            alt={'christchurchLogo'}
-          />
-        </a>
-        <Information>
-          <a
-            style={{ color: '#FFF' }}
-            href="https://www.facebook.com/nzssachch/"
-          >
-            <HeadingName css={{ fontWeight: 'bold' }}>
-              {' '}
-              CHRISTCHURCH
-            </HeadingName>
-          </a>
-        </Information>
-        <HeadingPosition>
-          University of Canterbury
-          <br />
-          <br />
-          <a
-            css={{
-              color: '#FFF',
-              transition: 'all 0.1s ease-in-out',
-              ':hover': {
-                color: theme.colors.teams.christchurch,
-              },
-            }}
-            href="https://www.facebook.com/nzssachch/"
-          >
-            <FaFacebookSquare />
-          </a>
-          <br />
-          <br />
-          sample@gmail.com
-        </HeadingPosition>
-      </Card>
-
-      <Card>
-        <a href="https://www.facebook.com/studentsInSpace/">
-          <Logo
-            css={{ height: '145px', align: 'center' }}
-            src={wellingtonLogo}
-            alt={'wellingtonLogo'}
-          />
-        </a>
-        <Information>
-          <a
-            style={{ color: '#FFF' }}
-            href="https://www.facebook.com/studentsInSpace/"
-          >
-            <HeadingName css={{ fontWeight: 'bold' }}>WELLINGTON</HeadingName>
-          </a>
-        </Information>
-        <HeadingPosition>
-          Victoria University of Wellington
-          <br />
-          <br />
-          <a
-            css={{
-              color: '#FFF',
-              transition: 'all 0.1s ease-in-out',
-              ':hover': {
-                color: theme.colors.teams.wellington,
-              },
-            }}
-            href="https://www.facebook.com/studentsInSpace/"
-          >
-            <FaFacebookSquare />
-          </a>
-          <br />
-          <br />
-          sample@gmail.com
-        </HeadingPosition>
-      </Card>
-
+      {/*MISSION CONTROL*/}
       <Card>
         <Logo
           css={{ height: '140px', align: 'center' }}
@@ -219,6 +144,98 @@ const Contact = center => (
         </HeadingPosition>
       </Card>
 
+      {/*WELLINGTON*/}
+      <Card>
+        <a href="https://www.facebook.com/studentsInSpace/">
+          <Logo
+            css={{ height: '145px', align: 'center' }}
+            src={wellingtonLogo}
+            alt={'wellingtonLogo'}
+          />
+        </a>
+        <Information>
+          <a href="https://www.facebook.com/studentsInSpace/">
+            <HeadingName css={{
+              fontWeight: 'bold',
+              color: '#FFF',
+              transition: 'all 0.1s ease-in-out',
+              ':hover': {
+                color: theme.colors.teams.wellington,
+              },
+            }}>WELLINGTON</HeadingName>
+          </a>
+        </Information>
+        <HeadingPosition>
+          Victoria University of Wellington
+          <br />
+          <br />
+          <a
+            css={{
+              color: '#FFF',
+              fontSize: '2.5em',
+              transition: 'all 0.1s ease-in-out',
+              ':hover': {
+                color: theme.colors.teams.wellington,
+              },
+            }}
+            href="https://www.facebook.com/studentsInSpace/"
+          >
+            <FaFacebookSquare />
+          </a>
+          <br />
+          <br />
+          sample@gmail.com
+        </HeadingPosition>
+      </Card>
+
+      {/*CHRISTCHURCH*/}
+      <Card>
+        <a href="https://www.facebook.com/nzssachch/">
+          <Logo
+            css={{ height: '150px', align: 'center' }}
+            src={christchurchLogo}
+            alt={'christchurchLogo'}
+          />
+        </a>
+        <Information>
+          <a href="https://www.facebook.com/nzssachch/">
+            <HeadingName css={{
+              fontWeight: 'bold',
+              color: '#FFF',
+              transition: 'all 0.1s ease-in-out',
+              ':hover': {
+                color: theme.colors.teams.christchurch,
+              },
+            }}>{' '}CHRISTCHURCH
+            </HeadingName>
+          </a>
+        </Information>
+        <HeadingPosition>
+          University of Canterbury
+          <br />
+          <br />
+          <a css={{
+              color: '#FFF',
+              fontSize: '2.5em',
+              transition: 'all 0.1s ease-in-out',
+              ':hover': {
+                color: theme.colors.teams.christchurch,
+              },
+            }}
+            href="https://www.facebook.com/nzssachch/"
+          >
+            <FaFacebookSquare />
+          </a>
+          <br />
+          <br />
+          sample@gmail.com
+        </HeadingPosition>
+      </Card>
+    </GridWrapper>
+
+    <Line></Line>
+
+    <GridWrapper>
       {/*BUTTON TO BOOK WORKSHOP*/}
       <Button>
         <ButtonText>
@@ -230,6 +247,7 @@ const Contact = center => (
           </a>
         </ButtonText>
       </Button>
+
       {/*BUTTON TO BECOME AN AMBASSADOR*/}
       <Button>
         <ButtonText>
@@ -241,6 +259,7 @@ const Contact = center => (
           </a>
         </ButtonText>
       </Button>
+
       {/*BUTTON TO START A BRANCH*/}
       <Button>
         <ButtonText>
