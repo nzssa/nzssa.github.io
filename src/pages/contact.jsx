@@ -172,6 +172,7 @@ const Contact = center => (
           <a
             css={{
               color: '#FFF',
+              fontSize: '2.5em',
               transition: 'all 0.1s ease-in-out',
               ':hover': {
                 color: theme.colors.teams.wellington,
@@ -215,6 +216,7 @@ const Contact = center => (
           <br />
           <a css={{
               color: '#FFF',
+              fontSize: '2.5em',
               transition: 'all 0.1s ease-in-out',
               ':hover': {
                 color: theme.colors.teams.christchurch,
