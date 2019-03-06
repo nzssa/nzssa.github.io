@@ -124,54 +124,27 @@ const Contact = center => (
     <Header title="Contact us" />
 
     <GridWrapper css={{ paddingTop: '100px' }}>
+      {/*MISSION CONTROL*/}
       <Card>
-        <a href="https://www.facebook.com/nzssachch/">
-          <Logo
-            css={{ height: '150px', align: 'center' }}
-            src={christchurchLogo}
-            alt={'christchurchLogo'}
-          />
-        </a>
+        <Logo
+          css={{ height: '140px', align: 'center' }}
+          src={nationalLogo}
+          alt={'nationalLogo'}
+        />
         <Information>
-          <a
-
-            href="https://www.facebook.com/nzssachch/"
-          >
-            <HeadingName css={{
-              fontWeight: 'bold',
-              color: '#FFF',
-              transition: 'all 0.1s ease-in-out',
-              ':hover': {
-                color: theme.colors.teams.christchurch,
-              },
-            }}>
-              {' '}
-              CHRISTCHURCH
-            </HeadingName>
-          </a>
+          <HeadingName style={{ color: '#FFF' }} css={{ fontWeight: 'bold' }}>
+            MISSION CONTROL
+          </HeadingName>
         </Information>
         <HeadingPosition>
-          University of Canterbury
-          <br />
-          <br />
-          <a
-            css={{
-              color: '#FFF',
-              transition: 'all 0.1s ease-in-out',
-              ':hover': {
-                color: theme.colors.teams.christchurch,
-              },
-            }}
-            href="https://www.facebook.com/nzssachch/"
-          >
-            <FaFacebookSquare />
-          </a>
+          National Organisation
           <br />
           <br />
           sample@gmail.com
         </HeadingPosition>
       </Card>
 
+      {/*WELLINGTON*/}
       <Card>
         <a href="https://www.facebook.com/studentsInSpace/">
           <Logo
@@ -181,9 +154,7 @@ const Contact = center => (
           />
         </a>
         <Information>
-          <a
-            href="https://www.facebook.com/studentsInSpace/"
-          >
+          <a href="https://www.facebook.com/studentsInSpace/">
             <HeadingName css={{
               fontWeight: 'bold',
               color: '#FFF',
@@ -216,19 +187,43 @@ const Contact = center => (
         </HeadingPosition>
       </Card>
 
+      {/*CHRISTCHURCH*/}
       <Card>
-        <Logo
-          css={{ height: '140px', align: 'center' }}
-          src={nationalLogo}
-          alt={'nationalLogo'}
-        />
+        <a href="https://www.facebook.com/nzssachch/">
+          <Logo
+            css={{ height: '150px', align: 'center' }}
+            src={christchurchLogo}
+            alt={'christchurchLogo'}
+          />
+        </a>
         <Information>
-          <HeadingName style={{ color: '#FFF' }} css={{ fontWeight: 'bold' }}>
-            MISSION CONTROL
-          </HeadingName>
+          <a href="https://www.facebook.com/nzssachch/">
+            <HeadingName css={{
+              fontWeight: 'bold',
+              color: '#FFF',
+              transition: 'all 0.1s ease-in-out',
+              ':hover': {
+                color: theme.colors.teams.christchurch,
+              },
+            }}>{' '}CHRISTCHURCH
+            </HeadingName>
+          </a>
         </Information>
         <HeadingPosition>
-          National Organisation
+          University of Canterbury
+          <br />
+          <br />
+          <a css={{
+              color: '#FFF',
+              transition: 'all 0.1s ease-in-out',
+              ':hover': {
+                color: theme.colors.teams.christchurch,
+              },
+            }}
+            href="https://www.facebook.com/nzssachch/"
+          >
+            <FaFacebookSquare />
+          </a>
           <br />
           <br />
           sample@gmail.com
@@ -250,6 +245,7 @@ const Contact = center => (
           </a>
         </ButtonText>
       </Button>
+
       {/*BUTTON TO BECOME AN AMBASSADOR*/}
       <Button>
         <ButtonText>
@@ -261,6 +257,7 @@ const Contact = center => (
           </a>
         </ButtonText>
       </Button>
+
       {/*BUTTON TO START A BRANCH*/}
       <Button>
         <ButtonText>
