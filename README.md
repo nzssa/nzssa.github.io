@@ -13,15 +13,25 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 :white_large_square: incorporate brand into site design
 
 
+<<<<<<< HEAD
 ### INDEX PAGE
 
 :white_check_mark: Add Join Us button
+=======
+INDEX PAGE
+
+:white_large_square: Add Join Us button
+>>>>>>> parent of f232cd0... Update README.md
 
 :white_large_square: Fix formatting
 
 
+<<<<<<< HEAD
 
 ### ABOUT US PAGE
+=======
+ABOUT US PAGE
+>>>>>>> parent of f232cd0... Update README.md
 
 :white_check_mark: hard-code about us page for design review
 
@@ -32,8 +42,12 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 :white_check_mark: remove doodles, add proper visuals
 
 
+<<<<<<< HEAD
 
 ### EVENTS PAGE
+=======
+EVENTS PAGE
+>>>>>>> parent of f232cd0... Update README.md
 
 :white_check_mark: add colour labels to events to indicate location
 
@@ -44,8 +58,12 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 :white_large_square: add location icon and text to event box
 
 
+<<<<<<< HEAD
 
 ### BLOG PAGE
+=======
+BLOG PAGE
+>>>>>>> parent of f232cd0... Update README.md
 
 :white_check_mark: fix up blog post tags 
 
@@ -58,16 +76,24 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 :white_large_square: update previous/next link at bottom of blog posts
 
 
+<<<<<<< HEAD
 
 ### TEAM PAGE
+=======
+TEAM PAGE
+>>>>>>> parent of f232cd0... Update README.md
 
 :white_check_mark: finish team page (add members)
 
 :white_large_square: If members don't have a linked in profile (or other links), remove hover colour.
 
 
+<<<<<<< HEAD
 
 ### CONTACT US PAGE
+=======
+CONTACT US PAGE
+>>>>>>> parent of f232cd0... Update README.md
 
 :white_large_square: add facebook links to repspective colonies and "where to find more info" to contact us page
 
