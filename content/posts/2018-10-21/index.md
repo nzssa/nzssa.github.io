@@ -1,7 +1,7 @@
 ---
 path: "/star-gazing"
 cover: "./stars.jpg"
-picture1: "./blocks.jpg"
+picture1: "./pizza.jpg"
 slug: "tutorial"
 date: "17-06-2018"
 title: "Overnight Star Gazing Trip"
