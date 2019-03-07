@@ -1,6 +1,7 @@
 ---
 path: "/social-event-pizza-night"
 cover: "./pizza.jpg"
+picture1: "./pizza.jpg"
 slug: "tutorial"
 date: "2018-10-20"
 title: "Social Event: Pizza Night"

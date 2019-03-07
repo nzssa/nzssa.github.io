@@ -1,6 +1,7 @@
 ---
 path: "/students-in-space-conference"
 cover: "./daniel.jpg"
+picture1: "./daniel.jpg"
 slug: "post-four"
 date: "2018-10-18"
 title: "Students' In Space Conference"

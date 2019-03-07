@@ -1,6 +1,7 @@
 ---
 path: "/global-space-innovation-competition"
 cover: "./blocks.jpg"
+picture1: "./blocks.jpg"
 slug: "tutorial"
 date: "2018-10-20"
 title: "Member wins Global Space Innovation Competition!"

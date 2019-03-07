@@ -22,6 +22,7 @@ const Blog = ({ data }) => {
           date={node.frontmatter.date}
           tags={node.frontmatter.tags}
           excerpt={node.excerpt}
+          picture={node.frontmatter.picture1.childImageSharp.fluid}
         />
       ))}
     </Layout>
@@ -44,6 +45,7 @@ Blog.propTypes = {
               author: PropTypes.string.isRequired,
               date: PropTypes.string.isRequired,
               tags: PropTypes.array,
+              picture1: PropTypes.object.isRequired,
             }),
           }),
         }).isRequired
@@ -69,6 +71,17 @@ export const query = graphql`
             tags
             date
             cover {
+              childImageSharp {
+                fluid(
+                  maxWidth: 1000
+                  quality: 90
+                  traceSVG: { color: "#2B2B2F" }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+            picture1 {
               childImageSharp {
                 fluid(
                   maxWidth: 1000

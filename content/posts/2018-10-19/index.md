@@ -1,6 +1,7 @@
 ---
 path: "/meeting-with-justin"
 cover: "./mayor.jpg"
+picture1: "./mayor.jpg"
 slug: "post-five"
 date: "2018-10-19"
 title: "Meeting with Justin"

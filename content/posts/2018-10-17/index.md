@@ -1,6 +1,7 @@
 ---
 path: "/guardians-of-the-galaxy"
 cover: "./gg.jpg"
+picture1: "./gg.jpg"
 slug: "post-three"
 date: "2018-10-17"
 title: "Guardians of the Galaxy"

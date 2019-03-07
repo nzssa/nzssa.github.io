@@ -1,6 +1,7 @@
 ---
 path: "/rasnz-conference"
 cover: "./rasnz.jpg"
+picture1: "./rasnz.jpg"
 slug: "post-two"
 date: "2018-10-16"
 title: "RASNZ Conference"

@@ -1,6 +1,7 @@
 ---
 path: "/talk-from-sarah-kessans"
 cover: "./blocks.jpg"
+picture1: "./blocks.jpg"
 slug: "tutorial"
 date: "2018-10-20"
 title: "Talk from Sarah Kessans"
