@@ -3,7 +3,7 @@ path: "/rasnz-conference"
 cover: "./rasnz.jpg"
 picture1: "./rasnz.jpg"
 slug: "post-two"
-date: "2018-10-16"
+date: "2018-05-04"
 title: "RASNZ Conference"
 author: "Amber Joseph"
 published: true

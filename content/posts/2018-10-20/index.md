@@ -1,12 +1,12 @@
 ---
 path: "/social-event-pizza-night"
-cover: "./pizza.jpg"
+cover: "./yuri.jpg"
 picture1: "./pizza.jpg"
 slug: "tutorial"
-date: "2018-10-20"
-title: "Social Event: Pizza Night"
+date: "2018-04-12"
+title: "Yuri's Night"
 author: "Amber Joseph"
-tags: ['gatsby', 'tutorial']
+tags: ['pizza', 'movie']
 published: true
 ---
 

@@ -3,7 +3,7 @@ path: "/star-gazing"
 cover: "./stars.jpg"
 picture1: "./pizza.jpg"
 slug: "tutorial"
-date: "17-06-2018"
+date: "2018-06-17"
 title: "Overnight Star Gazing Trip"
 author: "Daniel Wrench"
 tags: ['astronomy', 'stargazing', 'Wellington']

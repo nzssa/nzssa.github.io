@@ -1,9 +1,9 @@
 ---
 path: "/guardians-of-the-galaxy"
-cover: "./gg.jpg"
-picture1: "./gg.jpg"
+cover: "./crowd.jpg"
+picture1: "./screen.jpg"
 slug: "post-three"
-date: "2018-10-17"
+date: "2018-10-05"
 title: "Guardians of the Galaxy"
 author: "Amber Joseph"
 tags: ['gatsby', 'news', 'other']
