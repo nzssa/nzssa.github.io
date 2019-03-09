@@ -90,7 +90,7 @@ const Button = styled.button`
   margin: 2px 2px;
   cursor: pointer;
   border-radius: 25px;
-  width: 300px;
+  width: 50%;
   margin: auto;
   display: block;
 `;
@@ -235,7 +235,7 @@ const Contact = center => (
 
     <Line></Line>
 
-    <GridWrapper>
+    < br />< br />< br />
       {/*BUTTON TO BOOK WORKSHOP*/}
       <Button>
         <ButtonText>
@@ -248,6 +248,7 @@ const Contact = center => (
         </ButtonText>
       </Button>
 
+    < br />< br />
       {/*BUTTON TO BECOME AN AMBASSADOR*/}
       <Button>
         <ButtonText>
@@ -260,6 +261,7 @@ const Contact = center => (
         </ButtonText>
       </Button>
 
+    < br />< br />
       {/*BUTTON TO START A BRANCH*/}
       <Button>
         <ButtonText>
@@ -271,7 +273,7 @@ const Contact = center => (
           </a>
         </ButtonText>
       </Button>
-    </GridWrapper>
+    < br />< br />< br />
 
     <h1 css={{ textAlign: 'center' }}>We look forward to hearing from you!</h1>
 
