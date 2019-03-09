@@ -1,7 +1,7 @@
 ---
 path: "/space-week-art-in-space"
-cover: "./blocks.jpg"
-picture1: "./blocks.jpg"
+cover: "./art1.jpg"
+picture1: "./art2.jpg"
 slug: "tutorial"
 date: "2018-10-20"
 title: "Space Week; Art in space?"

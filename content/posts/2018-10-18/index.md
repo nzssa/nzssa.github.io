@@ -1,9 +1,9 @@
 ---
 path: "/students-in-space-conference"
 cover: "./daniel.jpg"
-picture1: "./daniel.jpg"
+picture1: "./audience.jpg"
 slug: "post-four"
-date: "2018-10-18"
+date: "2018-05-21"
 title: "Students' In Space Conference"
 author: "Amber Joseph"
 tags: ['gatsby', 'other']

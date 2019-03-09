@@ -1,9 +1,9 @@
 ---
 path: "/industry-tour-to-kiwistar"
-cover: "./blocks.jpg"
-picture1: "./blocks.jpg"
+cover: "./logo.jpg"
+picture1: "./kiwistar.jpg"
 slug: "tutorial"
-date: "2018-10-20"
+date: "2018-06-05"
 title: "Industry Tour to KiwiStar"
 author: "Amber Joseph"
 tags: ['gatsby', 'tutorial']
