@@ -23,8 +23,6 @@ const PostSuggestion = styled.div`
 const Image = styled.div`
   margin: auto;
   position: relative;
-  box-shadow: ${props => props.theme.shadow.feature.small.default};
-  transition: ${props => props.theme.transitions.boom.transition};
   border-radius: ${props => props.theme.borderRadius.default};
   min-height: 300px;
   img {
@@ -129,7 +127,6 @@ export const query = graphql`
             fluid(
               maxWidth: 1920
               quality: 90
-              duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
             ) {
               ...GatsbyImageSharpFluid_withWebp
             }
