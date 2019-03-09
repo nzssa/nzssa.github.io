@@ -46,7 +46,7 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: finish and order all blog posts
 
-:white_large_square: change folder names of blog posts
+:white_check_mark: change folder names of blog posts
 
 :white_check_mark: fix up /tags/tagName layout (and add author, date)
 
