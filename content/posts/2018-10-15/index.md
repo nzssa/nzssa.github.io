@@ -1,7 +1,7 @@
 ---
 path: "/act-in-space-hackathon"
 cover: "./actInSpace.jpg"
-picture1: "./actInSpace.jpg"
+picture1: "./hacking.jpg"
 slug: "post-one"
 date: "2018-05-28"
 title: "Act in Space Hackathon"
