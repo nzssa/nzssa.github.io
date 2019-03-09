@@ -11,7 +11,7 @@ const SuggestionBar = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background: ${props => props.theme.colors.white.light};
+  background: ${props => props.theme.colors.black};
   box-shadow: ${props => props.theme.shadow.suggestion};
 `;
 const PostSuggestion = styled.div`
@@ -71,7 +71,7 @@ const Post = ({ data, pageContext }) => {
       <SuggestionBar>
         <PostSuggestion>
           {prev && (
-            <Link to={prev.frontmatter.path}>
+            <Link css={{color: 'white'}} to={prev.frontmatter.path}>
               Previous
               <h3>{prev.frontmatter.title}</h3>
             </Link>
@@ -79,7 +79,7 @@ const Post = ({ data, pageContext }) => {
         </PostSuggestion>
         <PostSuggestion>
           {next && (
-            <Link to={next.frontmatter.path}>
+            <Link css={{color: 'white'}} to={next.frontmatter.path}>
               Next
               <h3>{next.frontmatter.title}</h3>
             </Link>
