@@ -47,11 +47,11 @@ const EventLink = styled.a`
     color: ${props => props.theme.colors.primary.base};
   }
 `;
-const SingleEvent = ({ title, date, excerpt, colour, path }) => (
+const SingleEvent = ({ title, date, excerpt, colour, path, location }) => (
   <Wrapper css={{ borderColor: colour, backgroundColor: '#fff' }}>
     <EventTitle>
       <EventLink href={'/' + path}>{title}</EventLink>
-      <EventLocation>Wellington</EventLocation>
+      <EventLocation>{location}</EventLocation>
     </EventTitle>
     <Date>{date}</Date>
     <Excerpt>{excerpt}</Excerpt>
@@ -65,4 +65,5 @@ SingleEvent.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   tags: PropTypes.array,
+  location: PropTypes.string,
 };

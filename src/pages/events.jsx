@@ -65,6 +65,7 @@ const Events = ({ data }) => {
             excerpt={node.excerpt}
             colour={node.frontmatter.colour}
             path={node.frontmatter.slug}
+            location={node.frontmatter.location}
           />
         ))}
       </Container>
@@ -112,6 +113,7 @@ export const query = graphql`
             slug
             date
             colour
+            location
             published
             _PARENT
           }
