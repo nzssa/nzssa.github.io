@@ -12,32 +12,21 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: incorporate brand into site design
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### INDEX PAGE
 
 :white_check_mark: Add Join Us button
-=======
-=======
->>>>>>> parent of f232cd0... Update README.md
+
 INDEX PAGE
 
 :white_large_square: Add Join Us button
->>>>>>> parent of f232cd0... Update README.md
 
 :white_large_square: Fix formatting
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ### ABOUT US PAGE
-=======
-=======
->>>>>>> parent of f232cd0... Update README.md
+
 ABOUT US PAGE
->>>>>>> parent of f232cd0... Update README.md
 
 :white_check_mark: hard-code about us page for design review
 
@@ -47,35 +36,22 @@ ABOUT US PAGE
 
 :white_check_mark: remove doodles, add proper visuals
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 ### EVENTS PAGE
-=======
-=======
->>>>>>> parent of f232cd0... Update README.md
+
 EVENTS PAGE
->>>>>>> parent of f232cd0... Update README.md
 
 :white_check_mark: add colour labels to events to indicate location
 
 :white_check_mark: update events colour var so only location needs to be indicated
 
-:white_large_square: make events clickable
+:white_check_mark: make events clickable
 
-:white_large_square: add location icon and text to event box
+:white_check_mark: add location icon and text to event box
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ### BLOG PAGE
-=======
-=======
->>>>>>> parent of f232cd0... Update README.md
+
 BLOG PAGE
->>>>>>> parent of f232cd0... Update README.md
 
 :white_check_mark: fix up blog post tags 
 
@@ -88,30 +64,16 @@ BLOG PAGE
 :white_large_square: update previous/next link at bottom of blog posts
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 ### TEAM PAGE
-=======
-=======
->>>>>>> parent of f232cd0... Update README.md
+
 TEAM PAGE
->>>>>>> parent of f232cd0... Update README.md
 
 :white_check_mark: finish team page (add members)
 
 :white_large_square: If members don't have a linked in profile (or other links), remove hover colour.
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 ### CONTACT US PAGE
-=======
-=======
->>>>>>> parent of f232cd0... Update README.md
-CONTACT US PAGE
->>>>>>> parent of f232cd0... Update README.md
 
 :white_check_mark: add facebook links to repspective colonies and "where to find more info" to contact us page
 
