@@ -5,12 +5,8 @@ import PropTypes from 'prop-types';
 import { Header } from 'components';
 import { Layout, Container } from 'layouts';
 import AboutUsArticle from '../components/AboutUsArticle';
-import planet from '../../static/planet.jpg';
-import line from '../../static/line.png';
-import line2 from '../../static/line2.png';
-import line3 from '../../static/line3.png';
-import rocket from '../../static/rocket.jpg';
-import test from '../../static/backpack-girl.jpg';
+import backpackGirl from '../../static/backpack-girl.jpg';
+import committee from '../../static/committee.png';
 
 const Card = styled.div`
 `;
@@ -40,12 +36,6 @@ const HeadingName = styled.h2`
   padding-right: 0px;
   padding-bottom: 0px;
   margin: 10px;
-`;
-
-const SubHeading = styled.text`
-  font-family: 'Rubik', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
 `;
 
 const HeadingPosition = styled.h4`
@@ -115,41 +105,6 @@ const GridWrapperThirds = styled.div`
 `;
 
 
-const Line1 = styled.img`
-  position: absolute;
-  right: -30px;
-  top: 470px;
-  z-index: 2;
-`;
-
-const RocketImage = styled.img`
-  position: absolute;
-  left: 40px;
-  top: 350px;
-  z-index: 2;
-`;
-
-const Line2 = styled.img`
-  position: absolute;
-  left: 180px;
-  top: 480px;
-  z-index: 2;
-`;
-
-const Line3 = styled.img`
-  position: absolute;
-  left: -210px;
-  top: 1250px;
-  z-index: 2;
-`;
-
-const Line4 = styled.img`
-  position: absolute;
-  left: 1510px;
-  top: 1750px;
-  z-index: 2;
-`;
-
 const Button = styled.button` 
   background-color: #ffffff;
   color: black;
@@ -199,12 +154,12 @@ const About = center => (
       <Container center={center}>
         <PurposeText>OUR PURPOSE</PurposeText>
         <br/>
-        <h3 css={{color: '#ffffff'}}>
+        <h3 css={{lineHeight: '1.6'}}>
           To <EmphasisBlue>empower</EmphasisBlue> and <EmphasisBlue>inspire</EmphasisBlue> students to realise their
           potential to contribute to the future of the space industry.
         </h3>
         <br/>
-        <h3>
+        <h3 css={{lineHeight: '1.6'}}>
           This involves keeping their <EmphasisYellow>passion</EmphasisYellow> for all things space related alive,
           connecting them with industry professionals, and surrounding them with positive, like-minded people who
           challenge each other to explore their abilities in space related subjects.
@@ -213,20 +168,20 @@ const About = center => (
       </Container>
 
       {/*WHY WE EXIST*/}
-      <GridWrapperHalf>
+      <GridWrapperHalf css={{paddingBottom: '140px'}}>
         <AboutUsArticle/>
-        <img src={planet} alt={"planet"} height={"600px"} ></img>
+        <img src={backpackGirl} alt={"backpackGirl"} height={"700px"} ></img>
       </GridWrapperHalf>
 
       {/*PRIMARY SECONDARY TERTIARY DISPLAY*/}
-      <GridWrapperThirds>
+      <GridWrapperThirds css={{paddingBottom: '70px'}}>
 
         {/*PRIMARY*/}
         <h3 css={{textAlign: 'center'}}>
           <svg height="200" width="300"><circle cx="150" cy="100" r="80" fill="#69BACC" /></svg>
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px'}}>Primary</PurposeText>
           <br/><br/>
-          <h4 css={{textAlign: 'center'}}>
+          <h4 css={{lineHeight: '1.6', textAlign: 'center'}}>
             Creating opportunities for Primary School children to experience the wonder of space through Single and Multiple Event Learning Modules, some of which include ‘Rocket Building’, ‘Training Like an Astronaut’, and ‘Going to Space’.
           </h4>
         </h3>
@@ -238,7 +193,7 @@ const About = center => (
           </svg>
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px', padding: '80px'}}>Secondary</PurposeText>
           <br/><br/>
-          <h4 css={{textAlign: 'center'}}>
+          <h4 css={{lineHeight: '1.6', textAlign: 'center'}}>
             Encourage Secondary students to consider space as a viable career option through presentations at school assembly's, workshops, and competitions. Our long term goal is to introduce a NCEA Space Standard.
           </h4>
         </h3>
@@ -250,7 +205,7 @@ const About = center => (
           </svg>
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px', align: 'right', padding: '80px'}}>Tertiary</PurposeText>
           <br/><br/>
-          <h4 css={{textAlign: 'center'}}>
+          <h4 css={{lineHeight: '1.6', textAlign: 'center'}}>
             Empower Tertiary students to explore the current Space Industry through networking, inter-university competitions, Space Conferences, Industry tours, and networking events.  A strong focus on Entrepreneurship and what a career in space looks like.
           </h4>
         </h3>
@@ -269,8 +224,7 @@ const About = center => (
         <Card>
           {/*VALUES*/}
           <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>OUR VALUES</HeadingName>
-          <HeadingPosition >
-            < br />< br />
+          <HeadingPosition css={{lineHeight: '1.6'}} >
             <EmphasisYellow>Be Bold</EmphasisYellow>< br />
             EXPLORE > TAKE RISKS > CREATE > CHALLENGE YOURSELF
             < br />< br />
@@ -283,23 +237,22 @@ const About = center => (
 
           {/*CODE OF CONDUCT*/}
           <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>CODE OF CONDUCT</HeadingName>
-          <HeadingPosition >
-            < br />< br />
+          <HeadingPosition css={{lineHeight: '1.6'}}>
             It's pretty simple.
-            < br />< br />
+            < br />< br/>
             DON'T BE A <EmphasisBlue>J.E.R.K</EmphasisBlue>
-            < br />< br />
+            < br />
             <EmphasisBlue>J</EmphasisBlue>udgmental, <EmphasisBlue>E</EmphasisBlue>xclusive, <EmphasisBlue>R</EmphasisBlue>ude, <EmphasisBlue>K</EmphasisBlue>now-it-all
-            < br />< br />< br />< br />
-            INSTEAD, BE <EmphasisBlue>N.I.C.E</EmphasisBlue>
             < br />< br />
+            INSTEAD, BE <EmphasisBlue>N.I.C.E</EmphasisBlue>
+            < br />
             <EmphasisBlue>N</EmphasisBlue>o pre-bias, <EmphasisBlue>I</EmphasisBlue>nclusive, <EmphasisBlue>C</EmphasisBlue>ommunicate, <EmphasisBlue>E</EmphasisBlue>ncouraging
           </HeadingPosition>
         </Card>
 
-        {/*BACKPACK-GIRL IMAGE*/}
+        {/*COMMITTEE IMAGE*/}
         <Card>
-          <img css={{paddingLeft: '0px'}} src={test} alt={"planet"} height={"800px"} ></img>
+          <img css={{paddingTop: '100px'}} src={committee} alt={"committee"}></img>
         </Card>
       </GridWrapperHalf>
 
@@ -317,43 +270,6 @@ const About = center => (
           <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></ButtonText>
         </Button>
       </GridWrapperThirds>
-
-      {/*ADDED IMAGES*/}
-      <Line1
-        src={line}
-        alt={'line'}
-        height={'100px'}
-        width={'360px'}
-        vspace="0"
-      />
-      <Line2
-        src={line2}
-        alt={'line'}
-        height={'100px'}
-        width={'150px'}
-        vspace="0"
-      />
-      <Line3
-        src={line3}
-        alt={'line'}
-        height={'200px'}
-        width={'460px'}
-        vspace="0"
-      />
-      <Line4
-        src={line3}
-        alt={'line'}
-        height={'200px'}
-        width={'460px'}
-        vspace="0"
-      />
-      <RocketImage
-        src={rocket}
-        alt={'line'}
-        height={'150px'}
-        width={'150px'}
-        vspace="0"
-      />
 
     </Layout>
 );

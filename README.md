@@ -12,14 +12,11 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: incorporate brand into site design
 
-
 ### INDEX PAGE
 
-:white_large_square: Add Join Us button
+:white_check_mark: Add Join Us button
 
 :white_large_square: Fix formatting
-
-
 
 ### ABOUT US PAGE
 
@@ -27,11 +24,9 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_check_mark: finish polished article for About Us page
 
-:white_large_square: Fix text spacing
+:white_check_mark: Fix text spacing
 
-:white_large_square: remove doodles, add proper visuals
-
-
+:white_check_mark: remove doodles, add proper visuals
 
 ### EVENTS PAGE
 
@@ -43,8 +38,6 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: add location icon and text to event box
 
-
-
 ### BLOG PAGE
 
 :white_check_mark: fix up blog post tags 
@@ -53,11 +46,11 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: finish and order all blog posts
 
-:white_large_square: fix up /tags/tagName layout (and add author, date)
+:white_check_mark: change folder names of blog posts
 
-:white_large_square: update previous/next link at bottom of blog posts
+:white_check_mark: fix up /tags/tagName layout (and add author, date)
 
-
+:white_check_mark: update previous/next link at bottom of blog posts
 
 ### TEAM PAGE
 
@@ -65,15 +58,13 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: If members don't have a linked in profile (or other links), remove hover colour.
 
-
-
 ### CONTACT US PAGE
 
-:white_large_square: add facebook links to repspective colonies and "where to find more info" to contact us page
+:white_check_mark: add facebook links to repspective colonies and "where to find more info" to contact us page
 
 :white_large_square: <strike>add form submission to Contact Us</strike>
 
-:white_large_square: change layout to vertically list branches and horizontally list buttons
+:white_check_mark: change layout to horizontally list branches and vertically list buttons
 
 ## Starter Features
 

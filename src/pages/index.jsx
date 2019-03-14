@@ -5,9 +5,7 @@ import Helmet from 'react-helmet';
 import styled from 'react-emotion';
 import { HomeHeader, Header, PostList } from 'components';
 import { Layout } from 'layouts';
-// import backpackGirl from '../../static/backpackGirl.svg';
-// import stars from '../../static/stars.svg';
-import logo from '../../static/logo/white-logo.png';
+import logo from '../../static/logo/logo-gif.gif';
 
 const PostWrapper = styled.div`
   top: 600px;
@@ -22,6 +20,33 @@ const PostWrapper = styled.div`
   }
   @media (max-width: 700px) {
     margin: 2rem 1rem 1rem 1rem;
+  }
+`;
+
+const Button = styled.button`
+  background-color: #ffffff;
+  color: black;
+  padding: 15px 5px;
+  align: right;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
+  margin: 0px;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 130px;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 600px;
+  right: 80px;
+`;
+
+const ButtonText = styled.div`
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    align: center;
   }
 `;
 
@@ -41,14 +66,12 @@ const Subheading = styled.h2`
 const Index = ({ data }) => {
   return (
     <Layout>
-
       <Image2
         src={logo}
         styles={'background-color: #000000'}
         alt={'logo'}
         height={'500px'}
         alt={'backpackGirl'}
-        // height={'500px'}
         width={'35%'}
         height={'auto'}
         align="left"
@@ -58,6 +81,19 @@ const Index = ({ data }) => {
       <HomeHeader title="New Zealand Students' Space Association">
         Be bold. Have fun. Build a better world.
       </HomeHeader>
+
+      {/*BUTTON TO BOOK WORKSHOP*/}
+      <Button>
+        <ButtonText>
+          <a
+            style={{ color: '#000' }}
+            href="https://docs.google.com/forms/d/1Mq1mNDnXJ_lIaIASuVDuN6rK_gIo9sAdZ3IOuEHNnYo/viewform?fbclid=IwAR0K2ZsmECMckLZumcdMDZLwXJIrnNZHqMgOXkfDHx2GBYAjhJ8Z5VDS0-w&edit_requested=true"
+          >
+            Join Us!
+          </a>
+        </ButtonText>
+      </Button>
+
       <Subheading>Upcoming Events</Subheading>
 
       <hr css={{ width: '230px', border: '0.5px solid white', marginLeft: '6rem', marginTop: '1rem' }} />

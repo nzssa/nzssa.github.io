@@ -4,23 +4,43 @@ import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import { Layout, Container, Content } from 'layouts';
 import { TagsBlock, Header, SEO } from 'components';
-// import Header from '../components/Header';
-// import Container from '../layouts/Container';
-// import Content from '../layouts/Content';
-// import SEO from '../components/SEO';
 import '../styles/prism';
+import Img from 'gatsby-image';
 
 const SuggestionBar = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background: ${props => props.theme.colors.white.light};
+  background: ${props => props.theme.colors.black};
   box-shadow: ${props => props.theme.shadow.suggestion};
 `;
 const PostSuggestion = styled.div`
   display: flex;
   align-items: center;
   margin: 1rem 3rem 0 3rem;
+`;
+
+const Image = styled.div`
+  margin: auto;
+  position: relative;
+  border-radius: ${props => props.theme.borderRadius.default};
+  min-height: 300px;
+  img {
+    border-radius: ${props => props.theme.borderRadius.default};
+  }
+
+  flex-basis: 100%;
+  max-width: 100%;
+  width: 70%;
+  @media (max-width: 800px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 500px) {
+    min-height: 200px;
+  }
 `;
 
 const Post = ({ data, pageContext }) => {
@@ -31,6 +51,8 @@ const Post = ({ data, pageContext }) => {
   const author = post.frontmatter.author;
   const date = post.frontmatter.date;
   const html = post.html;
+  const picture = post.frontmatter.picture1.childImageSharp.fluid;
+
   return (
     <Layout>
       <SEO
@@ -42,13 +64,14 @@ const Post = ({ data, pageContext }) => {
       />
       <Header title={title} date={date} cover={image}/>
       <Container>
-        <Content input={html} />
+        <Image><Img fluid={picture} /></Image>
+        <Content input={html}/>
         <TagsBlock list={post.frontmatter.tags || []} />
       </Container>
       <SuggestionBar>
         <PostSuggestion>
           {prev && (
-            <Link to={prev.frontmatter.path}>
+            <Link css={{color: 'white'}} to={prev.frontmatter.path}>
               Previous
               <h3>{prev.frontmatter.title}</h3>
             </Link>
@@ -56,7 +79,7 @@ const Post = ({ data, pageContext }) => {
         </PostSuggestion>
         <PostSuggestion>
           {next && (
-            <Link to={next.frontmatter.path}>
+            <Link css={{color: 'white'}} to={next.frontmatter.path}>
               Next
               <h3>{next.frontmatter.title}</h3>
             </Link>
@@ -91,6 +114,19 @@ export const query = graphql`
               maxWidth: 1920
               quality: 90
               duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
+            ) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+            resize(width: 1200, quality: 90) {
+              src
+            }
+          }
+        }
+        picture1 {
+          childImageSharp {
+            fluid(
+              maxWidth: 1920
+              quality: 90
             ) {
               ...GatsbyImageSharpFluid_withWebp
             }
