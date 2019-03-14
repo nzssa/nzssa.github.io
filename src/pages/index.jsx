@@ -25,16 +25,6 @@ const PostWrapper = styled.div`
   }
 `;
 
-// const Image = styled.img`
-//   position: absolute;
-//   left: 500px;
-//   top: -140px;
-//   z-index: 1;
-//   background-color: #000000;
-//   background-repeat: repeat-x;
-//   background-image: url('../../static/stars.svg');
-// `;
-
 const Image2 = styled.img`
   background-color: #000000;
   position: absolute;
@@ -49,18 +39,9 @@ const Subheading = styled.h2`
 `;
 
 const Index = ({ data }) => {
-  // const { eventsEdges } = data.upcomingEvents;
-  // const { postsEdges } = data.blogPosts;
   return (
     <Layout>
-      {/*<Image*/}
-      {/*src={stars}*/}
-      {/*styles={'background-color: #000000'}*/}
-      {/*alt={'stars'}*/}
-      {/*height={'400px'}*/}
-      {/*width={'400px'}*/}
-      {/*vspace="0"*/}
-      {/*/>*/}
+
       <Image2
         src={logo}
         styles={'background-color: #000000'}
@@ -87,6 +68,7 @@ const Index = ({ data }) => {
             cover={node.frontmatter.cover.childImageSharp.fluid}
             path={node.frontmatter.path}
             title={node.frontmatter.title}
+            location={node.frontmatter.location}
             author={node.frontmatter.author}
             date={node.frontmatter.date}
             excerpt={node.excerpt}
@@ -144,7 +126,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          ...contentFields
+          ...contentFieldsEvent
         }
       }
     }
@@ -171,6 +153,30 @@ export const query = graphql`
             path
             tags
             date
+            cover {
+              childImageSharp {
+                fluid(
+                  maxWidth: 1000
+                  quality: 90
+                  traceSVG: { color: "#2B2B2F" }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+          }
+  }
+  
+    fragment contentFieldsEvent on MarkdownRemark {
+            id
+          excerpt(pruneLength: 75)
+          frontmatter {
+            title
+            author
+            path
+            tags
+            date
+            location
             cover {
               childImageSharp {
                 fluid(
