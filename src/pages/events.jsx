@@ -55,22 +55,6 @@ const Events = ({ data }) => {
       <Helmet title={'Events'} />
       <Header title="Events"></Header>
 
-      {/*LOCATION KEY DISPLAY*/}
-      <GridWrapperThirds>
-
-        {/*WELLINGTON*/}
-        <h3 css={{textAlign: 'center'}}>
-          <svg height="40" width="40"><circle cx="20" cy="20" r="20" fill="#6F4D88" /></svg>
-          <Text css={{fontWeight: 'bold', fontSize: '20px'}}>Wellington</Text>
-        </h3>
-
-        {/*SECONDARY*/}
-        <h3 css={{textAlign: 'center'}}>
-          <svg height="40" width="40"><circle cx="20" cy="20" r="20" fill="#1A4174" /></svg>
-          <Text css={{fontWeight: 'bold', fontSize: '20px'}}>Christchurch</Text>
-        </h3>
-      </GridWrapperThirds>
-
       <Container>
         <HeaderTitle>Upcoming</HeaderTitle>
         {edges.map(({ node }) => (
@@ -80,6 +64,8 @@ const Events = ({ data }) => {
             date={node.frontmatter.date}
             excerpt={node.excerpt}
             colour={node.frontmatter.colour}
+            path={node.frontmatter.slug}
+            location={node.frontmatter.location}
           />
         ))}
       </Container>
@@ -127,6 +113,7 @@ export const query = graphql`
             slug
             date
             colour
+            location
             published
             _PARENT
           }

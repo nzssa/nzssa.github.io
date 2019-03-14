@@ -107,14 +107,15 @@ const Title = styled.h2`
   font-family: 'Rubik', sans-serif;
 `;
 
-const PostList = ({ cover, path, date, title, excerpt }) => (
+const PostList = ({ cover, path, date, title, excerpt, location }) => (
   <Wrapper>
     <Image>
       <Img fluid={cover} />
     </Image>
     <StyledLink to={path}>
+      <p css={{fontStyle: 'italic', fontWeight: 'bold', marginBottom: '4px'}}>{location}</p>
+      <p css={{marginBottom: '10px'}}>{date}</p>
       <Info>
-        <p css={{marginBottom: '10px'}}>{date}</p>
         <Title>{title}</Title>
         <span>{excerpt}</span>
       </Info>

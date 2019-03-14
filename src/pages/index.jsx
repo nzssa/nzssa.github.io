@@ -5,8 +5,6 @@ import Helmet from 'react-helmet';
 import styled from 'react-emotion';
 import { HomeHeader, Header, PostList } from 'components';
 import { Layout } from 'layouts';
-// import backpackGirl from '../../static/backpackGirl.svg';
-// import stars from '../../static/stars.svg';
 import logo from '../../static/logo/logo-gif.gif';
 
 const PostWrapper = styled.div`
@@ -106,6 +104,7 @@ const Index = ({ data }) => {
             cover={node.frontmatter.cover.childImageSharp.fluid}
             path={node.frontmatter.path}
             title={node.frontmatter.title}
+            location={node.frontmatter.location}
             author={node.frontmatter.author}
             date={node.frontmatter.date}
             excerpt={node.excerpt}
@@ -163,7 +162,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          ...contentFields
+          ...contentFieldsEvent
         }
       }
     }
@@ -190,6 +189,30 @@ export const query = graphql`
             path
             tags
             date
+            cover {
+              childImageSharp {
+                fluid(
+                  maxWidth: 1000
+                  quality: 90
+                  traceSVG: { color: "#2B2B2F" }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+          }
+  }
+  
+    fragment contentFieldsEvent on MarkdownRemark {
+            id
+          excerpt(pruneLength: 75)
+          frontmatter {
+            title
+            author
+            path
+            tags
+            date
+            location
             cover {
               childImageSharp {
                 fluid(

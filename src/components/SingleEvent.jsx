@@ -8,14 +8,23 @@ const Wrapper = styled.article`
   margin: 2rem 1rem;
   border-radius: 10px;
   padding: 1rem;
+  padding-top: 0.5rem;
   box-shadow: ${props => props.theme.shadow.card};
   border-left: 15px solid;
 `;
 
-
-const EventTitle = styled.h2`
+const EventTitle = styled.div`
   margin: 0;
   color: #000;
+  display: block;
+`;
+
+const EventLocation = styled.p`
+  display: inline-block;
+  float: right;
+  color: #000;
+  margin: auto 0;
+  font-style: italic;
 `;
 
 const Excerpt = styled.p`
@@ -29,9 +38,21 @@ const Date = styled.p`
   color: #000;
 `;
 
-const SingleEvent = ({ title, date, excerpt, colour }) => (
-  <Wrapper css={{borderColor: colour, backgroundColor: '#fff'}}>
-    <EventTitle>{title}</EventTitle>
+const EventLink = styled.a`
+  color: ${props => props.theme.colors.black.blue};
+  transition: color 0.2s;
+  font-weight: bold;
+  font-size: 1.5rem;
+  &:hover {
+    color: ${props => props.theme.colors.primary.base};
+  }
+`;
+const SingleEvent = ({ title, date, excerpt, colour, path, location }) => (
+  <Wrapper css={{ borderColor: colour, backgroundColor: '#fff' }}>
+    <EventTitle>
+      <EventLink href={'/' + path}>{title}</EventLink>
+      <EventLocation>{location}</EventLocation>
+    </EventTitle>
     <Date>{date}</Date>
     <Excerpt>{excerpt}</Excerpt>
   </Wrapper>
@@ -44,4 +65,5 @@ SingleEvent.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   tags: PropTypes.array,
+  location: PropTypes.string,
 };
