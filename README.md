@@ -16,17 +16,11 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_check_mark: Add Join Us button
 
-INDEX PAGE
-
-:white_large_square: Add Join Us button
-
 :white_large_square: Fix formatting
-
-
 
 ### ABOUT US PAGE
 
-ABOUT US PAGE
+:white_large_square: Fix formatting
 
 :white_check_mark: hard-code about us page for design review
 
@@ -38,8 +32,6 @@ ABOUT US PAGE
 
 ### EVENTS PAGE
 
-EVENTS PAGE
-
 :white_check_mark: add colour labels to events to indicate location
 
 :white_check_mark: update events colour var so only location needs to be indicated
@@ -48,10 +40,7 @@ EVENTS PAGE
 
 :white_check_mark: add location icon and text to event box
 
-
 ### BLOG PAGE
-
-BLOG PAGE
 
 :white_check_mark: fix up blog post tags 
 
@@ -59,19 +48,17 @@ BLOG PAGE
 
 :white_large_square: finish and order all blog posts
 
-:white_large_square: fix up /tags/tagName layout (and add author, date)
+:white_check_mark: change folder names of blog posts
 
-:white_large_square: update previous/next link at bottom of blog posts
+:white_check_mark: fix up /tags/tagName layout (and add author, date)
 
+:white_check_mark: update previous/next link at bottom of blog posts
 
 ### TEAM PAGE
-
-TEAM PAGE
 
 :white_check_mark: finish team page (add members)
 
 :white_large_square: If members don't have a linked in profile (or other links), remove hover colour.
-
 
 ### CONTACT US PAGE
 
@@ -79,7 +66,7 @@ TEAM PAGE
 
 :white_large_square: <strike>add form submission to Contact Us</strike>
 
-:white_check_mark: change layout to vertically list branches and horizontally list buttons
+:white_check_mark: change layout to horizontally list branches and vertically list buttons
 
 ## Starter Features
 

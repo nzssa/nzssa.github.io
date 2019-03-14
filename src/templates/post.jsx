@@ -11,7 +11,7 @@ const SuggestionBar = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background: ${props => props.theme.colors.white.light};
+  background: ${props => props.theme.colors.black};
   box-shadow: ${props => props.theme.shadow.suggestion};
 `;
 const PostSuggestion = styled.div`
@@ -23,8 +23,6 @@ const PostSuggestion = styled.div`
 const Image = styled.div`
   margin: auto;
   position: relative;
-  box-shadow: ${props => props.theme.shadow.feature.small.default};
-  transition: ${props => props.theme.transitions.boom.transition};
   border-radius: ${props => props.theme.borderRadius.default};
   min-height: 300px;
   img {
@@ -73,7 +71,7 @@ const Post = ({ data, pageContext }) => {
       <SuggestionBar>
         <PostSuggestion>
           {prev && (
-            <Link to={prev.frontmatter.path}>
+            <Link css={{color: 'white'}} to={prev.frontmatter.path}>
               Previous
               <h3>{prev.frontmatter.title}</h3>
             </Link>
@@ -81,7 +79,7 @@ const Post = ({ data, pageContext }) => {
         </PostSuggestion>
         <PostSuggestion>
           {next && (
-            <Link to={next.frontmatter.path}>
+            <Link css={{color: 'white'}} to={next.frontmatter.path}>
               Next
               <h3>{next.frontmatter.title}</h3>
             </Link>
@@ -129,7 +127,6 @@ export const query = graphql`
             fluid(
               maxWidth: 1920
               quality: 90
-              duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
             ) {
               ...GatsbyImageSharpFluid_withWebp
             }
