@@ -50,7 +50,9 @@ const EventLink = styled.a`
 const SingleEvent = ({ title, date, excerpt, colour, path, location }) => (
   <Wrapper css={{ borderColor: colour, backgroundColor: '#fff' }}>
     <EventTitle>
-      <EventLink href={'/' + path}>{title}</EventLink>
+      <Link to={path}>
+        <EventLink>{title}</EventLink>
+      </Link>
       <EventLocation>{location}</EventLocation>
     </EventTitle>
     <Date>{date}</Date>
