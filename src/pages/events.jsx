@@ -86,6 +86,7 @@ Events.propTypes = {
               title: PropTypes.string.isRequired,
               date: PropTypes.string.isRequired,
               colour: PropTypes.string.isRequired,
+              location: PropTypes.string.isRequired,
               tags: PropTypes.array,
             }),
           }),

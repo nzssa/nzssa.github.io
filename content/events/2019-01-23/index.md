@@ -5,6 +5,7 @@ slug: "post-five"
 date: "2019-01-23"
 title: "Event 2"
 colour: "#71B585"
+location: "Christchurch"
 tags: ['tutorial', 'javascript', 'frontend']
 published: true
 ---

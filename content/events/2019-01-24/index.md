@@ -5,6 +5,7 @@ slug: "post-four"
 date: "2019-01-24"
 title: "Event 3"
 colour: "#6F4D88"
+location: "Wellington"
 tags: ['gatsby', 'other']
 published: false
 ---

@@ -5,6 +5,7 @@ slug: "tutorial"
 date: "2019-01-20"
 title: "Event Numero Uno"
 colour: "#69BACC"
+location: "Wellington"
 tags: ['gatsby', 'tutorial']
 published: true
 ---
