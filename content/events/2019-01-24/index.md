@@ -1,7 +1,8 @@
 ---
-path: "/post-four"
-cover: "../2019-01-24/blocks.jpg"
-slug: "post-four"
+path: "/event2"
+cover: "./blocks.jpg"
+picture1: "./blocks.jpg"
+slug: "event-three"
 date: "2019-01-24"
 title: "Event 3"
 colour: "#6F4D88"

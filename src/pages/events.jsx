@@ -64,7 +64,7 @@ const Events = ({ data }) => {
             date={node.frontmatter.date}
             excerpt={node.excerpt}
             colour={node.frontmatter.colour}
-            path={node.frontmatter.slug}
+            path={node.frontmatter.path}
             location={node.frontmatter.location}
           />
         ))}
@@ -87,6 +87,7 @@ Events.propTypes = {
               date: PropTypes.string.isRequired,
               colour: PropTypes.string.isRequired,
               location: PropTypes.string.isRequired,
+              path: PropTypes.string.isRequired,
               tags: PropTypes.array,
             }),
           }),
@@ -111,7 +112,7 @@ export const query = graphql`
         excerpt(pruneLength: 200)
           frontmatter {
             title
-            slug
+            path
             date
             colour
             location

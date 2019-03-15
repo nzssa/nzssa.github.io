@@ -1,7 +1,8 @@
 ---
-path: "/tutorial"
-cover: "../2019-01-20/finance.jpg"
-slug: "tutorial"
+path: "/event1"
+cover: "./finance.jpg"
+picture1: "./finance.jpg"
+slug: "event-one"
 date: "2019-01-20"
 title: "Event Numero Uno"
 colour: "#69BACC"
