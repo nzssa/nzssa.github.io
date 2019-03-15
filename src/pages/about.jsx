@@ -178,7 +178,7 @@ const About = center => (
 
         {/*PRIMARY*/}
         <h3 css={{textAlign: 'center'}}>
-          <svg height="200" width="300"><circle cx="150" cy="100" r="80" fill="#69BACC" /></svg>
+          <svg height="200" width="300"><circle cx="150" cy="100" r="80" fill="#F6CA68" /></svg>
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px'}}>Primary</PurposeText>
           <br/><br/>
           <h4 css={{lineHeight: '1.6', textAlign: 'center'}}>
@@ -201,7 +201,7 @@ const About = center => (
         {/*TERTIARY*/}
         <h3 css={{textAlign: 'center'}}>
           <svg height="200" width="300">
-            <circle cx="150" cy="100" r="80" fill="#1A4174" />
+            <circle cx="150" cy="100" r="80" fill="#F6CA68" />
           </svg>
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px', align: 'right', padding: '80px'}}>Tertiary</PurposeText>
           <br/><br/>
@@ -225,13 +225,13 @@ const About = center => (
           {/*VALUES*/}
           <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>OUR VALUES</HeadingName>
           <HeadingPosition css={{lineHeight: '1.6'}} >
-            <EmphasisYellow>Be Bold</EmphasisYellow>< br />
+            <EmphasisBlue>Be bold</EmphasisBlue>< br />
             EXPLORE > TAKE RISKS > CREATE > CHALLENGE YOURSELF
             < br />< br />
-            <EmphasisYellow>Have Fun</EmphasisYellow>< br />
+            <EmphasisBlue>Have fun</EmphasisBlue>< br />
             JOIN A COMMUNITY > MAKE MISTAKES > SUCCEED TOGETHER
             < br />< br />
-            <EmphasisYellow>Build a better world</EmphasisYellow>< br />
+            <EmphasisBlue>Build a better world</EmphasisBlue>< br />
             NEW KNOWLEDGE > INNOVATION > MAKE YOUR DIFFERENCE
           </HeadingPosition>
 
