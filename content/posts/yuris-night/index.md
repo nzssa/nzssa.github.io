@@ -6,7 +6,7 @@ slug: "tutorial"
 date: "2018-04-12"
 title: "Yuri's Night"
 author: "Amber Joseph"
-tags: ['pizza', 'movie']
+tags: ['pizza', 'movie', 'social']
 published: true
 ---
 
