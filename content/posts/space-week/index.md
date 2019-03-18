@@ -6,7 +6,7 @@ slug: "tutorial"
 date: "2018-10-20"
 title: "Space Week; Art in space?"
 author: "Amber Joseph"
-tags: ['social', 'art', 'quiz', 'movie', 'space-week']
+tags: ['social', 'space-week']
 published: true
 ---
 

@@ -6,7 +6,7 @@ slug: "tutorial"
 date: "2018-03-03"
 title: "Humble Beginnings"
 author: "Amber Joseph"
-tags: ['gatsby', 'tutorial']
+tags: ['Wellington']
 published: true
 ---
 

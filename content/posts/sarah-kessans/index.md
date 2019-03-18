@@ -6,7 +6,7 @@ slug: "tutorial"
 date: "2018-10-20"
 title: "Talk from Sarah Kessans"
 author: "Vaishnavi Anand"
-tags: ['gatsby', 'tutorial']
+tags: ['speech', 'guest']
 published: true
 ---
 

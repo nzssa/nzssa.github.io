@@ -6,7 +6,7 @@ slug: "post-four"
 date: "2018-05-21"
 title: "Students' In Space Conference"
 author: "Amber Joseph"
-tags: ['gatsby', 'other']
+tags: ['conference', 'Wellington']
 published: false
 ---
 On Monday 21st May we held the inaugural Students in Space conference. It was a great success, with attendees of all ages bursting with questions, space quizzes, planetarium shows, and most of all, some incredible entertaining speakers, from a range of fields within the space industry. Check out some photos from the night - we can't wait to see you at the next one!

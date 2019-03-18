@@ -6,7 +6,7 @@ slug: "post-three"
 date: "2018-10-05"
 title: "Guardians of the Galaxy"
 author: "Amber Joseph"
-tags: ['social', 'movie', 'space-week']
+tags: ['social', 'space-week']
 published: true
 ---
 As part of Space Week 2018, we decided it would be epic to have a movie night that brings people together from all over the space community.

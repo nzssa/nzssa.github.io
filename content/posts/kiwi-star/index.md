@@ -6,7 +6,7 @@ slug: "tutorial"
 date: "2018-06-05"
 title: "Industry Tour to KiwiStar"
 author: "Amber Joseph"
-tags: ['gatsby', 'tutorial']
+tags: ['industry', 'guest']
 published: true
 ---
 
