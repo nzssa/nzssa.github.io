@@ -7,7 +7,7 @@ date: "2018-05-04"
 title: "RASNZ Conference"
 author: "Amber Joseph"
 published: true
-tags: ['astronomy', 'conference', 'presentation']
+tags: ['astronomy', 'conference', 'success']
 ---
 Vee and I approached the RASNZ 2018 conference full of anticipation, excitement, and a hint of trepidation. The cost was putting a decent dent in our untouched club budget; as we had never been to a RASNZ conference before, we were taking what we believed to be a substantial leap into the dark. Fortunately the local Wellington Astronomical Society, run by the fantastic Antony Gomez, was able to contribute to the cost of flights down to Christchurch. Still, there remained the $250 tickets (per person) and the accomodation to cover. We ran a sausage sizzle at the Kelburn Campus to help, but majority of it came out of the club budget….we certainly felt the weight of the investment on the way down!
 
