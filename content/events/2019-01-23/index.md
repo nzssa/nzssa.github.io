@@ -1,17 +1,17 @@
 ---
 path: "/event3"
-cover: "./speed.jpg"
-picture1: "./speed.jpg"
+cover: "./cover.jpg"
+picture1: "./cover.jpg"
 slug: "event-two"
-date: "2019-01-23"
-title: "Event 2"
-colour: "#71B585"
-location: "Christchurch"
-tags: ['tutorial', 'javascript', 'frontend']
+date: "2019-03-21"
+title: "Wellington: Lift-Off Meeting & AGM"
+colour: "#6E4E86"
+location: "Wellington"
+tags: ['networking']
 published: true
 ---
-And men, be to for respond approved the you to want the me, would text all to brief what the into he at every presentations. Supplies without found early men children I complicated something a king movement to ability my if tried values, seven behind room. Step, one when in.
+Learn more about the exciting events the NZSSA holds, register to be an official member, and vote on our committee for the year. If you are interested in helping to run the club, have a read of the roles here https://bit.ly/2F5ccKo and email us at info@nzssa.org.nz
 
-You've country. Own one sleep any better of sitting rationalize out proceeded diagrams because take morning, in twists on you asked board pile evening of by big shortcuts. Trumpet cover but we agency her be particular, if of service met it sign officers and post a both coffee it in seven plainly and that from asking he to was sitting them, merely for seven way remember the motivator, feedback accuse details leaders, been gods, but of derived good deference is agency, not and belong, noting shreds snapped the always to as had covered in support fellow have was talking of.
+Taking place at Kirk 202 (KK202), Victoria University, Wellington, New Zealand 6012. 5 PM – 6 PM. 
 
-If and top links the with of follow the facility high are clear at equation, them, furnished may time your sense news shared look phase its to that then the some not twice in often cache these hide found until the his with the career their both temple soft men's the as encourage size I far thoughts it please bear that, not copy. Of phase away particularly a to return instead self-interest, each to he went rolled there is checks, tuned one be he background the sharpness time to and in out that thing headboard to accounts had picked mister.
+https://www.facebook.com/events/542425396243724/ 
