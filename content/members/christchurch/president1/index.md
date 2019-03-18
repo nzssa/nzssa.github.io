@@ -4,7 +4,7 @@ cover: "./profile.jpg"
 slug: "tutorial"
 date: "1"
 title: "CO-PRESIDENT"
-link: ""
+link: "https://www.linkedin.com/in/megan-poehler-393392180/"
 name: "Megan Poehler"
 tags: ['gatsby', 'tutorial']
 published: true
