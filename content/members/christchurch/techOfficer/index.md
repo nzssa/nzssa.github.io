@@ -1,6 +1,7 @@
 ---
 path: "/tutorial"
 cover: "./profile.jpg"
+picture1: "./profile.jpg"
 slug: "tutorial"
 date: "6"
 title: "TECHNOLOGY OFFICER"

@@ -1,6 +1,7 @@
 ---
 path: "/tutorial"
 cover: "./profile.jpg"
+picture1: "./profile.jpg"
 slug: "tutorial"
 date: "7"
 title: "SPONSORSHIP MANAGER"

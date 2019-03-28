@@ -1,6 +1,7 @@
 ---
 path: "/tutorial"
 cover: "./finance.jpg"
+picture1: "./finance.jpg"
 slug: "tutorial"
 date: "2"
 title: "Welly Treasurer"
