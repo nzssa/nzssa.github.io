@@ -7,7 +7,7 @@ date: "5"
 title: "HEAD DESIGNER"
 name: "Megan Taylor"
 link: ""
-tags: ['gatsby', 'test']
+tags: ['gatsby']
 published: true
 ---
 
