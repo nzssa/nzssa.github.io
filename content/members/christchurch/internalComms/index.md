@@ -2,7 +2,7 @@
 path: "/tutorial"
 cover: "./profile.jpg"
 slug: "tutorial"
-date: "9.1"
+date: "9"
 title: "INTERNAL COMMUNICATIONS OFFICER"
 name: "Jake McNaughton"
 link: ""
