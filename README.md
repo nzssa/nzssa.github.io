@@ -46,7 +46,7 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_check_mark: add author to blog posts
 
-:white_large_square: finish and order all blog posts
+:white_check_mark finish and order all blog posts
 
 :white_check_mark: change folder names of blog posts
 

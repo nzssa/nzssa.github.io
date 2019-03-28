@@ -5,7 +5,7 @@ slug: "tutorial"
 date: "6"
 title: "TECHNOLOGY OFFICER"
 name: "Ben Hollows"
-link: ""
+link: "https://www.linkedin.com/in/ben-hollows/"
 tags: ['gatsby', 'tutorial']
 published: true
 ---
