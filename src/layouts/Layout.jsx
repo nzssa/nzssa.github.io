@@ -42,29 +42,29 @@ injectGlobal`
     
   }
   a {
-    color: ${theme.colors.link};
+    color: ${theme.colors.link} !important;
     transition: color .5s;
     text-decoration: none;
   }
   a:hover {
     text-decoration: none;
-    color: ${theme.colors.linkHover};
+    color: ${theme.colors.linkHover} !important;
   }
   h1{
     font-family: ${theme.fontFamily.heading};
-    color: #ffffff;
+    color: #ffffff !important;
   }
   h2 {
-    color: #ffffff;
+    color: #ffffff !important;
   }
   h3 {
-    color: #ffffff;
+    color: #ffffff !important;
   }
   h4 {
-    color: #ffffff;
+    color: #ffffff !important;
   }
   p {
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
 
