@@ -12,6 +12,8 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: incorporate brand into site design
 
+:white_large_square: update site thumbnail (seen when you paste link into facebook)
+
 ### INDEX PAGE
 
 :white_check_mark: Add Join Us button
@@ -62,7 +64,7 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 ### CONTACT US PAGE
 
-:white_check_mark: add facebook links to repspective colonies and "where to find more info" to contact us page
+:white_check_mark: add facebook links to respective colonies and "where to find more info" to contact us page
 
 :white_large_square: <strike>add form submission to Contact Us</strike>
 
