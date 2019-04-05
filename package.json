@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-tutorial-starter",
-  "author": "Justin Formentin",
-  "title": "Gatsby V2 Tutorial Starter",
-  "description": "My Blog",
-  "homepage": "https://gatsby-tutorial-starter.netlify.com",
+  "name": "NZSSA",
+  "author": "",
+  "title": "NZSSA",
+  "description": "New Zealand Students' Space Association",
+  "homepage": "https://nzssa.org.nz",
   "license": "MIT",
-  "version": "0.0.7",
+  "version": "1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/justinformentin/gatsby-v2-tutorial-starter"
+    "url": "https://nzssa.org.nz"
   },
   "scripts": {
     "develop": "gatsby develop",
