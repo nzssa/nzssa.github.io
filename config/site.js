@@ -14,5 +14,5 @@ module.exports = {
   author: '', // Author for schemaORGJSONLD
   themeColor: '#3e7bf2',
   backgroundColor: '#d3e0ff',
-  //twitter: '@justinformentin', // Twitter Username
+  twitter: '', // Twitter Username
 };
