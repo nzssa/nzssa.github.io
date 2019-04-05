@@ -167,7 +167,7 @@ this.workbox.routing = (function (assert_mjs,logger_mjs,WorkboxError_mjs,getFrie
    * requests against third-party servers, you must define a RegExp that matches
    * the start of the URL.
    *
-   * [See the module public for info.]{@link https://developers.google.com/web/tools/workbox/modules/workbox-routing}
+   * [See the module docs for info.]{@link https://developers.google.com/web/tools/workbox/modules/workbox-routing}
    *
    * @memberof workbox.routing
    * @extends workbox.routing.Route
