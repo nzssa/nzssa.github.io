@@ -2,71 +2,60 @@
 Website built with Gatsby and Justin Formentin's <a href="https://github.com/justinformentin/gatsby-v2-tutorial-starter">starter</a>.
 
 ## dev notes / to-dos
-:white_check_mark: create new component for home page header (which is different from blog post headers)
 
-:white_check_mark: <strike>reformat home page blog icons to use CSS Grid</strike> make blog post icons sit nicely
+:white_large_square: ensure everything is r e s p o n s i v e (mobile friendly - dum dum daaaa)
 
-:white_large_square: ensure everything is r e s p o n s i v e
+:white_large_square: make local gatsby branch to test and compare white background
 
-:white_large_square: develop brand identity
-
-:white_large_square: incorporate brand into site design
 
 ### INDEX PAGE
 
-:white_check_mark: Add Join Us button
+:white_large_square: fix formatting
 
-:white_large_square: Fix formatting
+:white_large_square: add proper email to button
+
+:white_large_square: give whole buttom click rights
+
 
 ### ABOUT US PAGE
 
-:white_large_square: Fix formatting
+:white_large_square: do something with giant yellow circles - NO MORE
 
-:white_check_mark: hard-code about us page for design review
-
-:white_check_mark: finish polished article for About Us page
-
-:white_check_mark: Fix text spacing
-
-:white_check_mark: remove doodles, add proper visuals
 
 ### EVENTS PAGE
 
-:white_check_mark: add colour labels to events to indicate location
+:white_large_square: reference to check out blog at bottom of page
 
-:white_check_mark: update events colour var so only location needs to be indicated
+:white_large_square: fix URL colours
 
-:white_check_mark: make events clickable
+:white_large_square: give whole event click rights
 
-:white_check_mark: add location icon and text to event box
+:white_large_square: change text location to black instead of white
+
+:white_large_square: add filter by tag feature
+
 
 ### BLOG PAGE
 
-:white_check_mark: fix up blog post tags 
+:white_large_square: fix double lined titles
 
-:white_check_mark: add author to blog posts
+:white_large_square: fix spacing with titles, dates, break-line
 
-:white_check_mark finish and order all blog posts
+:white_large_square: add timeline to side of blog
 
-:white_check_mark: change folder names of blog posts
+:white_large_square: fix URL colours
 
-:white_check_mark: fix up /tags/tagName layout (and add author, date)
-
-:white_check_mark: update previous/next link at bottom of blog posts
 
 ### TEAM PAGE
 
-:white_check_mark: finish team page (add members)
-
-:white_large_square: If members don't have a linked in profile (or other links), remove hover colour.
 
 ### CONTACT US PAGE
 
-:white_check_mark: add facebook links to repspective colonies and "where to find more info" to contact us page
+:white_large_square: add proper emails
 
-:white_large_square: <strike>add form submission to Contact Us</strike>
+:white_large_square: give whole buttom click rights; all contact buttons
 
-:white_check_mark: change layout to horizontally list branches and vertically list buttons
+:white_large_square: give Mission Control its own line
 
 ## Starter Features
 
