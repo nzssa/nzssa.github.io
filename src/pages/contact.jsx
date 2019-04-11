@@ -62,7 +62,6 @@ const HeadingPosition = styled.h4`
 `;
 
 const Information = styled.div`
-
   text-align: center;
   flex-basis: 100%;
   max-width: 100%;
@@ -155,14 +154,18 @@ const Contact = center => (
         </a>
         <Information>
           <a href="https://www.facebook.com/studentsInSpace/">
-            <HeadingName css={{
-              fontWeight: 'bold',
-              color: '#FFF',
-              transition: 'all 0.1s ease-in-out',
-              ':hover': {
-                color: theme.colors.teams.wellington,
-              },
-            }}>WELLINGTON</HeadingName>
+            <HeadingName
+              css={{
+                fontWeight: 'bold',
+                color: '#FFF',
+                transition: 'all 0.1s ease-in-out',
+                ':hover': {
+                  color: theme.colors.teams.wellington,
+                },
+              }}
+            >
+              WELLINGTON
+            </HeadingName>
           </a>
         </Information>
         <HeadingPosition>
@@ -199,14 +202,18 @@ const Contact = center => (
         </a>
         <Information>
           <a href="https://www.facebook.com/nzssachch/">
-            <HeadingName css={{
-              fontWeight: 'bold',
-              color: '#FFF',
-              transition: 'all 0.1s ease-in-out',
-              ':hover': {
-                color: theme.colors.teams.christchurch,
-              },
-            }}>{' '}CHRISTCHURCH
+            <HeadingName
+              css={{
+                fontWeight: 'bold',
+                color: '#FFF',
+                transition: 'all 0.1s ease-in-out',
+                ':hover': {
+                  color: theme.colors.teams.christchurch,
+                },
+              }}
+            >
+              {' '}
+              CHRISTCHURCH
             </HeadingName>
           </a>
         </Information>
@@ -214,7 +221,8 @@ const Contact = center => (
           University of Canterbury
           <br />
           <br />
-          <a css={{
+          <a
+            css={{
               color: '#FFF',
               fontSize: '2.5em',
               transition: 'all 0.1s ease-in-out',
@@ -233,47 +241,45 @@ const Contact = center => (
       </Card>
     </GridWrapper>
 
-    <Line></Line>
+    <Line />
 
-    < br />< br />< br />
-      {/*BUTTON TO BOOK WORKSHOP*/}
+    <br />
+    <br />
+    <br />
+    {/*BUTTON TO BOOK WORKSHOP*/}
+    <a
+      style={{ color: '#000' }}
+      href="mailto:info@nzssa.org.nz?subject=I would like to book a NZSSA Workshop!"
+    >
       <Button>
-        <ButtonText>
-          <a
-            style={{ color: '#000' }}
-            href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!"
-          >
-            Book a workshop
-          </a>
-        </ButtonText>
+        <ButtonText>Book a workshop</ButtonText>
       </Button>
-
-    < br />< br />
-      {/*BUTTON TO BECOME AN AMBASSADOR*/}
+    </a>
+    <br />
+    <br />
+    {/*BUTTON TO BECOME AN AMBASSADOR*/}
+    <a
+      style={{ color: '#000' }}
+      href="mailto:info@nzssa.org.nz?subject=I would like to become an NZSSA ambassador!"
+    >
       <Button>
-        <ButtonText>
-          <a
-            style={{ color: '#000' }}
-            href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!"
-          >
-            Become an ambassador
-          </a>
-        </ButtonText>
+        <ButtonText>Become an ambassador</ButtonText>
       </Button>
-
-    < br />< br />
-      {/*BUTTON TO START A BRANCH*/}
+    </a>
+    <br />
+    <br />
+    {/*BUTTON TO START A BRANCH*/}
+    <a
+      style={{ color: '#000' }}
+      href="mailto:info@nzssa.org.nz?subject=I would like to start my own NZSSA branch!"
+    >
       <Button>
-        <ButtonText>
-          <a
-            style={{ color: '#000' }}
-            href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!"
-          >
-            Start a branch
-          </a>
-        </ButtonText>
+        <ButtonText>Start a branch</ButtonText>
       </Button>
-    < br />< br />< br />
+    </a>
+    <br />
+    <br />
+    <br />
 
     <h1 css={{ textAlign: 'center' }}>We look forward to hearing from you!</h1>
 

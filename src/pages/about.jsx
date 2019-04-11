@@ -8,18 +8,17 @@ import AboutUsArticle from '../components/AboutUsArticle';
 import backpackGirl from '../../static/backpack-girl.jpg';
 import committee from '../../static/committee.png';
 
-const Card = styled.div`
-`;
+const Card = styled.div``;
 
 const ButtonText = styled.div`
-    display: inline-block;
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    transition: all ${props => props.theme.transitions.default.duration};
-    &:hover {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  transition: all ${props => props.theme.transitions.default.duration};
+  &:hover {
     color: ${props => props.theme.colors.primary.base};
   }
-`
+`;
 
 const PurposeText = styled.text`
   font-family: 'Rubik', sans-serif;
@@ -43,7 +42,7 @@ const HeadingPosition = styled.h4`
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
-`
+`;
 
 const EmphasisBlue = styled.text`
   font-family: 'Rubik', sans-serif;
@@ -58,8 +57,6 @@ const EmphasisYellow = styled.text`
   font-size: 30px;
   color: #f8e074;
 `;
-
-
 
 const GridWrapperHalf = styled.div`
   margin: 0 auto;
@@ -104,8 +101,7 @@ const GridWrapperThirds = styled.div`
   height: 100%;
 `;
 
-
-const Button = styled.button` 
+const Button = styled.button`
   background-color: #ffffff;
   color: black;
   padding: 15px 5px;
@@ -117,8 +113,8 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 25px;
   width: 300px;
-  margin:auto;
-  display:block;
+  margin: auto;
+  display: block;
 `;
 
 const LinkColor = styled.div`
@@ -142,136 +138,204 @@ const LinkColor = styled.div`
   }
 `;
 
-
 const About = center => (
-    <Layout>
-      <Helmet title={'About Us'}/>
-      <Header title="About Us"></Header>
-      <p css={{textAlign: 'center'}}>"A long time ago in a galaxy far, far away..."</p>
+  <Layout>
+    <Helmet title={'About Us'} />
+    <Header title="About Us" />
+    <p css={{ textAlign: 'center' }}>
+      "A long time ago in a galaxy far, far away..."
+    </p>
 
+    {/*OUR PURPOSE*/}
+    <Container center={center}>
+      <PurposeText>OUR PURPOSE</PurposeText>
+      <br />
+      <h3 css={{ lineHeight: '1.6' }}>
+        To <EmphasisBlue>empower</EmphasisBlue> and{' '}
+        <EmphasisBlue>inspire</EmphasisBlue> students to realise their potential
+        to contribute to the future of the space industry.
+      </h3>
+      <br />
+      <h3 css={{ lineHeight: '1.6' }}>
+        This involves keeping their <EmphasisYellow>passion</EmphasisYellow> for
+        all things space related alive, connecting them with industry
+        professionals, and surrounding them with positive, like-minded people
+        who challenge each other to explore their abilities in space related
+        subjects.
+      </h3>
+      <br />
+    </Container>
 
-      {/*OUR PURPOSE*/}
-      <Container center={center}>
-        <PurposeText>OUR PURPOSE</PurposeText>
-        <br/>
-        <h3 css={{lineHeight: '1.6'}}>
-          To <EmphasisBlue>empower</EmphasisBlue> and <EmphasisBlue>inspire</EmphasisBlue> students to realise their
-          potential to contribute to the future of the space industry.
-        </h3>
-        <br/>
-        <h3 css={{lineHeight: '1.6'}}>
-          This involves keeping their <EmphasisYellow>passion</EmphasisYellow> for all things space related alive,
-          connecting them with industry professionals, and surrounding them with positive, like-minded people who
-          challenge each other to explore their abilities in space related subjects.
-        </h3>
-        <br/>
-      </Container>
+    {/*WHY WE EXIST*/}
+    <GridWrapperHalf css={{ paddingBottom: '140px' }}>
+      <AboutUsArticle />
+      <img src={backpackGirl} alt={'backpackGirl'} height={'700px'} />
+    </GridWrapperHalf>
 
-      {/*WHY WE EXIST*/}
-      <GridWrapperHalf css={{paddingBottom: '140px'}}>
-        <AboutUsArticle/>
-        <img src={backpackGirl} alt={"backpackGirl"} height={"700px"} ></img>
-      </GridWrapperHalf>
+    {/*PRIMARY SECONDARY TERTIARY DISPLAY*/}
+    <GridWrapperThirds css={{ paddingBottom: '70px' }}>
+      {/*PRIMARY*/}
+      <h3 css={{ textAlign: 'center' }}>
+        <svg height="200" width="300">
+          <circle cx="150" cy="100" r="80" fill="#F6CA68" />
+        </svg>
+        <PurposeText css={{ fontWeight: 'bold', fontSize: '40px' }}>
+          Primary
+        </PurposeText>
+        <br />
+        <br />
+        <h4 css={{ lineHeight: '1.6', textAlign: 'center' }}>
+          Creating opportunities for Primary School children to experience the
+          wonder of space through Single and Multiple Event Learning Modules,
+          some of which include ‘Rocket Building’, ‘Training Like an Astronaut’,
+          and ‘Going to Space’.
+        </h4>
+      </h3>
 
-      {/*PRIMARY SECONDARY TERTIARY DISPLAY*/}
-      <GridWrapperThirds css={{paddingBottom: '70px'}}>
+      {/*SECONDARY*/}
+      <h3 css={{ textAlign: 'center' }}>
+        <svg height="200" width="300">
+          <circle cx="150" cy="100" r="80" fill="#F6CA68" />
+        </svg>
+        <PurposeText
+          css={{ fontWeight: 'bold', fontSize: '40px', padding: '80px' }}
+        >
+          Secondary
+        </PurposeText>
+        <br />
+        <br />
+        <h4 css={{ lineHeight: '1.6', textAlign: 'center' }}>
+          Encourage Secondary students to consider space as a viable career
+          option through presentations at school assembly's, workshops, and
+          competitions. Our long term goal is to introduce a NCEA Space
+          Standard.
+        </h4>
+      </h3>
 
-        {/*PRIMARY*/}
-        <h3 css={{textAlign: 'center'}}>
-          <svg height="200" width="300"><circle cx="150" cy="100" r="80" fill="#F6CA68" /></svg>
-          <PurposeText css={{fontWeight: 'bold', fontSize: '40px'}}>Primary</PurposeText>
-          <br/><br/>
-          <h4 css={{lineHeight: '1.6', textAlign: 'center'}}>
-            Creating opportunities for Primary School children to experience the wonder of space through Single and Multiple Event Learning Modules, some of which include ‘Rocket Building’, ‘Training Like an Astronaut’, and ‘Going to Space’.
-          </h4>
-        </h3>
+      {/*TERTIARY*/}
+      <h3 css={{ textAlign: 'center' }}>
+        <svg height="200" width="300">
+          <circle cx="150" cy="100" r="80" fill="#F6CA68" />
+        </svg>
+        <PurposeText
+          css={{
+            fontWeight: 'bold',
+            fontSize: '40px',
+            align: 'right',
+            padding: '80px',
+          }}
+        >
+          Tertiary
+        </PurposeText>
+        <br />
+        <br />
+        <h4 css={{ lineHeight: '1.6', textAlign: 'center' }}>
+          Empower Tertiary students to explore the current Space Industry
+          through networking, inter-university competitions, Space Conferences,
+          Industry tours, and networking events. A strong focus on
+          Entrepreneurship and what a career in space looks like.
+        </h4>
+      </h3>
+    </GridWrapperThirds>
+    <br />
+    <br />
 
-        {/*SECONDARY*/}
-        <h3 css={{textAlign: 'center'}}>
-          <svg height="200" width="300">
-            <circle cx="150" cy="100" r="80" fill="#F6CA68" />
-          </svg>
-          <PurposeText css={{fontWeight: 'bold', fontSize: '40px', padding: '80px'}}>Secondary</PurposeText>
-          <br/><br/>
-          <h4 css={{lineHeight: '1.6', textAlign: 'center'}}>
-            Encourage Secondary students to consider space as a viable career option through presentations at school assembly's, workshops, and competitions. Our long term goal is to introduce a NCEA Space Standard.
-          </h4>
-        </h3>
-
-        {/*TERTIARY*/}
-        <h3 css={{textAlign: 'center'}}>
-          <svg height="200" width="300">
-            <circle cx="150" cy="100" r="80" fill="#F6CA68" />
-          </svg>
-          <PurposeText css={{fontWeight: 'bold', fontSize: '40px', align: 'right', padding: '80px'}}>Tertiary</PurposeText>
-          <br/><br/>
-          <h4 css={{lineHeight: '1.6', textAlign: 'center'}}>
-            Empower Tertiary students to explore the current Space Industry through networking, inter-university competitions, Space Conferences, Industry tours, and networking events.  A strong focus on Entrepreneurship and what a career in space looks like.
-          </h4>
-        </h3>
-      </GridWrapperThirds>
-      < br />< br />
-
-      {/*BUTTON TO BOOK WORKSHOP*/}
+    {/*BUTTON TO BOOK WORKSHOP*/}
+    <a
+      style={{ color: '#000' }}
+      href="mailto:info@nzssa.org.nz?subject=I would like to book a NZSSA Workshop!"
+    >
       <Button>
-        <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></ButtonText>
+        <ButtonText>Book a workshop</ButtonText>
       </Button>
+    </a>
 
+    {/*VALUES AND CODE OF CONDUCT*/}
+    <GridWrapperHalf>
+      <Card>
+        {/*VALUES*/}
+        <HeadingName css={{ fontWeight: 'bold', fontSize: '40px' }}>
+          OUR VALUES
+        </HeadingName>
+        <HeadingPosition css={{ lineHeight: '1.6' }}>
+          <EmphasisBlue>Be bold</EmphasisBlue>
+          <br />
+          EXPLORE > TAKE RISKS > CREATE > CHALLENGE YOURSELF
+          <br />
+          <br />
+          <EmphasisBlue>Have fun</EmphasisBlue>
+          <br />
+          JOIN A COMMUNITY > MAKE MISTAKES > SUCCEED TOGETHER
+          <br />
+          <br />
+          <EmphasisBlue>Build a better world</EmphasisBlue>
+          <br />
+          NEW KNOWLEDGE > INNOVATION > MAKE YOUR DIFFERENCE
+        </HeadingPosition>
 
+        {/*CODE OF CONDUCT*/}
+        <HeadingName css={{ fontWeight: 'bold', fontSize: '40px' }}>
+          CODE OF CONDUCT
+        </HeadingName>
+        <HeadingPosition css={{ lineHeight: '1.6' }}>
+          It's pretty simple.
+          <br />
+          <br />
+          DON'T BE A <EmphasisBlue>J.E.R.K</EmphasisBlue>
+          <br />
+          <EmphasisBlue>J</EmphasisBlue>
+          udgmental, <EmphasisBlue>E</EmphasisBlue>
+          xclusive, <EmphasisBlue>R</EmphasisBlue>
+          ude, <EmphasisBlue>K</EmphasisBlue>
+          now-it-all
+          <br />
+          <br />
+          INSTEAD, BE <EmphasisBlue>N.I.C.E</EmphasisBlue>
+          <br />
+          <EmphasisBlue>N</EmphasisBlue>o pre-bias,{' '}
+          <EmphasisBlue>I</EmphasisBlue>
+          nclusive, <EmphasisBlue>C</EmphasisBlue>
+          ommunicate, <EmphasisBlue>E</EmphasisBlue>
+          ncouraging
+        </HeadingPosition>
+      </Card>
 
-      {/*VALUES AND CODE OF CONDUCT*/}
-      <GridWrapperHalf>
-        <Card>
-          {/*VALUES*/}
-          <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>OUR VALUES</HeadingName>
-          <HeadingPosition css={{lineHeight: '1.6'}} >
-            <EmphasisBlue>Be bold</EmphasisBlue>< br />
-            EXPLORE > TAKE RISKS > CREATE > CHALLENGE YOURSELF
-            < br />< br />
-            <EmphasisBlue>Have fun</EmphasisBlue>< br />
-            JOIN A COMMUNITY > MAKE MISTAKES > SUCCEED TOGETHER
-            < br />< br />
-            <EmphasisBlue>Build a better world</EmphasisBlue>< br />
-            NEW KNOWLEDGE > INNOVATION > MAKE YOUR DIFFERENCE
-          </HeadingPosition>
+      {/*COMMITTEE IMAGE*/}
+      <Card>
+        <img css={{ paddingTop: '100px' }} src={committee} alt={'committee'} />
+      </Card>
+    </GridWrapperHalf>
 
-          {/*CODE OF CONDUCT*/}
-          <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>CODE OF CONDUCT</HeadingName>
-          <HeadingPosition css={{lineHeight: '1.6'}}>
-            It's pretty simple.
-            < br />< br/>
-            DON'T BE A <EmphasisBlue>J.E.R.K</EmphasisBlue>
-            < br />
-            <EmphasisBlue>J</EmphasisBlue>udgmental, <EmphasisBlue>E</EmphasisBlue>xclusive, <EmphasisBlue>R</EmphasisBlue>ude, <EmphasisBlue>K</EmphasisBlue>now-it-all
-            < br />< br />
-            INSTEAD, BE <EmphasisBlue>N.I.C.E</EmphasisBlue>
-            < br />
-            <EmphasisBlue>N</EmphasisBlue>o pre-bias, <EmphasisBlue>I</EmphasisBlue>nclusive, <EmphasisBlue>C</EmphasisBlue>ommunicate, <EmphasisBlue>E</EmphasisBlue>ncouraging
-          </HeadingPosition>
-        </Card>
-
-        {/*COMMITTEE IMAGE*/}
-        <Card>
-          <img css={{paddingTop: '100px'}} src={committee} alt={"committee"}></img>
-        </Card>
-      </GridWrapperHalf>
-
-      <GridWrapperThirds css={{paddingTop: '60px'}}>
-        {/*BUTTON TO BOOK WORKSHOP*/}
+    <GridWrapperThirds css={{ paddingTop: '60px' }}>
+      {/*BUTTON TO BOOK WORKSHOP*/}
+      <a
+        style={{ color: '#000' }}
+        href="mailto:info@nzssa.org.nz?subject=I would like to book a NZSSA Workshop!"
+      >
         <Button>
-          <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></ButtonText>
+          <ButtonText>Book a workshop</ButtonText>
         </Button>
-        {/*BUTTON TO BECOME AN AMBASSADOR*/}
+      </a>
+      {/*BUTTON TO BECOME AN AMBASSADOR*/}
+      <a
+        style={{ color: '#000' }}
+        href="mailto:info@nzssa.org.nz?subject=I would like to become an NZSSA ambassador!"
+      >
         <Button>
-          <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!">Become an ambassador</a></ButtonText>
+          <ButtonText>Become an ambassador</ButtonText>
         </Button>
-        {/*BUTTON TO START A BRANCH*/}
+      </a>
+      {/*BUTTON TO START A BRANCH*/}
+      <a
+        style={{ color: '#000' }}
+        href="mailto:info@nzssa.org.nz?subject=I would like to start my own NZSSA branch!"
+      >
         <Button>
-          <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></ButtonText>
+          <ButtonText>Start a branch</ButtonText>
         </Button>
-      </GridWrapperThirds>
-
-    </Layout>
+      </a>
+    </GridWrapperThirds>
+  </Layout>
 );
 
 export default About;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from 'react-emotion';
@@ -77,26 +77,33 @@ const Index = ({ data }) => {
         align="left"
       />
       <Helmet title={'Home Page'} />
-      < br />< br />< br />< br />< br />< br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <HomeHeader title="New Zealand Students' Space Association">
         Be bold. Have fun. Build a better world.
       </HomeHeader>
 
       {/*BUTTON TO BOOK WORKSHOP*/}
-      <Button>
-        <ButtonText>
-          <a
-            style={{ color: '#000' }}
-            href="https://docs.google.com/forms/d/1Mq1mNDnXJ_lIaIASuVDuN6rK_gIo9sAdZ3IOuEHNnYo/viewform?fbclid=IwAR0K2ZsmECMckLZumcdMDZLwXJIrnNZHqMgOXkfDHx2GBYAjhJ8Z5VDS0-w&edit_requested=true"
-          >
-            Join Us!
-          </a>
-        </ButtonText>
-      </Button>
+      <a href="https://docs.google.com/forms/d/1Mq1mNDnXJ_lIaIASuVDuN6rK_gIo9sAdZ3IOuEHNnYo/viewform?fbclid=IwAR0K2ZsmECMckLZumcdMDZLwXJIrnNZHqMgOXkfDHx2GBYAjhJ8Z5VDS0-w&edit_requested=true">
+        <Button>
+          <ButtonText>Join Us!</ButtonText>
+        </Button>
+      </a>
 
       <Subheading>Upcoming Events</Subheading>
 
-      <hr css={{ width: '230px', border: '0.5px solid white', marginLeft: '6rem', marginTop: '1rem' }} />
+      <hr
+        css={{
+          width: '230px',
+          border: '0.5px solid white',
+          marginLeft: '6rem',
+          marginTop: '1rem',
+        }}
+      />
       <PostWrapper>
         {data.upcomingEvents.edges.map(({ node }) => (
           <PostList
@@ -112,7 +119,14 @@ const Index = ({ data }) => {
         ))}
       </PostWrapper>
       <Subheading>Blog Posts</Subheading>
-      <hr css={{ width: '140px', border: '0.5px solid white', marginLeft: '6rem', marginTop: '1rem' }} />
+      <hr
+        css={{
+          width: '140px',
+          border: '0.5px solid white',
+          marginLeft: '6rem',
+          marginTop: '1rem',
+        }}
+      />
       <PostWrapper>
         {data.blogPosts.edges.map(({ node }) => (
           <PostList
