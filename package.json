@@ -5,7 +5,7 @@
   "description": "New Zealand Students' Space Association",
   "homepage": "https://nzssa.org.nz",
   "license": "MIT",
-  "version": "1",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://nzssa.org.nz"
@@ -79,11 +79,11 @@
     "prettier": "^1.14.3"
   },
   "keywords": [
-    "justin formentin",
-    "personal blog",
-    "tutorial",
-    "gatsby",
-    "gatsby",
-    "emotion"
+    "NZSSA",
+    "space",
+    "students",
+    "New Zealand",
+    "Wellington",
+    "Christchurch"
   ]
 }
