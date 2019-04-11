@@ -8,18 +8,17 @@ import AboutUsArticle from '../components/AboutUsArticle';
 import backpackGirl from '../../static/backpack-girl.jpg';
 import committee from '../../static/committee.png';
 
-const Card = styled.div`
-`;
+const Card = styled.div``;
 
 const ButtonText = styled.div`
-    display: inline-block;
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    transition: all ${props => props.theme.transitions.default.duration};
-    &:hover {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  transition: all ${props => props.theme.transitions.default.duration};
+  &:hover {
     color: ${props => props.theme.colors.primary.base};
   }
-`
+`;
 
 const PurposeText = styled.text`
   font-family: 'Rubik', sans-serif;
@@ -43,7 +42,7 @@ const HeadingPosition = styled.h4`
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
-`
+`;
 
 const EmphasisBlue = styled.text`
   font-family: 'Rubik', sans-serif;
@@ -58,8 +57,6 @@ const EmphasisYellow = styled.text`
   font-size: 30px;
   color: #f8e074;
 `;
-
-
 
 const GridWrapperHalf = styled.div`
   margin: 0 auto;
@@ -106,8 +103,7 @@ const GridWrapperThirds = styled.div`
   height: 100%;
 `;
 
-
-const Button = styled.button` 
+const Button = styled.button`
   background-color: #ffffff;
   color: black;
   padding: 15px 5px;
@@ -119,8 +115,8 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 25px;
   width: 300px;
-  margin:auto;
-  display:block;
+  margin: auto;
+  display: block;
 `;
 
 const LinkColor = styled.div`
@@ -143,7 +139,6 @@ const LinkColor = styled.div`
     width: 100%;
   }
 `;
-
 
 const About = center => (
     <Layout>
@@ -263,20 +258,34 @@ const About = center => (
 
       <GridWrapperThirds css={{paddingTop: '800px'}}>
         {/*BUTTON TO BOOK WORKSHOP*/}
+      <a
+        style={{ color: '#000' }}
+        href="mailto:info@nzssa.org.nz?subject=I would like to book a NZSSA Workshop!"
+      >
         <Button>
-          <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></ButtonText>
+          <ButtonText>Book a workshop</ButtonText>
         </Button>
-        {/*BUTTON TO BECOME AN AMBASSADOR*/}
+      </a>
+      {/*BUTTON TO BECOME AN AMBASSADOR*/}
+      <a
+        style={{ color: '#000' }}
+        href="mailto:info@nzssa.org.nz?subject=I would like to become an NZSSA ambassador!"
+      >
         <Button>
-          <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to become an NZSSA ambassador!">Become an ambassador</a></ButtonText>
+          <ButtonText>Become an ambassador</ButtonText>
         </Button>
-        {/*BUTTON TO START A BRANCH*/}
+      </a>
+      {/*BUTTON TO START A BRANCH*/}
+      <a
+        style={{ color: '#000' }}
+        href="mailto:info@nzssa.org.nz?subject=I would like to start my own NZSSA branch!"
+      >
         <Button>
-          <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to start my own NZSSA branch!">Start a branch</a></ButtonText>
+          <ButtonText>Start a branch</ButtonText>
         </Button>
-      </GridWrapperThirds>
-
-    </Layout>
+      </a>
+    </GridWrapperThirds>
+  </Layout>
 );
 
 export default About;
