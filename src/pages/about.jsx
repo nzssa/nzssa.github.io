@@ -65,8 +65,10 @@ const GridWrapperHalf = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 600px 600px;
-  grid-template-rows: 600px;
+  grid-template-rows: 20px;
   grid-row-gap: 20px;
+  grid-column-gap: 20px;
+
   width: 75%;
   justify-content: space-around;
   align-content: space-around;
@@ -86,15 +88,15 @@ const GridWrapperThirds = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 400px;
+  grid-template-rows: 200px;
   grid-row-gap: 0px;
-  grid-column-gap: 40px;
+  grid-column-gap: 20px;
   width: 75%;
   justify-content: space-around;
   align-content: space-around;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
     width: 90%;
-    grid: 400px 400px 400px/ 300px 300px;
+    grid: 400px 400px 400px/ 300px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     width: 95%;
@@ -168,44 +170,47 @@ const About = center => (
       </Container>
 
       {/*WHY WE EXIST*/}
-      <GridWrapperHalf css={{paddingBottom: '140px'}}>
+      <GridWrapperHalf css={{paddingBottom: '250px'}}>
         <AboutUsArticle/>
         <img src={backpackGirl} alt={"backpackGirl"} height={"700px"} ></img>
       </GridWrapperHalf>
 
+
       {/*PRIMARY SECONDARY TERTIARY DISPLAY*/}
-      <GridWrapperThirds css={{paddingBottom: '70px'}}>
+      <GridWrapperHalf css={{height: '20px', paddingTop: '500px', paddingBottom: '150px'}}>
+        <Card css={{height: '20px'}}>
+          <HeadingName  css={{fontWeight: 'bold', fontSize: '40px'}}>OUR ENGAGEMENT</HeadingName>
+        </Card>
+      </GridWrapperHalf>
+
+      <GridWrapperThirds css={{paddingLeft: '30px', paddingBottom: '70px'}}>
 
         {/*PRIMARY*/}
-        <h3 css={{textAlign: 'center'}}>
-          <svg height="200" width="300"><circle cx="150" cy="100" r="80" fill="#F6CA68" /></svg>
+        <h3 css={{textAlign: 'left'}}>
+          {/*<svg height="200" width="300"><circle cx="150" cy="100" r="80" fill="#F6CA68" /></svg>*/}
           <PurposeText css={{fontWeight: 'bold', fontSize: '40px'}}>Primary</PurposeText>
           <br/><br/>
-          <h4 css={{lineHeight: '1.6', textAlign: 'center'}}>
+          <h4 css={{lineHeight: '1.6', textAlign: 'left'}}>
             Creating opportunities for Primary School children to experience the wonder of space through Single and Multiple Event Learning Modules, some of which include ‘Rocket Building’, ‘Training Like an Astronaut’, and ‘Going to Space’.
           </h4>
         </h3>
 
         {/*SECONDARY*/}
-        <h3 css={{textAlign: 'center'}}>
-          <svg height="200" width="300">
-            <circle cx="150" cy="100" r="80" fill="#F6CA68" />
-          </svg>
-          <PurposeText css={{fontWeight: 'bold', fontSize: '40px', padding: '80px'}}>Secondary</PurposeText>
+        <h3 css={{textAlign: 'left'}}>
+          {/*<svg height="200" width="300"><circle cx="150" cy="100" r="80" fill="#F6CA68" /></svg>*/}
+          <PurposeText css={{fontWeight: 'bold', fontSize: '40px'}}>Secondary</PurposeText>
           <br/><br/>
-          <h4 css={{lineHeight: '1.6', textAlign: 'center'}}>
+          <h4 css={{lineHeight: '1.6', textAlign: 'left'}}>
             Encourage Secondary students to consider space as a viable career option through presentations at school assembly's, workshops, and competitions. Our long term goal is to introduce a NCEA Space Standard.
           </h4>
         </h3>
 
         {/*TERTIARY*/}
-        <h3 css={{textAlign: 'center'}}>
-          <svg height="200" width="300">
-            <circle cx="150" cy="100" r="80" fill="#F6CA68" />
-          </svg>
-          <PurposeText css={{fontWeight: 'bold', fontSize: '40px', align: 'right', padding: '80px'}}>Tertiary</PurposeText>
+        <h3 css={{textAlign: 'left'}}>
+          {/*<svg height="200" width="300"><circle cx="150" cy="100" r="80" fill="#F6CA68" /></svg>*/}
+          <PurposeText css={{fontWeight: 'bold', fontSize: '40px'}}>Tertiary</PurposeText>
           <br/><br/>
-          <h4 css={{lineHeight: '1.6', textAlign: 'center'}}>
+          <h4 css={{lineHeight: '1.6', textAlign: 'left'}}>
             Empower Tertiary students to explore the current Space Industry through networking, inter-university competitions, Space Conferences, Industry tours, and networking events.  A strong focus on Entrepreneurship and what a career in space looks like.
           </h4>
         </h3>
@@ -214,7 +219,7 @@ const About = center => (
 
       {/*BUTTON TO BOOK WORKSHOP*/}
       <Button>
-        <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></ButtonText>
+        <ButtonText><a style={{ color: '#000' }} href="mailto:info@nzssa.org.nz?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></ButtonText>
       </Button>
 
 
@@ -256,7 +261,7 @@ const About = center => (
         </Card>
       </GridWrapperHalf>
 
-      <GridWrapperThirds css={{paddingTop: '60px'}}>
+      <GridWrapperThirds css={{paddingTop: '800px'}}>
         {/*BUTTON TO BOOK WORKSHOP*/}
         <Button>
           <ButtonText><a style={{ color: '#000' }} href="mailto:someone@yoursite.com?subject=I would like to book a NZSSA Workshop!">Book a workshop</a></ButtonText>
