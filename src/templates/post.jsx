@@ -62,16 +62,18 @@ const Post = ({ data, pageContext }) => {
         pathname={post.frontmatter.path}
         article
       />
-      <Header title={title} date={date} cover={image}/>
+      <Header title={title} date={date} cover={image} />
       <Container>
-        <Image><Img fluid={picture} /></Image>
-        <Content input={html}/>
+        <Image>
+          <Img fluid={picture} />
+        </Image>
+        <Content input={html} />
         <TagsBlock list={post.frontmatter.tags || []} />
       </Container>
       <SuggestionBar>
         <PostSuggestion>
           {prev && (
-            <Link css={{color: 'white'}} to={prev.frontmatter.path}>
+            <Link css={{ color: 'white' }} to={prev.frontmatter.path}>
               Previous
               <h3>{prev.frontmatter.title}</h3>
             </Link>
@@ -79,7 +81,7 @@ const Post = ({ data, pageContext }) => {
         </PostSuggestion>
         <PostSuggestion>
           {next && (
-            <Link css={{color: 'white'}} to={next.frontmatter.path}>
+            <Link css={{ color: 'white' }} to={next.frontmatter.path}>
               Next
               <h3>{next.frontmatter.title}</h3>
             </Link>
@@ -124,10 +126,7 @@ export const query = graphql`
         }
         picture1 {
           childImageSharp {
-            fluid(
-              maxWidth: 1920
-              quality: 90
-            ) {
+            fluid(maxWidth: 1920, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
             }
             resize(width: 1200, quality: 90) {
