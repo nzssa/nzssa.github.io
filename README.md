@@ -21,7 +21,7 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 ### ABOUT US PAGE
 
-:white_large_square: do something with giant yellow circles - NO MORE
+:white_check_mark: do something with giant yellow circles - NO MORE
 
 
 ### EVENTS PAGE
@@ -45,7 +45,7 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: add timeline to side of blog
 
-:white_large_square: fix URL colours
+:white_check_mark: fix URL colours
 
 
 ### TEAM PAGE
