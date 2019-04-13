@@ -48,16 +48,17 @@ const EventLink = styled.a`
   }
 `;
 const SingleEvent = ({ title, date, excerpt, colour, path, location }) => (
-  <Wrapper css={{ borderColor: colour, backgroundColor: '#fff' }}>
-    <EventTitle>
-      <Link to={path}>
+  <Link to={path}>
+    <Wrapper css={{ borderColor: colour, backgroundColor: '#fff' }}>
+      <EventTitle>
         <EventLink>{title}</EventLink>
-      </Link>
-      <EventLocation>{location}</EventLocation>
-    </EventTitle>
-    <Date>{date}</Date>
-    <Excerpt>{excerpt}</Excerpt>
-  </Wrapper>
+
+        <EventLocation>{location}</EventLocation>
+      </EventTitle>
+      <Date>{date}</Date>
+      <Excerpt>{excerpt}</Excerpt>
+    </Wrapper>
+  </Link>
 );
 
 export default SingleEvent;

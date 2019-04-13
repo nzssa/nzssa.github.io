@@ -28,11 +28,11 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: reference to check out blog at bottom of page
 
-:white_large_square: fix URL colours
+:white_check_mark: fix URL colours
 
-:white_large_square: give whole event click rights
+:white_check_mark: give whole event click rights
 
-:white_large_square: change text location to black instead of white
+:white_check_mark: change text location to black instead of white
 
 :white_large_square: add filter by tag feature
 
@@ -59,45 +59,17 @@ Website built with Gatsby and Justin Formentin's <a href="https://github.com/jus
 
 :white_large_square: give Mission Control its own line
 
-## Starter Features
-
-- Gatsby v2
-- Emotion for styling
-- Code syntax highlighting
-- Tags
-- SEO
-  - Sitemap generation
-  - Schema.org JSON-LD for Google Rich Snippets
-  - Twitter Tags
-  - OpenGraph Tags for Facebook/Google+/Pinterest
-  - robots.txt
-- Typography.js
-- Typefaces for faster font loading
-- Offline Support
-- Manifest Support
-- Gatsby Image
-  - Responsive images
-  - Traced SVG Loading with Lazy-Loading
-  - WebP Support
-- Development tools
-  - ESLint for linting
-  - Prettier for code style
-  - CircleCI support
-  - Google Lighthouse Optimization
-
 # Usage
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/justinformentin/gatsby-v2-tutorial-starter)
 
 ```bash
 Download project
 # With `gatsby-cli`
-gatsby new my-site https://github.com/justinformentin/gatsby-v2-tutorial-starter
+gatsby new my-site https://github.com/nzssa/nzssa.github.io
 
 OR
 
 # Cloning
-git clone my-site https://github.com/justinformentin/gatsby-v2-tutorial-starter.git
+git clone my-site https://github.com/nzssa/nzssa.github.io.git
 cd my-site
 
 THEN
@@ -131,3 +103,29 @@ npm format
 ├── gatsby-config.js # Plugin loading and configuration
 └── gatsby-node.js # Generate posts/tags and modify webpack
 ```
+
+## Starter Features
+
+- Gatsby v2
+- Emotion for styling
+- Code syntax highlighting
+- Tags
+- SEO
+  - Sitemap generation
+  - Schema.org JSON-LD for Google Rich Snippets
+  - Twitter Tags
+  - OpenGraph Tags for Facebook/Google+/Pinterest
+  - robots.txt
+- Typography.js
+- Typefaces for faster font loading
+- Offline Support
+- Manifest Support
+- Gatsby Image
+  - Responsive images
+  - Traced SVG Loading with Lazy-Loading
+  - WebP Support
+- Development tools
+  - ESLint for linting
+  - Prettier for code style
+  - CircleCI support
+  - Google Lighthouse Optimization
