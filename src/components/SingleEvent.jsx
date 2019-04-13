@@ -29,13 +29,13 @@ const EventLocation = styled.p`
 
 const Excerpt = styled.p`
   margin: 0;
-  color: #000 !important;
+  color: #000;
 `;
 
 const Date = styled.p`
   margin: 0;
   font-weight: bold;
-  color: #000 !important;
+  color: #000;
 `;
 
 const EventLink = styled.a`
