@@ -139,7 +139,7 @@ const Contact = center => (
           National Organisation
           <br />
           <br />
-          sample@gmail.com
+          test@gmail.com
         </HeadingPosition>
       </Card>
 
