@@ -61,6 +61,7 @@ const Image2 = styled.img`
 const Subheading = styled.h2`
   font-family: 'Rubik', sans-serif;
   margin: 0 6rem;
+  color: #fff !important;
 `;
 
 const Index = ({ data }) => {

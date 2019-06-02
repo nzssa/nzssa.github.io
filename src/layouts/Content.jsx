@@ -12,6 +12,7 @@ const Wrapper = styled.div`
     --x-height-multiplier: 0.35;
     font-size: 1.15rem;
     line-height: 2;
+    margin-top: 2rem;
     code {
       padding: 0.2rem 0.5rem;
       margin: 0.5rem 0;
