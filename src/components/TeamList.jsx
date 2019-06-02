@@ -34,6 +34,7 @@ const HeadingPosition = styled.h4`
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
+  color: #fff !important;
 `;
 
 const Information = styled.div`

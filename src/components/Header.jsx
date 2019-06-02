@@ -1,15 +1,9 @@
 import React from 'react';
 import styled from 'react-emotion';
-import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import starHeader from '../../static/black-stars-header.png';
-//import starHeader from '../../static/stars.svg'
 
 const Wrapper = styled.header`
-  // background-image: url('../../static/stars.svg');
-  // background-position: center;
-  // background-size: cover;
-  // background: ${props => props.theme.gradient.rightToLeft};
   object-fit: cover;
   object-position: 50% 50%;
   height: 200px;
@@ -37,7 +31,6 @@ const Text = styled.div`
   width: 100%;
   max-width: ${props => props.theme.layout.base};
   padding: 0 2rem;
-  // margin-bottom: 3rem;
   align-items: center;
 `;
 
@@ -69,10 +62,16 @@ const Header = ({ children, title, date, cover }) => (
       }}
     />
     <Text>
-      {/*<br />*/}
-      {/*<br />*/}
-      <h1 css={{ fontSize: '3rem', zIndex: 100 }}>{title}</h1>
-      <hr css={{ width: '300px', border: '0.5px solid white', marginBottom: 0 }} />
+      <h1
+        css={{
+          fontSize: '3rem',
+          zIndex: 100,
+          paddingBottom: '1rem',
+          borderBottom: '2px solid white',
+        }}
+      >
+        {title}
+      </h1>
       <h3>{date}</h3>
 
       {children && <Subtitle>{children}</Subtitle>}

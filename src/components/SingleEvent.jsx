@@ -22,20 +22,20 @@ const EventTitle = styled.div`
 const EventLocation = styled.p`
   display: inline-block;
   float: right;
-  color: #000;
+  color: #000 !important;
   margin: auto 0;
   font-style: italic;
 `;
 
 const Excerpt = styled.p`
   margin: 0;
-  color: #000;
+  color: #000 !important;
 `;
 
 const Date = styled.p`
   margin: 0;
   font-weight: bold;
-  color: #000;
+  color: #000 !important;
 `;
 
 const EventLink = styled.a`
